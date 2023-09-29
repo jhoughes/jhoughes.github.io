@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tech Field Day Extra VMworld 2018 – Quali &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,400i|Merriweather:400,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Fira Sans']
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about" align=center>
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+        <img src="/images/logo.png" width=50%>
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Posts</a> </li>
+        <li><a href="/about/">About</a></li>
+      </br>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Tech Field Day Extra VMworld 2018 – Quali</h1>
+  <time datetime=2018-10-07T15:45:23Z class="post-date">Sun, Oct 7, 2018</time>
+  <p><strong>DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.</strong></p>
+<p><img src="/images/TFD-Extra-VMworld-300.png" alt="Tech Field Day Extra VMworld 2018" title="Tech Field Day Extra VMworld 2018"></p>
+<p>Quali Systems was the second presentation which I attended at Tech Field Day Extra during VMworld 2018.  After hearing the opening description about the CloudShell platform, I was very interested to see what they can control with regards to infrastructure and application automation within their product.  Their focus on delivering self-provisioning to any data center, or any cloud, while being primarily focused on DevOps was a very intriguing concept to me.</p>
+<p>As a long time infrastructure geek who has had to provision many components that include servers, storage, networking, and virtualization, followed by focusing on the automation of these technologies, I have seen and tested many platforms which attempt to encompass these components &ndash; all with the goal of easy and more automated provisioning.  To set the stage a little on my focus and interest, I will give a little background on previous platforms, along with the current trending in IT.</p>
+<p>Any time that I have seen a product which focused on controlling all of these aspects of the data center infrastructure, they have been focused on the needs of the infrastructure admin, and not the developer or user whose workload is hosted by that infrastructure.  Even self-provisioning components have been geared towards IT staff who manage the physical gear and the platforms which are the underlying components of dev/test/production environments. When moving to the next step of provisioning these workloads themselves, very minimal tooling from these infrastructure-focused platforms has existed, and much of it has been far from polished.  There is a definite gap in transitioning from the infrastructure focus to the application focus, at least within an automation platform that can still drive the physical infrastructure.  The rise of agile workflows, CI/CD pipelines, and the desire for composable infrastructure leads to a very wide open market if there was a platform that was able to successfully encompass all of these components.</p>
+<p>Quali has a product called CloudShell which it presented that is focused to play in this space by delivering something with a new focus:  Environments as a Service.  While I&rsquo;m not typically a huge fan of the new AAS terminology that some vendors try to create, I was intrigued as to why they chose &ldquo;environments&rdquo; as their base.  Due to it having a basis in the DevOps culture and methodology, CloudShell has a different focus than the typical infrastructure automation platforms in that it is intended to be used by, and useful for, all teams within your organization.</p>
+<p><img src="/images/cloudshell.png" alt="CloudShell" title="CloudShell"></p>
+<p>Quali truly expects this platform to be beneficial to your developers and testers, quality assurance teams, sales teams, and even your security team.  There is a concept of fully-isolated &ldquo;sandbox&rdquo; environments driven by policy-based provisioning along with built-in reservations and scheduling, which allows for fully-managed environments to be provisioned dynamically or at a specific time, as needed by your organization.</p>
+<p><img src="/images/quali_self_service_any_cloud.png" alt="Self-service any cloud" title="Self-service any cloud"></p>
+<p>I did specifically ask about how this platform looks to the end-user, mostly due to my bias from previous orchestration platforms, which have nearly always been focused on meeting the needs of only the infrastructure administrator.  I was pleasantly surprised to head that the entire pipeline of deploying, reclaiming, saving and/or restoring of these sandboxes is available to users of the platform, and all as self-service options.  CloudShell does have both top-down as well as bottom-up perspectives, so both your DevOps architects who are building your workflows &amp; blueprints, as well as your end-users requesting these specific environments can have their needs fulfilled.</p>
+<p><img src="/images/quali_cicd.png" alt="CI/CD" title="CI/CD"></p>
+<p>CloudShell has over 130 community plugins, and can orchestrate NSX for virtual networking, but not Cisco ACI. I saw that you could even orchestrate components like IXIA for even adding capabilities of full network testing, such as traffic generation and even security attacks.  Having used IXIA as a critical component when we tested IVR systems and &ldquo;happy path&rdquo; in call center environments, this was a definite bonus that I saw.  Pre-provisioned environment reservations are allowed, along with scheduled environment builds, so you can even leverage your environments for use cases such as scheduled demos, regularly scheduled QA tests, and security testing or validation at random intervals.</p>
+<p><img src="/images/quali_components.png" alt="Components" title="Components"></p>
+<p>In my mind, Quali has definitely hit a very sweet spot of having a very broad focus, but still executing on it with a valuable use case, and seeming to be a very solid answer to addressing the needs of a wide range of teams.  I can definitely see benefits for many organizations that I have worked for an within the past, and it honestly just excites me to see that the DevOps trend has now driven some innovation in the orchestration space, to try to bring the technologies together in the same fashion that the DevOps culture is working to accomplish.</p>
+<p>Even if this is a product that you do not believe that you would not use in your environment, and especially if you have some trouble understanding some of the focus around agile, CI/CD and composable infrastructure, <strong>I HIGHLY ENCOURAGE YOU TO WATCH THE VIDEO</strong> including the demo given by Roni Dover during TFDx.  I was rewarded for my excitement with both his presentation and enthusiasm in Quali CloudShell.  He did an excellent job of presenting this in my opinion, and I really got the feeling that this was a product that he believes in and is proud to present on, and I was glad to have the opportunity to see it in person.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

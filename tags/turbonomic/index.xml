@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Turbonomic on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/turbonomic/</link>
+    <description>Recent content in Turbonomic on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Oct 2017 16:55:05 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/turbonomic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First impressions on CWOM – a less green Turbonomic</title>
+      <link>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</link>
+      <pubDate>Thu, 26 Oct 2017 16:55:05 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</guid>
+      <description>Early this year, there were talks of Cisco acquiring Turbonomic. A few months back this became a partnership to release Cisco Workload Optimization Manager (CWOM). This is one of the newest products included in the Cisco ONE Enterprise Cloud Suite.
+Cisco Workload Optimization Manager is now in its 1.1.3 release. Starting with this release, you can target UCS Director as an orchestration target. I would love to leverage this, I now need to get UCS Director back into the environment).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ValidatedDesign on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/validateddesign/</link>
+    <description>Recent content in ValidatedDesign on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Aug 2022 14:13:21 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/validateddesign/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating the Entire Stack with FlashStack: Part 1 - From Validated Design to Real World Use</title>
+      <link>https://www.fullstackgeek.net/2022/08/04/automating-the-entire-stack-with-flashstack-1-from-validated-design-to-real-world-use/</link>
+      <pubDate>Thu, 04 Aug 2022 14:13:21 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2022/08/04/automating-the-entire-stack-with-flashstack-1-from-validated-design-to-real-world-use/</guid>
+      <description>Technologies like virtualization, containers, and deployment automation should simplify work around IT operations and enable them to provide for the constantly changing needs of their organizations. As work to manage operations on-prem and in the cloud becomes increasingly challenging at scale, empowering IT teams and developers to consume resources more easily becomes a critical need. Infrastructure as Code (IaC) is a primary means to simplify these functions. It has become a significant driver for simplifying deployment efforts for infrastructure teams in the past few years and easing the overhead of managing environments at scale.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VMworld2018 on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/vmworld2018/</link>
+    <description>Recent content in VMworld2018 on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Oct 2018 11:23:38 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/vmworld2018/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – Runecast</title>
+      <link>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</link>
+      <pubDate>Sat, 27 Oct 2018 11:23:38 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</guid>
+      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was provided any compensation, only stickers/swag. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.
+Runecast was the third and final presentation which I attended at Tech Field Day Extra during VMworld 2018.</description>
+    </item>
+    
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – Quali</title>
+      <link>https://www.fullstackgeek.net/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</link>
+      <pubDate>Sun, 07 Oct 2018 15:45:23 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</guid>
+      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.</description>
+    </item>
+    
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – JetStream Software</title>
+      <link>https://www.fullstackgeek.net/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</link>
+      <pubDate>Tue, 02 Oct 2018 17:55:21 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</guid>
+      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.</description>
+    </item>
+    
+  </channel>
+</rss>

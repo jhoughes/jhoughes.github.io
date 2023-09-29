@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pure Storage on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/pure-storage/</link>
+    <description>Recent content in Pure Storage on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Apr 2018 05:44:53 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/pure-storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing the Pure Storage plugin for Veeam Backup &amp; Recovery Snapshot Integration</title>
+      <link>https://www.fullstackgeek.net/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</link>
+      <pubDate>Sun, 15 Apr 2018 05:44:53 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</guid>
+      <description>Whew, that title is a mouthful. This post will cover the installation and configuration of the Pure Storage plugin for Veeam Backup &amp;amp; Recovery, but we&amp;rsquo;ll incorporate some background first.
+One of the most significant enhancements released with Veeam 9.5U3 is one from which most users have not seen direct improvement &amp;mdash; until now. The specific enhancement that I am referring to is the Universal Storage API, which is the framework that storage vendors can leverage to integrate their storage arrays to allow for Veeam to offload snapshots for backup &amp;amp; recovery operations to the array, rather than relying on VMware snapshots.</description>
+    </item>
+    
+  </channel>
+</rss>

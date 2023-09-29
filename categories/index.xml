@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/</link>
+    <description>Recent content in Categories on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Aug 2022 14:13:21 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IaC</title>
+      <link>https://www.fullstackgeek.net/categories/iac/</link>
+      <pubDate>Thu, 04 Aug 2022 14:13:21 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PureStorage</title>
+      <link>https://www.fullstackgeek.net/categories/purestorage/</link>
+      <pubDate>Thu, 04 Aug 2022 14:13:21 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/purestorage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ValidatedDesign</title>
+      <link>https://www.fullstackgeek.net/categories/validateddesign/</link>
+      <pubDate>Thu, 04 Aug 2022 14:13:21 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/validateddesign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AustinPowerShell</title>
+      <link>https://www.fullstackgeek.net/categories/austinpowershell/</link>
+      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/austinpowershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>https://www.fullstackgeek.net/categories/presentation/</link>
+      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/presentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>https://www.fullstackgeek.net/categories/uncategorized/</link>
+      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/uncategorized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMUG</title>
+      <link>https://www.fullstackgeek.net/categories/vmug/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:57 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/vmug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpiceWorld</title>
+      <link>https://www.fullstackgeek.net/categories/spiceworld/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:56 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/spiceworld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Veeam</title>
+      <link>https://www.fullstackgeek.net/categories/veeam/</link>
+      <pubDate>Thu, 30 May 2019 20:03:32 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/veeam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TechFieldDay</title>
+      <link>https://www.fullstackgeek.net/categories/techfieldday/</link>
+      <pubDate>Sat, 27 Oct 2018 11:23:38 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/techfieldday/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Influencer</title>
+      <link>https://www.fullstackgeek.net/categories/influencer/</link>
+      <pubDate>Tue, 09 Oct 2018 15:48:21 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/influencer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exagrid</title>
+      <link>https://www.fullstackgeek.net/categories/exagrid/</link>
+      <pubDate>Thu, 31 May 2018 20:22:07 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/exagrid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>https://www.fullstackgeek.net/categories/cisco/</link>
+      <pubDate>Thu, 26 Oct 2017 16:55:05 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/cisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ramblings</title>
+      <link>https://www.fullstackgeek.net/categories/ramblings/</link>
+      <pubDate>Wed, 25 Oct 2017 18:57:14 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/categories/ramblings/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

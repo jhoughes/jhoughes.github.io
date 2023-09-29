@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentation on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/presentation/</link>
+    <description>Recent content in Presentation on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 15:22:17 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the Austin PowerShell User Group.
+Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.
+You can get more details on the presentation in my blog post about SpiceWorld, the video of the presentation here, and the version of the slides from this session here.</description>
+    </item>
+    
+    <item>
+      <title>Being Effective at Technical Communication - Technology Not Required</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:57 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
+      <description>The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.
+This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.
+Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications.</description>
+    </item>
+    
+    <item>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:56 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;. I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala. It was pretty cool to see my picture next to these two on the speakers page.</description>
+    </item>
+    
+    <item>
+      <title>VeeamOn 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 20:03:32 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted here for public download.
+The attachment is only a PDF export of the presentation slides themselves.
+I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.</description>
+    </item>
+    
+    <item>
+      <title>VeeamOn 2018 Presentation – Automate yourself out of a (backup) job</title>
+      <link>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
+      <pubDate>Tue, 15 May 2018 19:05:44 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
+      <description>I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.
+Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.
+PDF Version is available here, and the full PowerPoint version with embedded videos is available here.
+I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.</description>
+    </item>
+    
+  </channel>
+</rss>

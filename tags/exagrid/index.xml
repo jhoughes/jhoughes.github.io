@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exagrid on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/exagrid/</link>
+    <description>Recent content in Exagrid on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Oct 2017 23:50:25 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/exagrid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exagrid Installation and Initialization</title>
+      <link>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</link>
+      <pubDate>Mon, 30 Oct 2017 23:50:25 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</guid>
+      <description>We are testing out two new ExaGrid 40000E appliances. These will be new initial target repositories for backups from Veeam Backup &amp;amp; Recovery. This is a prime opportunity to get out another article about the install and initialization of the ExaGrid hardware. I intend to follow with a post about the benefits of the Veeam integration.
+ExaGrid is an exceptional idea for their layout with the distinct partitions of a &amp;ldquo;landing zone&amp;rdquo; and &amp;ldquo;retention zone&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

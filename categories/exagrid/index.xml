@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exagrid on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/exagrid/</link>
+    <description>Recent content in Exagrid on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 May 2018 20:22:07 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/exagrid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FYI: Veeam Credential errors after April/May 2018 Windows patches</title>
+      <link>https://www.fullstackgeek.net/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</link>
+      <pubDate>Thu, 31 May 2018 20:22:07 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</guid>
+      <description>I just wanted to post this up in case it helps someone else out.
+Short recap: Starting yesterday, when our VBR server was inadvertently rebooted and finished applying some patches that were outstanding for many weeks (don&amp;rsquo;t get me started on the fiasco of a background story), we started getting multiple failures and error messages. I only caught this while doing a job reconfiguration and trying to map a cloned job to an existing backup chain, which was failing with an error of &amp;ldquo;Unable to perform data sovereignty check&amp;hellip;&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Exagrid Installation and Initialization</title>
+      <link>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</link>
+      <pubDate>Mon, 30 Oct 2017 23:50:25 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</guid>
+      <description>We are testing out two new ExaGrid 40000E appliances. These will be new initial target repositories for backups from Veeam Backup &amp;amp; Recovery. This is a prime opportunity to get out another article about the install and initialization of the ExaGrid hardware. I intend to follow with a post about the benefits of the Veeam integration.
+ExaGrid is an exceptional idea for their layout with the distinct partitions of a &amp;ldquo;landing zone&amp;rdquo; and &amp;ldquo;retention zone&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

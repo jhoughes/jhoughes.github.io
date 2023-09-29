@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VeeamON2018 on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/veeamon2018/</link>
+    <description>Recent content in VeeamON2018 on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 May 2018 19:05:44 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/veeamon2018/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VeeamOn 2018 Presentation – Automate yourself out of a (backup) job</title>
+      <link>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
+      <pubDate>Tue, 15 May 2018 19:05:44 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
+      <description>I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.
+Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.
+PDF Version is available here, and the full PowerPoint version with embedded videos is available here.
+I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.</description>
+    </item>
+    
+  </channel>
+</rss>

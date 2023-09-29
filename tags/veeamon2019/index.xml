@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VeeamON2019 on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/veeamon2019/</link>
+    <description>Recent content in VeeamON2019 on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2019 20:03:32 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/veeamon2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VeeamOn 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 20:03:32 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted here for public download.
+The attachment is only a PDF export of the presentation slides themselves.
+I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.</description>
+    </item>
+    
+  </channel>
+</rss>

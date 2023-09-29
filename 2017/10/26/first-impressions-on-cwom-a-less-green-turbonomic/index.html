@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>First impressions on CWOM – a less green Turbonomic &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,400i|Merriweather:400,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Fira Sans']
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about" align=center>
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+        <img src="/images/logo.png" width=50%>
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Posts</a> </li>
+        <li><a href="/about/">About</a></li>
+      </br>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>First impressions on CWOM – a less green Turbonomic</h1>
+  <time datetime=2017-10-26T16:55:05Z class="post-date">Thu, Oct 26, 2017</time>
+  <p>Early this year, there were talks of Cisco acquiring Turbonomic. A few months back this became a partnership to release Cisco Workload Optimization Manager (CWOM). This is one of the newest products included in the Cisco ONE Enterprise Cloud Suite.</p>
+<p>Cisco Workload Optimization Manager is now in its 1.1.3 release. Starting with this release, you can target UCS Director as an orchestration target. I would love to leverage this, I now need to get UCS Director back into the environment).</p>
+<p>You can also now configure the following monitored resources:</p>
+<p><em>* Guest OS WMI/SNMP applications as Application Performance Management (APM) targets (similar to virtual machines)</em></p>
+<p><em>* Microsoft Exchange servers as Windows Application targets (utilizing WinRM over ports 5985 &amp; 5986)</em></p>
+<p><em>* Docker as Application Container targets (requires running/licensing the Cloud Native edition of CWOM)</em></p>
+<p><em>* The new version of the product also moves the platform to a new HTML5 based interface, which has some usability improvement over the original UI. (I admit that I did always like the look and layout of the Turbonomic/VMTurbo interface.)</em></p>
+<p>If you pay attention, you&rsquo;ll see that the current CWOM branded release is running the bits from Turbonomic 5.9.1 (released July 31, 2017). You can confirm this based on the known issues listed in the release notes. I&rsquo;ve been unable to get any timeline on the next CWOM release based on the Turbonomic 6.0 version. (I&rsquo;m harassing folks within Cisco and Turbonomic at Cisco Connect Austin today to try to get some more details&hellip;)</p>
+<p>Over the past few years, I&rsquo;m run many demos of different versions of VMTurbo and then Turbonomic. I&rsquo;ve not been fortunate enough to justify the spend for any of my smaller environments to leverage the resource management.</p>
+<p>One of the greatest benefits of the Cisco/Turbonomic partnership to me at this point is the easier sell to the organization. On the basis of being a large Cisco shop and the enhanced integration (plus potential licensing discounts), this makes it an easier sell. I&rsquo;m running a new iteration of a POC of the CWOM branded product, rather than the pure Turbonomic release.</p>
+<p>However, this partnership may also be a hindrance going forward. I&rsquo;ve already seen where the current CWOM install of version 1.1.3 (released August 16, 2017) does not see any updated. We cannot use the internal upgrade method to see any available updates to get the underlying Turbonomic code up to the new 6.0 version. <strong>Argh.</strong></p>
+<p>This is already causing me some grief in running the POC. One of the biggest benefits for our organization would be new Turbonomic 6.0 feature of targeting an EMC VPLEX. Having the linked analytics all the way through our stack from UCS environments through EMC VPLEX all the way down to the LUNs on our EMC VNX arrays would be HUGE for us. Thus far, this would be one of the VERY few platforms that would be capable of this. It would be great to connect resource visibility through the VPLEX platform with much success.</p>
+<p>I&rsquo;ve worked this upgrade concern with the team of Turbonomic and Cisco folks that are directing our POC. Thus far, no one knows how the upgrade cycle of the CWOM product will look, at least as compared to the product release cycles of Turbomonic. I&rsquo;m hoping that with some further questioning outside of the team working on the POC will lead to some more clear answers.</p>
+<p><em>UPDATE: Turbonomic has since informed me that CWOM will stay one version behind the Turbonomic releases.  This means that CWOM will have the functionality of Turbonomic 6.0 by the end of November.</em></p>
+<p>Also, I have to call out that I love that the base install of even the CWOM product is still using the original &ldquo;vmturbo&rdquo; password. Seeing that classic holdout is great, especially for the customers who will be seeing or deploying this product for the first time as the Cisco branded platform. It&rsquo;s a good throwback to the legacy of awesomeness that is VMTurbo, now Turbonomic.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

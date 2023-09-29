@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Exagrid Installation and Initialization &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,400i|Merriweather:400,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Fira Sans']
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about" align=center>
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+        <img src="/images/logo.png" width=50%>
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Posts</a> </li>
+        <li><a href="/about/">About</a></li>
+      </br>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Exagrid Installation and Initialization</h1>
+  <time datetime=2017-10-30T23:50:25Z class="post-date">Mon, Oct 30, 2017</time>
+  <p>We are testing out two new ExaGrid 40000E appliances. These will be new initial target repositories for backups from Veeam Backup &amp; Recovery. This is a prime opportunity to get out another article about the install and initialization of the ExaGrid hardware. I intend to follow with a post about the benefits of the Veeam integration.</p>
+<p>ExaGrid is an exceptional idea for their layout with the distinct partitions of a &ldquo;landing zone&rdquo; and &ldquo;retention zone&rdquo;. The landing zone is intended to host a full backup set. The post-backup deduplication and compression can then take place and be placed into the retention zone. This second zone is the location for longer-term archival of the de-duped and compressed data.</p>
+<p>Their architecture allows for the grid (single or many ExaGrid appliances within a site) to provide a scalable initial disk target. This achieves a quick intake of backup data, without the overhead of inline deduplication. You also do not face the processing penalty of having to rehydrate all data to restore.</p>
+<p>I have to admit that I am impressed by the results of ExaGrid as a deduplicating appliance, especially for simplicity of the hardware. I must also admit that I had hoped to never see maroon hard drive trays again in my life, no matter the brand. By now, seeing that shade of maroon gives me a nauseous feeling. It&rsquo;s the same feeling when I recognize the teal of the old networking equipment from a particular vendor. <strong>Ugh.</strong></p>
+<p>Color selection aside, the ExaGrid appliance itself is an extremely understated piece of gear. It is a standard SuperMicro server with a RAID controller &amp; battery, and there&rsquo;s not much else in the mix with this platform. Watching the boot sequence reminds me of my last white box server/custom built desktop. This makes it even more clear that the true secret sauce of ExaGrid is their software. The custom Linux platform is the only distinguishing feature seen when bringing the hardware online. It definitely makes all the difference.</p>
+<p>Once the server is online, the initialization of the ExaGrid is also a simple process. ExaGrid sites are laid out in a hub &amp; spoke fashion.You&rsquo;ll create the hub site first, then expand by adding more nodes or creating new sites.</p>
+<p>The only required details for configuring a new appliance (across the network and site configuration pages) are:</p>
+<ul>
+<li>IP details of the network connection</li>
+<li>Selecting which interfaces to enable and configure</li>
+<li>Sites allowed to communicate to each interface</li>
+<li>Server name</li>
+<li>NIC bonding type if desired</li>
+<li>Site name (only for a new site)</li>
+</ul>
+<p>Once the first appliance is configured, it needs to complete a soft reboot to come online. The second appliance only required the IP address of the master node and a grid security password. Coming from the heavy requirements for DataDomain, this is a hugely improved installation.</p>
+<p>Within 20 minutes, including the soft reboots of both appliances, I had a new ExaGrid site online with two appliances in a grid. From here, the real benefits of the VEEAM integration come into play.  Stay tuned.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

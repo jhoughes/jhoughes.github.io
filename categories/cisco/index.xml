@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/cisco/</link>
+    <description>Recent content in Cisco on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Oct 2017 16:55:05 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/cisco/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First impressions on CWOM – a less green Turbonomic</title>
+      <link>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</link>
+      <pubDate>Thu, 26 Oct 2017 16:55:05 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</guid>
+      <description>Early this year, there were talks of Cisco acquiring Turbonomic. A few months back this became a partnership to release Cisco Workload Optimization Manager (CWOM). This is one of the newest products included in the Cisco ONE Enterprise Cloud Suite.
+Cisco Workload Optimization Manager is now in its 1.1.3 release. Starting with this release, you can target UCS Director as an orchestration target. I would love to leverage this, I now need to get UCS Director back into the environment).</description>
+    </item>
+    
+    <item>
+      <title>Potential upgrade issues going to Cisco UCS Manager 3.2(1d)</title>
+      <link>https://www.fullstackgeek.net/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</link>
+      <pubDate>Sun, 27 Aug 2017 20:01:45 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</guid>
+      <description>We recently upgraded a few of our UCS domains from 3.1(1h) and 3.1(2b) up to 3.2(1d) and we had issues with a few IO modules hanging for up to 2 hours with trying to activate the firmware.
+The backup version was updated with no issues, but then the activation stalled through anywhere from 16 to 30 tries before failing.
+We decided to leave most of the faulted IOMs alone to see what they would do, but after 2 hours we decided to attempt a reset of one IO module, and that just made it angry&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

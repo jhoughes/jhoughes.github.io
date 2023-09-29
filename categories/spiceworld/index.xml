@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpiceWorld on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/spiceworld/</link>
+    <description>Recent content in SpiceWorld on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 12:57:56 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/spiceworld/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:56 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;. I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala. It was pretty cool to see my picture next to these two on the speakers page.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tech Field Day Extra VMworld 2018 – JetStream Software &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,400i|Merriweather:400,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Fira Sans']
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about" align=center>
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+        <img src="/images/logo.png" width=50%>
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Posts</a> </li>
+        <li><a href="/about/">About</a></li>
+      </br>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Tech Field Day Extra VMworld 2018 – JetStream Software</h1>
+  <time datetime=2018-10-02T17:55:21Z class="post-date">Tue, Oct 2, 2018</time>
+  <p><strong>DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.</strong></p>
+<p><img src="/images/TFD-Extra-VMworld-300.png" alt="Tech Field Day Extra VMworld 2018" title="Tech Field Day Extra VMworld 2018"></p>
+<p>JetStream Software gave a presentation at Tech Field Day Extra which focused on their three products: Migrate, Accelerate, and Data Protection.  The product within their presentation which intrigued me enough to focus on was Migrate.</p>
+<p>JetStream Migrate is a product designed to be a robust bulk-migration utility to move virtual machines from one site to another.  It is different from most of the other products that come to mind when talking about moving virtual machines across sites, in that this is not part of a backup or DR platform, and it does not require shared storage. This product makes more sense when you think of it as encapsulating a long distance compute &amp; storage vMotion.</p>
+<p>It took me a few slides to even realize that the product is not intended to handle DR-style replication, but rather it is intended to be used for a one-time migration.  This product will handle both on-premises customers migrating virtual machines to remote sites, or by cloud services providers to migrate customer virtual machines to a public or hosted cloud.</p>
+<p>Migrate offers a continuous live migration feature which will allow for bulk transfers of virtual machines to remote sites, leveraging an IO filter based on the VMware vSphere APIs for IO (VAIO) filter.  This not only means that the product is certified VMware ready, but it allows you to leverage this live migration capability whether you are utilizing VMFS, NFS, or VSAN for your datastores, as they are all fully supported platforms.</p>
+<p><img src="/images/migration_estimator.png" alt="Migration Estimator" title="Migration Estimator"></p>
+<p>Before migrating virtual machine data, the IO Filter can be run in &ldquo;observation mode&rdquo; to get an initial view of your environment based on network traffic and storage I/O over time.  Upon running observation mode against your environment, the tool will give you an estimate of the time required whether you are migrating individual VMs or groups of VMs.</p>
+<p><img src="/images/background_replication_device.png" alt="Background Replication Device" title="Background Replication Device"></p>
+<p>One of the unique advantages of this product is the ability to offload virtual machine data to a physical device for transportation, with re-hydration of the data performed at the destination site.  The ability for physical migration is a particularly unique and useful feature, especially if you need to migrate your workloads with this method, which could be a common occurrence based on capacity, bandwidth, distance, or a multitude of other reasons for not being able to perform &ldquo;live&rdquo; network migrations across sites.</p>
+<p>While you are moving the physical data transportation device (DTD) across your sites, or from your site to a provider site, the IO filter will capture data written after the data copy has been performed to the physical DTD.  That &ldquo;newly&rdquo; written data will then be reconciled with the original dataset once the DTD has arrived at the destination site.</p>
+<p>One additional feature of JetStream Migrate which is useful is the ability to schedule migration of VMs, in which individual VMs can be migrated then allow them start up one after another. There is also the ability to select groups of interdependent VMs (these could represent a particular application stack), and also ensuring that data migration is complete before allowing the migrated VMs to take over for the VMs at the original site.</p>
+<p>To ensure that the migration of workloads does not cause undue stress on your production environment, there are two types of &ldquo;back pressure controls&rdquo; which JetStream allows you to use to control the resources utilized for migrations: write throttling &amp; replication rate.  These two options are settings that will control the replication rate and storage IO, and these settings are applied per any group of VMs targeted for migration.  Now, to point this out, for service providers leveraging these controls, this back-pressure control still needs to be managed per tenant on the source side, which could be difficult as there does not seem to be any capability of a centralized control/reporting of this.</p>
+<p>To top the product off, all of the functionality is available through a plug-in within the vSphere client, which allows you to control the migrations (including both live and physical migrations), scheduling, and throttling while containing this all within your virtual environment.  I&rsquo;ll give a tip of the hat to JetStream for not having to launch another tool to manage the virtual machine migration, and bonus points for not having to rely on Java with having this integrated into the Flex client (no HTML5 client integration yet).</p>
+<p>Honestly, for the ease of use, and compatibility with any production datastores within a vSphere environment, I wish that this tool had been an option when we performed a data center migration.  Instead, what we had to install and then teardown was an EMC VPLEX setup, which required a considerable lift of hardware/effort/licensing, which was then decommissioned afterward.  JetStream Migrate even lets you clean up by removing the client plugin, just so your &ldquo;migration components&rdquo; are not permanently left behind within your environment.</p>
+<p>For the need to migrate VMs from internal sites with the options for live or physical migration while allowing for throttling, along with migrating your workloads to a cloud/service provider, I can see that JetStream Migrate has a very compelling story to be worth looking into utilizing this tool.  Even just the short lift to install which will ease many requirements of the migration itself make this a great tool in the toolbox for service providers as well. There is already enough to focus on with all of the other components in the moving of your workloads, taking away the complexity of the migration itself which can allow you to work on the requirements that should be much more relevant to your specific organization.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 15:22:17 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the Austin PowerShell User Group.
+Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.
+You can get more details on the presentation in my blog post about SpiceWorld, the video of the presentation here, and the version of the slides from this session here.</description>
+    </item>
+    
+    <item>
+      <title>Being Effective at Technical Communication - Technology Not Required</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:57 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
+      <description>The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.
+This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.
+Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications.</description>
+    </item>
+    
+    <item>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
+      <link>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 12:57:56 -0700</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;. I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala. It was pretty cool to see my picture next to these two on the speakers page.</description>
+    </item>
+    
+    <item>
+      <title>VeeamOn 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 20:03:32 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted here for public download.
+The attachment is only a PDF export of the presentation slides themselves.
+I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.</description>
+    </item>
+    
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – Runecast</title>
+      <link>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</link>
+      <pubDate>Sat, 27 Oct 2018 11:23:38 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</guid>
+      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was provided any compensation, only stickers/swag. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.
+Runecast was the third and final presentation which I attended at Tech Field Day Extra during VMworld 2018.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the blog</title>
+      <link>https://www.fullstackgeek.net/2017/08/27/welcome-to-the-blog/</link>
+      <pubDate>Sun, 27 Aug 2017 19:32:37 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2017/08/27/welcome-to-the-blog/</guid>
+      <description>Howdy everyone, this is Joe. I recently got accepted into the vExpert program for 2017 (second half) mostly based on internal and vendor community contributions.
+It&amp;rsquo;s now time to become a bit more social and share what I can with the wider community.
+I&amp;rsquo;m starting off with adding VMware content about the VMworld 2017 experience. Along with that I&amp;rsquo;ll be sharing experiences a UCS, PowerShell and VEEAM, and we&amp;rsquo;ll see where things go.</description>
+    </item>
+    
+  </channel>
+</rss>

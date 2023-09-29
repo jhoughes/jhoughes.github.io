@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Automating the Entire Stack with FlashStack: Part 1 - From Validated Design to Real World Use &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,400i|Merriweather:400,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Fira Sans']
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about" align=center>
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+        <img src="/images/logo.png" width=50%>
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Posts</a> </li>
+        <li><a href="/about/">About</a></li>
+      </br>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Automating the Entire Stack with FlashStack: Part 1 - From Validated Design to Real World Use</h1>
+  <time datetime=2022-08-04T14:13:21-0700 class="post-date">Thu, Aug 4, 2022</time>
+  <p><img src="/images/flashstack-cvd.png" alt="Flashstack Cisco Validated Design" title="Flashstack Cisco Validated Design"></p>
+<p>Technologies like virtualization, containers, and deployment automation should simplify work around IT operations and enable them to provide for the constantly changing needs of their organizations. As work to manage operations on-prem and in the cloud becomes increasingly challenging at scale, empowering IT teams and developers to consume resources more easily becomes a critical need. Infrastructure as Code (IaC) is a primary means to simplify these functions. It has become a significant driver for simplifying deployment efforts for infrastructure teams in the past few years and easing the overhead of managing environments at scale.</p>
+<p>Here we begin a blog series titled &ldquo;Automating the Entire Stack with FlashStack.&rdquo; This first post explains why Infrastructure as Code came to the Cisco Validated Designs (CVDs) running on FlashStack. So, let&rsquo;s begin by setting the context for this discussion by discussing FlashStack and CVDs.</p>
+<p>FlashStack is a platform built upon Cisco UCS and Pure Storage, which can include ethernet or fiber-channel networking. Cisco UCS brought drastic changes to server hardware with the concept of &ldquo;stateless computing.&rdquo; That term means that all the logical configuration is held within a management plane, contained in a profile that gets applied to specific hardware only when associated with a particular server.</p>
+<p>The stateless concept was a significantly different standard from the past, where a server&rsquo;s entire identity existed only within a single server&rsquo;s hardware, which could not get easily migrated to other hardware. Through the stateless model, the components of a UCS server do not have a persistent state and follow the configuration applied to them, which also means that this logical profile can migrate to other hardware.</p>
+<p>The stateless model is a concept mirrored in how Purity contains its logical configuration in software within a management plane. It is part of how Pure Storage can handle upgrading array hardware in a non-disruptive manner over the lifecycle of an array.</p>
+<p>One of the most significant components in how both Pure &amp; Cisco manage this hardware is that they are both built upon an API utilized to drive the configuration and operations of these platforms. The basis of an API with full coverage for all functionality of the Pure &amp; Cisco components makes it very easy to automate the operations of that platform, which is one of the benefits of the FlashStack platform for many customers.</p>
+<p>To give these customers the most significant benefits of their investment in the platform, Pure &amp; Cisco developed Cisco Validated Designs which deliver an infrastructure to address a specific use case. These designs have been configured and tested and intended to provide a solutions-driven result. Each of these designs covers a customer&rsquo;s need to deploy an environment to run workloads defined in the summary of each guide.</p>
+<p>These design documents are intended to serve as a validated reference architecture, beginning with a physical topology and logical configuration as each relates to the design&rsquo;s compute, network storage, and operating system layers. As for deployment, in-depth documentation is provided for all steps required to complete the manual configuration of all components to meet the design, where best practices are also defined. After the environment is built, many designs include testing for application performance to address specific workload requirements.</p>
+<p>These validated designs take the guesswork out of architecting an environment out of Pure Storage, Cisco UCS, and Cisco networking components that can provide a high-performance and high-bandwidth data center infrastructure. They provide reduced complexity in deploying these infrastructures while reducing the risk for customers of having issues with incompatible hardware or software. It also ensures customers can attain the provided performance, backed by support – even if it requires engagement with vendor support that fully covers these Cisco Validated Designs as written.</p>
+<p>These documents are a significant benefit to customers looking to standardize their datacenter infrastructure on the best-in-breed components that comprise the FlashStack platform. There are impressive amounts of both design &amp; engineering effort that go into the process that produces these documents. Each document focused on having a well-defined solution use case addressed and documented for customers, then defining both the solution&rsquo;s requirements and the technical design. Subject matter experts for both the infrastructure and the workloads covered in the design are involved in the deployment of the environment, documentation of that deployment, and the performance testing of workloads against that environment – and the result are documents that can be upwards of a few hundreds of pages in length.</p>
+<p>As these documents can take months to create with the effort involved to deploy, document &amp; test the platform, Pure &amp; Cisco faced many of the same challenges as customers when deploying FlashStack in their environments. For each architecture and design, the only difference between our environment and a completely new installation is the time required to rack &amp; install the components physically, while we still confirm or modify the cabling of the environment between deployments for each design.</p>
+<p>Like IT departments that have acquired new hardware, the real value to the organization is running the workloads that provide the applications and services that run the business, as all consumers want to achieve a quicker time to value with the platform. While we still faced the need to document the design &amp; deployment, we had the opportunity to update our validated design process in a way that can still provide additional benefit to customers – automating deployments with Infrastructure as Code.</p>
+<p>We are bringing Infrastructure as Code to FlashStack CVDs to provide easily automated deployments of the platform infrastructure with minimal customer effort to build these solutions use cases. Also, this process will help us to provide customers with new functionality around infrastructure administration and operations, orchestration, and even managed Kubernetes environments - all in a quicker fashion.</p>
+<p>Now that we have integrated FlashStack with Cisco Intersight – the current SaaS management platform that Cisco hosts for actual centralized data center management – we can also build upon all the feature sets that will be exposed by Intersight, as well as the extensibility provided by both the API and Intersight Cloud Orchestrator.</p>
+<p>These new focuses of bringing IaC and newer technologies to FlashStack CVDs are a continuation of the years of focus that has gone into enabling customers to consume the FlashStack platform. We want to provide resources that every customer can deploy in a tested fashion, to provide their organizations the capabilities of running any workloads they require, and achieve the best time-to-value when deploying the platform.</p>
+<p>Now that we have covered the background of FlashStack, Cisco Validated Designs, and the goals and requirements that helped us to bring Infrastructure as Code to the process, we’ll move into how we are accomplishing this in the next few blog articles.</p>
+<p>With that, we’ll see you in the next post.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

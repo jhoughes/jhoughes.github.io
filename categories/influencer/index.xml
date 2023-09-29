@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Influencer on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/influencer/</link>
+    <description>Recent content in Influencer on FullStackGeek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 15:48:21 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/categories/influencer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HPE Storage Tech Day starting now</title>
+      <link>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</link>
+      <pubDate>Tue, 09 Oct 2018 15:48:21 +0000</pubDate>
+      
+      <guid>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</guid>
+      <description>HPE has invited a great group of bloggers and influencers to join for HPE Storage Tech Day.
+We are here to get a deep dive on all things storage within the HPE ecosystem, including all of the topics seen here:
+You can find out more by watching the livestream, by keeping an eye here for blog posts as a follow-up, or by checking content from anyone within this great list of bloggers:</description>
+    </item>
+    
+  </channel>
+</rss>

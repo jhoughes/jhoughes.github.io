@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Installing the Pure Storage plugin for Veeam Backup &amp; Recovery Snapshot Integration &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,400i|Merriweather:400,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Fira Sans']
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about" align=center>
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+        <img src="/images/logo.png" width=50%>
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Posts</a> </li>
+        <li><a href="/about/">About</a></li>
+      </br>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Installing the Pure Storage plugin for Veeam Backup &amp; Recovery Snapshot Integration</h1>
+  <time datetime=2018-04-15T05:44:53Z class="post-date">Sun, Apr 15, 2018</time>
+  <p>Whew, that title is a mouthful.  This post will cover the installation and configuration of the Pure Storage plugin for Veeam Backup &amp; Recovery, but we&rsquo;ll incorporate some background first.</p>
+<p>One of the most significant enhancements released with Veeam 9.5U3 is one from which most users have not seen direct improvement  &mdash; until now.  The specific enhancement that I am referring to is the Universal Storage API, which is the framework that storage vendors can leverage to integrate their storage arrays to allow for Veeam to offload snapshots for backup &amp; recovery operations to the array, rather than relying on VMware snapshots.</p>
+<p>While Veeam Storage Snapshots are not new - this capability has been available for EMC, HPE, and NetApp arrays for many versions - there have been may more recent additions of vendor integrations which have increased the number of compatible storage devices.</p>
+<p>Even just since the release of version 9.5, Veeam has added the capabilities of native array snapshots for Cisco HyperFlex, and recently with the Universal Storage API, additional vendor array integrations are now available - IBM SVC/Storwize, Infinidat, and Pure Storage. (Corrected as I had originally not called out IBM SVC as dependent on the Universal Storage API).</p>
+<p><em>A personal endorsement here:  For those of you who have not had the pleasure of working with a Pure Storage array, I cannot express strongly enough how great it has been to work with this piece of gear has been thus far. The last hardware platform that I&rsquo;ve worked with that has excited me this much during my career was Cisco UCS.</em></p>
+<p><em>Being an infrastructure engineer who manages 17 UCS domains globally and geeks out on UCS daily, the fact that a single storage array got me excited about a Friday night install at the very end of a 60 hour week (including a second array outage from another storage vendor), that&rsquo;s saying A LOT.</em></p>
+<p><em>Before I put my Pure fanboy praise on hold; I will say that I doubt I will ever see another array in my career that I can get from unboxing to install to automated deployment/provisioning in just over 2 hours.</em></p>
+<p><em>It also took just over a dozen lines of code, and with only reading through the PowerShell module help.</em></p>
+<p>OK, now getting back to the reason you&rsquo;re probably here.  Getting your Veeam Backup and Recovery environment integrated with your Pure Storage array. Time to get started:</p>
+<p>As always, begin with ensuring that you have a fresh Veeam configuration &amp; database backup.  Disable any Veeam jobs (be sure this includes backup copy and replication jobs) and close the Veeam B&amp;R interface.</p>
+<p>Once we have a good backup in case you run into installation issues, extract the installer which is currently PureStoragePlugin_1.0.37.exe.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPurePlugInExtract.jpg" alt="Extract the installer" title="Extract the installer"></p>
+<p>Launch the executable and approve the UAC elevation prompt to launch the &ldquo;Pure Storage Plug-In for Veeam Backup &amp; Replication&rdquo; InstallShield wizard.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureUACPrompt.jpg" alt="UAC Prompt" title="UAC Prompt"></p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInstallShieldLaunch.jpg" alt="InstallShield Launch" title="InstallShield Launch"></p>
+<p>If you did not stop/disable any running jobs, or if there are any instances of the Veeam B&amp;R UI still running, the installer will prompt you to do this and retry.  If you are still facing this issue after you have stopped active jobs and closed the UI for all user sessions, restart the Veeam B&amp;R server and attempt the installation again.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInstallFailureRetry.jpg" alt="Install Failure Retry" title="Install Failure Retry"></p>
+<p>Accept the terms of use to proceed with the installation.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureStoragePlugInTermsofUse.jpg" alt="Plugin Terms of Use" title="Plugin Terms of Use"></p>
+<p>The Pure Plug-In is now ready for install.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureReadyToInstall.jpg" alt="Ready to Install" title="Ready to Install"></p>
+<p>The installer will now stop the Veeam services to perform the installation.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInstallStoppingServices.jpg" alt="Stopping Services" title="Stopping Services"></p>
+<p>I ran into an instance where the installer hit the timeout value for stopping Veeam services.  I pulled up a PowerShell session to watch the Veeam services to see when that had been stopped to proceed.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInstallerServicesTimeout.jpg" alt="Installer Services Timeout" title="Installer Services Timeout"></p>
+<p>After the Veeam services have been stopped, the installer will finish the plug-in installation and restart the Veeam services.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInstallerStartingServices.jpg" alt="Installer Starting Services" title="Installer Starting Services"></p>
+<p>At this point, the installation should be complete, and you are mere moments away from seeing your new storage integration within Veeam.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInstallerComplete.jpg" alt="Installer Complete" title="Installer Complete"></p>
+<p>Launch the Veeam B&amp;R UI, then move over to the Storage Infrastructure view and click &lsquo;Add Storage&rsquo;.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureAddStorage.jpg" alt="Add Storage" title="Add Storage"></p>
+<p>Select Pure Storage in the Add Storage window.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureAddPureStorage.jpg" alt="Add Pure Storage" title="Add Pure Storage"></p>
+<p>Enter the name/IP address and description of your Pure Storage array, then click next.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureNameIP.jpg" alt="Enter Pure Array Name or IP" title="Enter Pure Array Name or IP"></p>
+<p>Select the credentials with access to the Pure Storage array - this should be a member of the &lsquo;Storage Admin&rsquo; group.  If you don&rsquo;t have a credential created already, then click Add and run through the Veeam credential wizard. Click next.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureCredentials.jpg" alt="Enter Pure Credentials" title="Enter Pure Credentials"></p>
+<p>Upon clicking next, Veeam will attempt a connection to the Pure Storage array, and if successful, it will save the configuration.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureSavingConfiguration.jpg" alt="Saving configuration" title="Saving configuration"></p>
+<p>On the access options page, select which protocols you are using for the datastores hosted on your Pure array.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureAccessOptions.jpg" alt="Access Options" title="Access Options"></p>
+<p>You can choose to select all VMFS volumes found with the initial scan, or you can select which volumes to include/exclude:</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureAccessOptionsVolumeSelection.jpg" alt="Volume Selection" title="Volume Selection"></p>
+<p>You can also choose the backup proxy used for the backup job.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureAccessOptionsProxySelection.jpg" alt="Proxy Selection" title="Proxy Selection"></p>
+<p>Veeam will now show that the configuration of your Pure Storage array is now complete.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureComplete.jpg" alt="Array Configuration Complete" title="Array Configuration Complete"></p>
+<p>Once the setup of your Pure Storage array is complete, Veeam will begin the initial scan of your array for volumes supported for backup based on your proxy selection.</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureInitialScan.jpg" alt="Initial Scan" title="Initial Scan"></p>
+<p>At this point, your installation and integration are complete.  Within the Storage Infrastructure view, you can now expand out the Pure Storage node, then expand the node for your newly discovered array. This will show your volumes and details of any snapshots detected by Veeam.  (Would you look at those sweet new icons also&hellip;!!)</p>
+<p><img src="/images/VeeamPurePlugin/VeeamPureHotness.jpg" alt="Veeam + Pure Hotness" title="Veeam + Pure Hotness"></p>
+<p>My next post will cover more detail of the actual Pure Storage snapshots being used in a backup job.  It will also include a performance comparison of a set of VMs being backed up with both VMware and storage snapshots across EMC VNX5800, EMC Unity 650F, Cisco HyperFlex and a Pure //m50 array.</p>
+<p>Thanks for reading.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>
