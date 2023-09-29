@@ -2,39 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.fullstackgeek.net/2022/08/04/automating-the-entire-stack-with-flashstack-1-from-validated-design-to-real-world-use/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/iac/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/iac/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/posts/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/purestorage/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/purestorage/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/validateddesign/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/validateddesign/</loc>
-    <lastmod>2022-08-04T14:13:21-07:00</lastmod>
-  </url><url>
     <loc>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</loc>
     <lastmod>2019-11-27T15:22:17-07:00</lastmod>
   </url><url>
@@ -47,10 +14,22 @@
     <loc>https://www.fullstackgeek.net/tags/automation/</loc>
     <lastmod>2019-11-27T15:22:17-07:00</lastmod>
   </url><url>
+    <loc>https://www.fullstackgeek.net/categories/</loc>
+    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+  </url><url>
+    <loc>https://www.fullstackgeek.net/</loc>
+    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+  </url><url>
+    <loc>https://www.fullstackgeek.net/posts/</loc>
+    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+  </url><url>
     <loc>https://www.fullstackgeek.net/tags/powershell/</loc>
     <lastmod>2019-11-27T15:22:17-07:00</lastmod>
   </url><url>
     <loc>https://www.fullstackgeek.net/categories/presentation/</loc>
+    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+  </url><url>
+    <loc>https://www.fullstackgeek.net/tags/</loc>
     <lastmod>2019-11-27T15:22:17-07:00</lastmod>
   </url><url>
     <loc>https://www.fullstackgeek.net/categories/uncategorized/</loc>
@@ -162,6 +141,9 @@
     <lastmod>2018-04-15T05:44:53+00:00</lastmod>
   </url><url>
     <loc>https://www.fullstackgeek.net/tags/pure-storage/</loc>
+    <lastmod>2018-04-15T05:44:53+00:00</lastmod>
+  </url><url>
+    <loc>https://www.fullstackgeek.net/categories/purestorage/</loc>
     <lastmod>2018-04-15T05:44:53+00:00</lastmod>
   </url><url>
     <loc>https://www.fullstackgeek.net/tags/blogtober/</loc>
