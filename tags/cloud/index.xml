@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/cloud/</link>
+    <description>Recent content in Cloud on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2024 14:13:21 -0700</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</title>
+      <link>https://www.fullstackgeek.net/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</link>
+      <pubDate>Mon, 21 Oct 2024 14:13:21 -0700</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</guid>
+      <description>&lt;p&gt;For our final technical post in the series, we will look at Microsoft Azure as the public cloud to target for migrating workloads.&lt;/p&gt;&#xA;&lt;p&gt;Similar to our previous post, we are going to look at some of the options that customers have available to them for migrating on-prem workloads to Azure – we&amp;rsquo;ll mention AVS later in the post, but that one is almost cheating.&lt;/p&gt;&#xA;&lt;p&gt;Since our second post in the series got our data handled for being separated from the OS and replicated to the cloud, let&amp;rsquo;s see what we can use to move the workloads themselves  this time around.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 4 - AWS</title>
+      <link>https://www.fullstackgeek.net/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</link>
+      <pubDate>Thu, 17 Oct 2024 14:13:21 -0700</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</guid>
+      <description>&lt;p&gt;For our second technical post in the series, we will look at Amazon Web Services (AWS) as the public cloud to target for migrating workloads.&#xA;We are going to look at some of the options that customers have available to them for migrating on-prem workloads to AWS.  We already have our data handled through the methods we discussed in the last blog post, so now we are talking about getting the workloads themselves up to the cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 3 - Guest OS &amp; Replication</title>
+      <link>https://www.fullstackgeek.net/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</link>
+      <pubDate>Sat, 12 Oct 2024 14:13:21 -0700</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</guid>
+      <description>&lt;p&gt;If the environment that is being moved to a new platform is not VMware-based, or if vVols are not an option for some reason, then we moved to the next layer down and look at the performing data migrations from within an operating system.  This is going to be performed by enabling &amp;amp; configuring iSCSI within Windows or Linux, creating a host object in the FlashArray with the IQN initiator for the iSCSI initiator, and then mapping a volume to this new host object on the FlashArray.  Once the device is visible within the operating system, the raw device should be formatted with the appropriate file system option for the intended usage, and this newly formatted device can then be used for data migration. At this point, we need to discuss a few options and considerations which will be different for Windows versus Linux operating systems, and warn you that you should always have proper planning and backups in place prior to data conversions or migrations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 2 - vVols</title>
+      <link>https://www.fullstackgeek.net/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-vVols/</link>
+      <pubDate>Fri, 11 Oct 2024 14:13:21 -0700</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-vVols/</guid>
+      <description>&lt;p&gt;Continuing directly from our last blog post, let&amp;rsquo;s jump in if we need to get to a lower level than VM disks within a hypervisor.&lt;/p&gt;&#xA;&lt;p&gt;For our second (and longer) post in the series, we will look at some of the core functionality of Pure Storage which will be used to help any customer migrate workloads, and I am talking about volume management and replication.  For many customers that are considering moving VMware workloads to any new platform, one of the easiest ways to be successful with a &amp;ldquo;replatform&amp;rdquo; for any workloads is to separate the data that needs to move platforms from the core operating system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 1 - Ugh</title>
+      <link>https://www.fullstackgeek.net/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</link>
+      <pubDate>Tue, 08 Oct 2024 14:13:21 -0700</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</guid>
+      <description>&lt;p&gt;These days, businesses are realizing that sticking to just one cloud or one type of environment doesn’t cut it anymore. The reality is, most organizations need the flexibility to run workloads wherever it makes the most sense—whether that’s in their own on-premises setup, in the cloud, or a mix of both.&lt;/p&gt;&#xA;&lt;p&gt;A hybrid approach can be a game-changer, letting companies keep critical data or legacy systems on-prem while still taking advantage of the scalability and innovation that public cloud platforms offer. But it doesn’t stop there. As things change—whether it’s costs, technical needs, or capacity—workloads often need to shift between clouds.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

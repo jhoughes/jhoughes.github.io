@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Migrating to Cloud and Running Hybrid: Part 4 - AWS &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Migrating to Cloud and Running Hybrid: Part 4 - AWS</h1>
+  <time datetime=2024-10-17T14:13:21-0700 class="post-date">Thu, Oct 17, 2024</time>
+  <p>For our second technical post in the series, we will look at Amazon Web Services (AWS) as the public cloud to target for migrating workloads.
+We are going to look at some of the options that customers have available to them for migrating on-prem workloads to AWS.  We already have our data handled through the methods we discussed in the last blog post, so now we are talking about getting the workloads themselves up to the cloud.</p>
+<p>One of the main methods that AWS customer may run across or have recommended to them is the &ldquo;AWS Application Migration Service&rdquo;.  This tool will handle the migration of your virtual machine through a conversion to an EC2 instance for the OS boot volume.  The tool has many additional benefits for AWS customers such as being able to add in disaster recovery and license conversion, but one of the biggest benefits to the users of this tool is that the workload is still up and running during this replication process.  The overall use of the tool requires initializing the service in the AWS portal, then creation of replication templates to be used which control how data replication will work for each server, configuring a launch template which controls what actions are performed once the server is launched on AWS, along with a post-paunch template for post-launch actions.</p>
+<p>It is highly recommended to understand the requirements for the service, including network connectivity/bandwidth and costs, but this tool is focused on migrating workloads to AWS - at scale.  As such, it has a lot of flexibility for specific settings and actions to be take at specific stages of the migration process, and it controls all of the orchestration of those components, which makes your life much easier to migrate to the cloud.  The addition of the connector to check the prerequisites, along with the network &amp; storage benchmarking, or the ability to leverage dedicated replication servers makes the process very easy for beginning your migration to cloud while providing the capabilities of planned waves of both migrations and cutovers.  We have a full walkthrough of how this is done with AWS Application Migration Services and vVols/Cloud Block Store on the Pure Storage support site <a href="https://support.purestorage.com/bundle/m_cbs_for_aws/page/Pure_Cloud_Block_Store/topics/concept/c_vmware_vm_migration_to_aws_application_migration_services_pu.html">here</a>.</p>
+<p>If you are focused more on the ability to recover in the cloud during a disaster, or running in a hybrid model, another alternative to investigate is Elastic Disaster Recovery (DRS).  This tool is capable of setting up a disaster recovery scenario from VMware vSphere or Hyper-V, as well as existing cloud infrastructure, with the ability to recover onto EC2 instances running in AWS.  EDR is the replacement for the previous CloudEndure product which was discontinued in early 2024, and it includes integrations with AWS IAM, and some other services such as CloudWatch.</p>
+<p>AWS DRS requires some initial setup but then gives many of the capabilities of other AWS services with access by GUI/API/CLI, leveraging AWS user management and auditing, plus automaton and the ability to replicate/recover even across AWS regions.  Similar to the Application Migration Service discussed above, it must be initialized from the AWS portal, then it requires similar replication settings, plus launch/post-launch settings to be configured.  If a customer expects to have to failover from on-prem to AWS, and then failback later, this is possible as long as the environment can support boot from ISO or using the DRS failback automation. This can be some intense investigation and setup, but having the ability to fail to cloud and back may be worth the investment to avoid the cloud lock-in.</p>
+<p>Now, there are other alternatives that can assist with a migration from on-prem to AWS, especially if you are not running VMware, but many of these are really only viable if you already have them as they would not be purchased just for a migration to cloud.  Most of your backup platforms that support on-prem workloads and cloud providers will give you the capabilities of restoring your existing backups to a cloud provider, and I helped a decent number of Veeam users do that (or automate it) over the years.  Other tools such as CirrusMigrate can also help with the migration of your on-prem workloads to AWS, although this is again not a plug/advertisement.</p>
+<p>For customers that are planning to run in a hybrid mode between on-prem and public cloud(s), you also need to give some consideration to IaC and automation.  If you are able to completely separate the provisioning of your environment to be automated and even version controlled, your deployment methods may differ for each environment, but then your infrastructure becomes both composable and disposable.</p>
+<p>Once you have made it to the maturity of being able to redeploy your OS platforms and applications as needed, you have reached a much better foundation where your concern can be focused on what is really important to your business – your data.  At that point, everything else is tweaks in your code to decide to tweak your existing environment or deploy on a new one as needed.</p>
+<p>Hopefully this gives some insight into the tools that are readily available within AWS, or that you may have within your environment, which you can use to migrate to cloud or enable DR to the cloud.</p>
+<p>In the next blog of this series, we&rsquo;ll jump over to take a look at how to move to Azure.  See you soon.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

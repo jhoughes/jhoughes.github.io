@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Automating Your Pure Storage Infrastructure: Part 4 - Protection Group Snapshots - SDK1 and SDK2 &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Automating Your Pure Storage Infrastructure: Part 4 - Protection Group Snapshots - SDK1 and SDK2</h1>
+  <time datetime=2024-07-19T14:13:21-0700 class="post-date">Fri, Jul 19, 2024</time>
+  <p>For this next example, we will look at a request which came into from a customer looking to see if there is a way to list the volumes in a protection group snapshot.</p>
+<p>We&rsquo;ll look at how we can produce this output with 2 different methods:</p>
+<ol>
+<li>Continue with our use of PureStoragePowerShellSDK (the original v1 SDK) and the &lsquo;New-PfaCLICommand&rsquo; cmdlet</li>
+<li>Look at the use of PureStoragePowerShellSDK2 to gather these details</li>
+</ol>
+<p>While the command that we will use to gather these results from our FlashArray are different, method 1 is the same as our previous blog posts on the process of wrapping CLI commands into PowerShell to work with the results with the addition of using <code>Out-GridView</code> for the selection of a specific Protection Group (pgroup) snapshot.</p>
+<p>When we switch over to the newer method of using PowerShellSDK2 module, we can drop the dependency of needing SSH access to the FlashArray, and the code become much simpler as we are only using some basic cmdlets from the module.</p>
+<p>Let&rsquo;s dig into method 1 real quick and get our pgroup snapshots with <code>purepgroup listobj --type snap --csv</code> since we want all of snapshot names to be able to work with in the pipeline.  We capture the CLI results into a variable (this will just be a string of all pgroup  snapshot names) and then use a second variable to split the results into individual list of strings using the <code>-Split</code> operator.  Here is the code to for all of these steps:</p>
+<pre><code>$pgsnaps_command = 'purepgroup listobj --type snap --csv'
+$pgsnaps_csv = New-PfaCLICommand -EndPoint $FlashArray -Credentials $FA_Credential -CommandText $pgsnaps_command
+$pgsnaps = $pgsnaps_csv -Split ','
+</code></pre>
+<p>Now that we have the names of our pgroup snapshots, we can easily present this list for the user to choose from – this will then become the input for another CLI command to get the volumes contained within the selected pgroup snapshot.  We can perform all of these steps and capture their selection through the use of &ldquo;Out-GridView”, and here is the full one-liner:</p>
+<p><code>$pgsnap_pick = $pgsnaps | Out-GridView -PassThru -Title 'Choose a Protection Group Snapshot'</code></p>
+<p>The pop-up that the user sees for their selection is something similar to this:</p>
+<p><img src="/images/pgroup_out_gridview.png" alt="$pgsnaps | Out-GridView" title="$pgsnaps | Out-GridView"></p>
+<p>Once we have a pgroup snapshot selected, we can get the information for the volumes contained within the snapshot with the following CLI command, where &ldquo;%pgroup-snapshot-name%” is replaced by the captured name from the selected snapshot:</p>
+<p><code>purevol list --snap %pgroup-snapshot-name%* --csv</code></p>
+<p>Once we have this detail, we are just doing our same conversion from CSV, and our final code looks like this:</p>
+<pre><code>#Connection details &amp; module import
+$FlashArray = 'sn1-x90r2-f07-27.puretec.purestorage.com'
+$FA_Credential = Get-Credential
+Import-Module PureStoragePowerShellSDK
+
+#Get all Protection Group snapshots
+$pgsnaps_command = 'purepgroup listobj --type snap --csv'
+$pgsnaps_csv = New-PfaCLICommand -EndPoint $FlashArray -Credentials $FA_Credential -CommandText $pgsnaps_command
+$pgsnaps = $pgsnaps_csv -Split ','
+
+#GUI prompt including all Protection Group snapshots for selection
+$pgsnap_pick = $pgsnaps | Out-GridView -PassThru -Title 'Choose a Protection Group Snapshot'
+
+#Get all volume snapshots with PG snapshot name &amp; output
+$volsnaps_command = &quot;purevol list --snap $($pgsnap_pick)* --csv&quot;
+$pgsnap_details = New-PfaCLICommand -EndPoint $FlashArray -Credentials     $FA_Credential -CommandText $volsnaps_command
+$pgsnap_volumes = $pgsnap_details | ConvertFrom-Csv
+
+#Success/profit/output
+Write-Output $pgsnap_volumes
+</code></pre>
+<p>So now that we&rsquo;ve seen this somewhat involved process to get the list of volumes included within a pgroup snapshot using the SDK1 module, let&rsquo;s take a look at the newer method of using SDK2.</p>
+<p>First we need to create a connection to our FlashArray, so we&rsquo;ll start with our &lsquo;Connect-Pfa2Array&rsquo; cmdlet, and we want to capture this connection into a variable.  Our one-liner for the connection is the below line, with giving an IP/FQDN to the &lsquo;$FlashArray&rsquo; variable, and a PSCredential to the &lsquo;$Credential&rsquo; variable:</p>
+<p><code>$FA_Connection = Connect-Pfa2Array -Endpoint $FlashArray -Credential $Credential -IgnoreCertificateError</code></p>
+<p>Now that we have our FlashArray connection established and saved, we can use the SDK2 module to run the 2 commands that we need to get our pgroup snapshots, then our volume snapshots. The two commands to get these snapshot objects are easily discoverable and self-explanatory – they are <code>Get-Pfa2ProtectionGroupSnapshot</code> and <code>Get-Pfa2VolumeSnapshot</code>.</p>
+<p>We can get all of our pgroup snapshot names, give a selection with Out-Gridview again and then find the matching volume snapshot through a filter with the following simple code:</p>
+<pre><code>$PGSnapNames = Get-Pfa2ProtectionGroupSnapshot | Select-Object -ExpandProperty Name
+$PGSnap_pick = $PGSnapNames | Out-GridView -PassThru -Title 'Choose a Protection Group Snapshot'
+$VolumeSnapshots = Get-Pfa2VolumeSnapshot -Filter &quot;name='$pgsnap_pick*'&quot;
+</code></pre>
+<p>In the end, our final code for method 2 looks like this:</p>
+<pre><code>$FlashArray = 'sn1-x90r2-f07-27.puretec.purestorage.com'
+$FA_Credential = Get-Credential
+Import-Module PureStoragePowerShellSDK2
+
+$FA_Connection = Connect-Pfa2Array -Endpoint $FlashArray -Credential $FA_Credential     -IgnoreCertificateError
+
+$PGSnapNames = Get-Pfa2ProtectionGroupSnapshot -Array $FA_Connection | Select-Object -ExpandProperty Name
+
+$PGSnap_pick = $PGSnapNames | Out-GridView -PassThru -Title 'Choose a Protection Group Snapshot'
+
+$VolumeSnapshots = Get-Pfa2VolumeSnapshot -Array $FA_Connection -Filter &quot;name= '$PGSnap_pick*'&quot;
+
+Write-Output $VolSnaps
+</code></pre>
+<p>So, we are essentially using 2 cmdlets with some PowerShell basics and we are able to accomplish our goal with less code using SDK2.  If you are new to using this module, I would suggest you check out the <a href="https://www.nocentino.com/categories/pure-storage-powershell-sdk-2-series/">fantastic blog series</a> that was written by my teammate Anthony.</p>
+<p>With that, we&rsquo;re done with this Pure Storage basic automation series, and I&rsquo;ll continue to add to this as more requests come in.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Automating Your Pure Storage Infrastructure: Part 1 - Getting Started &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Automating Your Pure Storage Infrastructure: Part 1 - Getting Started</h1>
+  <time datetime=2024-07-09T14:13:21-0700 class="post-date">Tue, Jul 9, 2024</time>
+  <p>After a decently long hiatus from writing anything in a series-fashion, I&rsquo;m back to share a blog series based around automating your Pure Storage environment.  We&rsquo;re going to begin this series with a few posts about advancing both your understanding of your Pure Storage environment and understanding the options available to you for automating and monitoring the infrastructure.</p>
+<p>This series will begin with some requests that came from Pure Storage customers, and other Pure employees that asked for some help in delivering the solution, or just some help with understanding how to accomplish the goal.  These are normally the most enjoyable tasks to automate, as it gives a chance to understand what sorts of tasks a customer is trying to accomplish and what needs they have, and to help educate others along the way.</p>
+<p>I have always found that the most effective way to learn automation is focusing on a practical application, where you have a goal in mind, and starting with breaking the task down into simple steps.  We aim to have our automation handled in sequential steps which give us a repetitive process, where we can measure our results to both measure performance and work towards incremental improvement over time.</p>
+<p>The first project that I want to cover was a request from a Pure customer that was preparing for their first non-disruptive software upgrade (NDU) across two storage arrays. While this upgrade was going to be handled by Pure support, as there were no personnel on-site at the customer datacenter, they wanted to understand how their IT staff and their NOC could remotely monitor the infrastructure before, during, and after the upgrade. The primary question that the customer had was how to observe the host path connections from each server to their FlashArray.</p>
+<p>The biggest concern from the customer was with being new to the process and needing to ensure proper monitoring of their environment to meet their internal process and procedures for performing upgrades of critical infrastructure.  Part of their requirements also include submitting an upgrade plan to the change approval board before the upgrade could be approved, especially with the upgrade being performed remotely and not by on-site personnel.</p>
+<p>As they did not have operations experience with the platform and how a non-disruptive upgrade is performed (potentially also not trusting a vendor promise of &ldquo;no downtime&rdquo;), they wanted us to help make this an easy process for upgrades, beginning with the first. The customer was requesting assistance with a &ldquo;storage pathing report&rdquo;.</p>
+<p>As part of their upgrade process, they needed to ensure they were able to determine that the correct number of host paths were seen active throughout the upgrade process, and they were just unsure of the capabilities of scripting such a solution.  They were also smart enough to simply ask their account teams if one of our nerds could tell them which knobs to turn to accomplish this.</p>
+<p>Although the software upgrade on a FlashArray does not taking much time for minor jumps, they needed to have this information automatically provided to their NOC every few minutes.  They also needed to get the details displayed on the &lsquo;Health &gt; Connections&rsquo; tab for this detail, but avoid having to observe the array UI, as this is not a feasible way to monitor upgrades. (Seriously, that should never be an acceptable answer from a vendor… having a dedicated resource available to watch the UI through the upgrade)</p>
+<p>After a discussion with the customer about what would be the ideal final result for them, they said they would be able to do two things:</p>
+<ol>
+<li>Observe the current number of connected initiators to get regular/timed updates of the count of active host paths</li>
+<li>Get the detailed output of all connected &amp; not connected host initiators so that a comparison can be made before and after the upgrade</li>
+</ol>
+<p>Now one final wrinkle in this, is that the customer also has some VMs which are running in-guest iSCSI for some testing, but these are not critical to report against, they would like to limit this effort to only fiber-channel hosts.</p>
+<p>So, the breakdown of all of the required steps for processing both sets of output requested for these automated updates are:</p>
+<ol>
+<li>Allow for a script that can remotely access the array with externally stored credentials</li>
+<li>List out the number of initiators currently connected to the array (only fiber-channel)</li>
+<li>List out which array ports each host is currently connected to (only fiber-channel)</li>
+<li>Produce an object or text output that can be picked up and automatically sent to another alerting process (we only need to handle output, they would handle sending the notification/alert)</li>
+</ol>
+<p>Now, by taking our request and breaking it down into specific steps, it becomes almost a simple checklist for us to follow.  This also means that we can determine the basics of what is necessary and then add the code for each until we achieve our (MVP) minimum viable product.</p>
+<p>And yes, it may be easy to think that step 1 is very basic and simple, and maybe doesn&rsquo;t require being written down but the specific reason I wrote it down is honestly due to repetition. After many years of delivering example code to customers and users, I try to focus on the parts that are important and that are within my subject matter area. I don&rsquo;t know what method the customer running this script will use to input a credential for the connection to the FlashArray and that is not my primary concern. With basic functionality built into the script to use a credential, the customer is free to add additional code to deal with the credentials in whatever manner is necessary for their internal systems.</p>
+<p>We will be using the <code>PureStoragePowerShellSDK</code> (the original v1 SDK) module to connect to the array, just because I know the simple way to pull some of these details from the FlashArray via CLI, which means that my focus is just in taking these results which we can gather by CLI, and wrapping this in PowerShell.  As a pre-requisite, this means that the PowerShell host running this code will need SSH access to the FlashArray, and we&rsquo;ll highlight where we see this in the help for the cmdlet itself.</p>
+<p>Let&rsquo;s with step 1 and finding the cmdlet that we&rsquo;ll use to connect to the FlashArray and run our CLI command.  We&rsquo;ll start looking through all of the commands within our module by running <code>Get-Command -Module PureStoragePowerShellSDK</code></p>
+<pre><code>Get-Command -Module PureStoragePowerShellSDK
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Add-PfaArrayToPod                                  1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaHostGroupsToProtectionGroup                 1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaHostIqns                                    1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaHostNqn                                     1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaHosts                                       1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaHostsToProtectionGroup                      1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaHostWwns                                    1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Add-PfaPodReplicaLink                              1.19.49.0  PureStoragePowerShellSDK
+
+skipping a few lines...
+
+Cmdlet          Unlock-PfaUser                                     1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Update-PfaArrayConnectionsThrottlingInformation    1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Update-PfaItemFlag                                 1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Update-PfaKmip                                     1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Update-PfaSubnetSettings                           1.19.49.0  PureStoragePowerShellSDK
+Cmdlet          Update-PfaSubnetStatus                             1.19.49.0  PureStoragePowerShellSDK
+</code></pre>
+<p>This returns a lot of cmdlets to us, and we can find this exact number by piping the previous code to &lsquo;Measure-Object&rsquo;</p>
+<pre><code>Get-Command -Module PureStoragePowerShellSDK | Measure-Object
+
+Count    : 466
+</code></pre>
+<p>So, this module has 466 cmdlets in the current &lsquo;1.19.49.0&rsquo; version.  Now let&rsquo;s go about finding the cmdlet that we need for getting our CLI command run and returning the output – we&rsquo;ll do this by using our current &ldquo;Get-Command&rdquo; code and looking for a cmdlet with &ldquo;CLI&rdquo; as part of the cmdlet noun.</p>
+<pre><code>Get-Command -Module PureStoragePowerShellSDK -Noun *CLI*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          New-PfaCLICommand                                  1.19.49.0  PureStoragePowerShellSDK
+</code></pre>
+<p>This returns a single cmdlet for us within the module, so now we only need to look at the cmdlet help to see what information we need to run it.</p>
+<pre><code>Get-Help New-PfaCLICommand -Detailed
+
+NAME
+    New-PfaCLICommand
+
+SYNOPSIS
+    Execute CLI Command on the FlashArray.
+
+
+SYNTAX
+    New-PfaCLICommand -EndPoint &lt;String&gt; -UserName &lt;String&gt; -Password &lt;SecureString&gt; [-DisableLoggingToArray     &lt;SwitchParameter&gt;] [-TimeOutInMilliSeconds &lt;Nullable[Int32]&gt;] -CommandText &lt;String&gt; [&lt;CommonParameters&gt;]
+
+    New-PfaCLICommand -EndPoint &lt;String&gt; -Credentials &lt;PSCredential&gt; [-DisableLoggingToArray     &lt;SwitchParameter&gt;] [-TimeOutInMilliSeconds &lt;Nullable[Int32]&gt;] -CommandText &lt;String&gt; [&lt;CommonParameters&gt;]
+
+
+DESCRIPTION
+    Execute CLI Command on the FlashArray via the SSH protocol. SSH connectivity to the array is required.
+
+
+PARAMETERS
+    -EndPoint &lt;String&gt;
+        The management address or FQDN of the FlashArray.
+
+    -UserName &lt;String&gt;
+        The SSH username for the FlashArray
+
+    -Password &lt;SecureString&gt;
+        The secure password. Must be a SecureString.
+
+    -DisableLoggingToArray [&lt;SwitchParameter&gt;]
+        Disable phone home logging for this connection. This reduces the amount of logging on the array for     any commands that are executed.
+
+    -TimeOutInMilliSeconds &lt;Nullable[Int32]&gt;
+        Timeout in milliseconds for the command to complete.
+
+    -CommandText &lt;String&gt;
+        The CLI command to run on the FlashArray
+
+    -Credentials &lt;PSCredential&gt;
+        The credentials for SSH access to the FlashArray. Used in place of -Username and -Password. Obtained     as a PSCredential object. Example $creds=Get-Credential.
+
+    &lt;CommonParameters&gt;
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+    ------ EXAMPLE ------
+
+    New-PfaCLICommand -Endpoint array1 -Username pureuser -Password $securepassword -CommandText &quot;purearray     list --controller&quot;
+
+    Executes the CLI command 'purearray list --controller' on Array array1 using the username and password     credentials supplied
+    ------ EXAMPLE ------
+
+    $creds=Get-Credential
+    New-PfaCLICommand -Endpoint array1 -Credentials $creds -CommandText &quot;purearray list --controller&quot;     -DisableLoggingToArray
+
+    Creates a PSCredential object with the username and password supplied when prompted.
+    Executes the CLI command 'purearray list --controller' on Array 'array1' and disables the logging of this     connection for phone home logging.
+REMARKS
+    To see the examples, type: &quot;get-help New-PfaCLICommand -examples&quot;.
+    For more information, type: &quot;get-help New-PfaCLICommand -detailed&quot;.
+    For technical information, type: &quot;get-help New-PfaCLICommand -full&quot;.
+</code></pre>
+<p>The help for our cmdlet gives us a parameter set which will take a PSCredential object, as shown here:</p>
+<p><code>New-PfaCLICommand -EndPoint &lt;String&gt; -Credentials &lt;PSCredential&gt; [-DisableLoggingToArray &lt;SwitchParameter&gt;] [-TimeOutInMilliSeconds &lt;Nullable[Int32]&gt;] -CommandText &lt;String&gt;</code></p>
+<p>So we&rsquo;ve already got all of step 1 accomplished with just finding the right cmdlet.  Score.</p>
+<p>We&rsquo;ll continue soon with the next blog post, where we parse this output that we have, and continue with our next steps.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

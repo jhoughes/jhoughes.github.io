@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Migrating to Cloud and Running Hybrid: Part 2 - vVols &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Migrating to Cloud and Running Hybrid: Part 2 - vVols</h1>
+  <time datetime=2024-10-11T14:13:21-0700 class="post-date">Fri, Oct 11, 2024</time>
+  <p>For our second (and longer) post in the series, we will look at some of the core functionality of Pure Storage which will be used to help any customer migrate workloads, and I am talking about volume management and replication.  For many customers that are considering moving VMware workloads to any new platform, one of the easiest ways to be successful with a &ldquo;replatform&rdquo; for any workloads is to separate the data that needs to move platforms from the core operating system.</p>
+<p>Before we get into the technical overview of how we accomplish this, let&rsquo;s understand why we are needing to consider this in the first place.  Migrating to the cloud comes with a lot of perks, but it also requires some thoughtful planning. One of the big advantages of the cloud is how easy it is to get started—no lengthy procurement process needed. With just a self-service tool, users can request the resources they need - whether that is compute, power, storage, IOPs, or bandwidth. The catch? You must allocate for the maximum of your potential needs for each resource, and you pay for those resources as soon as they&rsquo;re allocated, whether you&rsquo;re using them fully or not.</p>
+<p>A big draw of the cloud is the promise of moving away from buying and managing hardware. But here&rsquo;s the twist: many cloud storage options are still tied to hardware behind the scenes. Crazy, right? Fortunately, with modern tools and features like data reduction—even in public clouds—it&rsquo;s easier to size your resources correctly and lower costs overall.</p>
+<p>For businesses adopting a hybrid cloud model, the flexibility to pay only for what you use is a game-changer. And when the time comes to move applications across clouds, having portable data that&rsquo;s separate from your workloads makes migrations much more realistic. This kind of portability is especially important as businesses increasingly rely on both public and private cloud environments to balance costs, governance, and performance needs.</p>
+<p>Unfortunately, many companies discover their lock-in on any platform and their lack or realistic migration limitations way too late. If they look to migrate to/from more than one platform, this becomes a very daunting task. By focusing on data portability from the start, businesses can avoid those pitfalls, distribute resources where they make the most sense—whether on-premises, in the cloud, or at the edge—and still enjoy all the benefits the cloud has to offer.</p>
+<p>OK, now that we have our background out of the way, let&rsquo;s discuss how we actually try and get our data to the cloud.</p>
+<p>For any customer running Pure Storage, we recommend that they first migrate existing vSphere VMs to vVols, as this allows for each virtual disk that is presented to a virtual machine to become a volume on the FlashArray.  This essentially gives the guest operating system direct access to a volume/LUN on the array, without any special formatting or VMFS filesystem, as it is still seen as a standard disk from the OS.  The advantage of a vVol is that if this volume is presented to another OS, including that of a physical host, the data on the volume can be read directly (as long as the OS can read the formatting done on the device by the source OS, but details&hellip;)</p>
+<p>I won&rsquo;t go into the additional benefits of vVols nor the details of setting up vVols for VMware and Pure Storage, as this is thoroughly covered in the <a href="https://support.purestorage.com/bundle/m_user_guides_for_vmware_solutions/page/Solutions/VMware_Platform_Guide/User_Guides_for_VMware_Solutions/topics/concept/c_virtual_volumes_user_guide.html">Virtual Volumes User Guide</a>, but the good news is that once your VMware environment has a vVol datastore configured and connected, migrating a disk to a vVol is as simple as a Storage vMotion (svMotion).  The same simple steps of a right-click in the vSphere GUI, clicking &lsquo;Migrate&rsquo;, choosing the migration type of &lsquo;Change storage only&rsquo; option, and selecting a vVol datastore as the target will get you to the end result of running each drive as a virtual volume.</p>
+<p>This simple &ldquo;migration&rdquo; from VMware virtual disk to virtual volume can be done for individual disks or an entire virtual machine and all of its disks at once, for VMFS or NFS based virtual machines.  If migration of a raw device mapping (RDM) in virtual mode needs to be performed, the same svMotion migration method applies, it just requires that the VM is powered off.  If the svMotions are done with a source and target datastore on the same FlashArray, this migration is also nearly instantaneous. RDMs can be migrated to a vVol while the virtual machine is online, but it&rsquo;s a bit more complex – it is done by mounting a new vVol to the virtual machine and mapping the device within the OS, copying the RDM to the vVol with the overwrite option, and then bringing the device online within the guest OS.</p>
+<p>If the environment that is being moved to a new platform is not VMware-based, or if vVols are not an option for some reason, then we moved to the next layer down and look at the performing data migrations from within an operating system.  This is going to be performed by enabling &amp; configuring iSCSI within Windows or Linux, creating a host object in the FlashArray with the IQN initiator for the iSCSI initiator, and then mapping a volume to this new host object on the FlashArray.  Once the device is visible within the operating system, the raw device should be formatted with the appropriate file system option for the intended usage, and this newly formatted device can then be used for data migration. At this point, we need to discuss a few options and considerations which will be different for Windows versus Linux operating systems, and warn you that you should always have proper planning and backups in place prior to data conversions or migrations.</p>
+<p>Within Windows, copying data is most likely going to be performed by robocopy which can copy large filesystems with options for recursion, permissions, and selection of specific properties to copy from source to destination.  If anyone has had to work with cloning or migrating any significant amount of data before, you are most likely not a stranger to robocopy.  If you are new to Windows migrations however, getting to where you can understand all of the options of robocopy to do bulk copy operations in the console is a lot and takes some practice.  Sometimes people are looking for simpler GUI option, even if it may take a bit longer to process the copying of data itself, as a tradeoff for ease of use.  There were some older tools which gained some popularity in the past that you can still find links for (Robocopy GUI or RichCopy), and there are a decent number of open source tools that have come around (<a href="https://github.com/Cinchoo/ChoEazyCopy">EasyCopy</a>), and even some tools with free/paid versions which have some great easy functionality (<a href="https://www.codesector.com/teracopy">TeraCopy</a>).  I use TeraCopy for personal use as I bought a pro license for a few bucks forever ago, and it&rsquo;s still valid with the upgrades for nearly the last 10 years.</p>
+<p>Beyond the actual data copying itself, you should also understand that this method of cloning data for Windows can be done for both entire disks, or just for directories.  This is especially useful if you want to move data to external storage devices, without changing your layout of the file structure on your disk currently, or having to shut down applications to move data that is on your OS disk to a new secondary drive letter.  This is all done via the capability of Windows to mount a drive as a folder, which lets you create an empty NTFS folder, and mount a drive to that folder path from Disk Management or from the command-line.  Now&hellip; the reality of moving data within Windows to a new device, whether it is on an external drive currently, or especially with moving data from your current OS disk to a drive mounted to a folder, is that you will probably face some downtime.  Depending on your applications and how the system is serving data, this can be stopping &amp; restarting of applications or services, of a full system reboot – it&rsquo;s too hard to give general advice or recommendations for anything more specific than to say that you need to plan for some level of outage to perform a final cutover.</p>
+<p>When we look at Linux, things might be easier depending on how the existing system is configured.  I will start this section by admitting that I am far from a Linux guru, but I can Google and follow documentation with the best of &rsquo;em, then Google again to figure out what isn&rsquo;t working.  With that caveat, we&rsquo;ll cover this in a higher overview fashion.  If logical volumes are in use on the system, the Logical Volume Manager (lvm) has functionality and commands to handle creating volume groups, creating mirrored logical volumes, and add/remove disks to a mirror.  Before you begin any of this process, it is highly recommended that you understand and confirm your multipathing configuration and any aliases in use on your system and for any devices to not confuse yourself, or work with the wrong device at the wrong time.  If you have your devices online and identified, essentially the rough steps for this process are these:</p>
+<ol>
+<li>Use &lsquo;pvcreate&rsquo; to create a new physical volume (PV) from the new block device</li>
+<li>Use &lsquo;vgextend&rsquo; to add the new PV to the existing volume group (VG)</li>
+<li>Use &rsquo;lvconvert -m 1&rsquo; to add the new disk as a mirror to the existing logical volume (LV)</li>
+<li>Wait for the operation of the converting (mirroring) of the data to be completed</li>
+<li>CONFIRM that the disks are working as mirrors (essentially RAID1 logic)</li>
+<li>Use &rsquo;lvconvert -m 0&rsquo; to remove the original disk from the mirror within the LV</li>
+<li>Use &lsquo;vgreduce&rsquo; to remove the original PV from the VG</li>
+<li>Use &lsquo;pvremove&rsquo; to remove the original block device as a PV</li>
+</ol>
+<p>Seems easy enough, right?  Honestly, once you understand the constructs for each level of this process, it&rsquo;s just understanding the syntax for your specific distro and version, and following the man pages or reading the online documentation.</p>
+<p>Now, if you want to look at an alternative tool for performing this migrations in an easier fashion for a whole fleet of systems that need data moved from one platform to another, it may be worth considering a tool that makes this process more manageable.  When these engagements go to our professional services team, or when customers ask for advice around how to do this at a much larger scale, we typically suggest CirrusData. (NOTE: This isn&rsquo;t a plug or advertisement for the product, I just know that it works and does this well.)  Data migration tools exist all throughout the market to help perform these lower level data migrations at a volume level, typically performed via local agents which have management done at a fleet level, including some that are managed via cloud portals.  If you want to look at more tools capable of doing these functions, I would recommend doing a quick search online or talking to your partner/vendor of choice to see what they recommend based on your requirements.</p>
+<p>In the end, we are just trying to get your data disentangled from your operating system so that it can be handled in an easier fashion, which is replication.  After the above wall of text above for how you can move your data to separate volumes, we get to the section where we discuss how we can copy all of that data around in bulk from an array level.  In this perspective where we are discussing migration to cloud, plus potentially back on-prem, or a hybrid model of running in both we can say that we are focusing on asynchronous replication.</p>
+<p>The good and the bad of discussing replication in regard to Pure Storage is that it is ridiculously easy as far as the core functionality and initial setup.  We can demonstrate setting up replication between two arrays within a few minutes – like we&rsquo;ve literally done live demos of this in lab environments in less than 5-10 minutes depending on who is talking (or rambling, in my case) while we perform the setup.  For any two FlashArrays, or a FlashArray and Cloud Block Storage instance, we need network connectivity between the arrays; then we simply copy our connection key, the management &amp; replication address of the source array, and enter these details into the destination array (we&rsquo;ve already said async replication is out type for this overview).</p>
+<p>Now, this only has our arrays connected, but from here it is not difficult to finish our configuration.  We will still want to consider things like bandwidth throttling, but all we need otherwise is a protection group (pgroup) created on our source array, and add the replication target of our second array.  We need to specify the snapshot and replication schedules that meet our needs for replicating data between our arrays, but local snapshots are not required if we are configuring this with the intention of replication only.  From here, we simply need to add members to our pgroup which could be host or host groups, but as we are talking about migrating data to/from the cloud, we are really talking about our volumes that we extricated our data to with the methods highlighted earlier in this now very long post.  Once we add our volumes as members, our replication will begin between our arrays based on the schedules, or a snapshot can be manually taken with selecting the &lsquo;Replicate Now&rsquo; option and our data replication will be underway.</p>
+<p>OK, that&rsquo;s a lot of discussion for the high level overview of how we can separate our data and replicate it to and from the cloud in a reasonable fashion.  In the next few blog posts, we will take a look at how we migrate our virtual machines themselves to AWS or Azure. We&rsquo;ll see you soon for that.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

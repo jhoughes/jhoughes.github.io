@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Automating Your Pure Storage Infrastructure: Part 2 - Active Port Connections with SDK1 &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Automating Your Pure Storage Infrastructure: Part 2 - Active Port Connections with SDK1</h1>
+  <time datetime=2024-07-11T14:13:21-0700 class="post-date">Thu, Jul 11, 2024</time>
+  <p>Now for step 2 in our blog series, we&rsquo;ll take a look at the CLI output which will give us the details that we are looking for, so we can work towards our &ldquo;grouped by host&rdquo; requirement.</p>
+<p>The CLI command which will give us the results we are looking for is <code>pureport list</code> with the &ldquo;initiator&rdquo; parameter, and a basic run of this CLI command in an SSH session gives us this output:</p>
+<p><img src="/images/pureport_list_initiator_ssh.png" alt="pureport list &ndash;initiator (SSH)" title="pureport list --initiator (SSH)"></p>
+<p>OK, this is giving us a good base to start from, as we are getting the beginning details of the initiator connected to the host.  Now let&rsquo;s see what this output gives us when it&rsquo;s run via <code>New-PfaCLICommand</code></p>
+<p><img src="/images/pureport_list_initiator_powershell.png" alt="pureport list &ndash;initiator (PowerShell)" title="pureport list --initiator (PowerShell)"></p>
+<p>Hrmm, this is less useful to us, as we are essentially getting back the same text output that would look fine in an interactive console session, but isn&rsquo;t giving us back anything that we can easily work with.  To start adjusting this, let&rsquo;s see what we get when we add the &lsquo;—csv&rsquo; parameter to our CLI command.</p>
+<p><img src="/images/pureport_list_initiator_csv.png" alt="pureport list &ndash;initiator &ndash;csv" title="pureport list --initiator --csv (PowerShell)"></p>
+<p>OK, while it may not look pretty on the screen, we have output that we can easily tweak to work with as a PowerShell object.  Let&rsquo;s first capture our output in a variable, and then pipe it to &ldquo;ConvertFrom-Csv&rdquo;.</p>
+<p><img src="/images/pureport_list_initiator_convertfromcsv.png" alt="pureport list &ndash;initiator &ndash;csv | ConvertFrom-Csv" title="pureport list --initiator --csv | ConvertFrom-Csv"></p>
+<p>Alright, now we&rsquo;re really making progress here, so let&rsquo;s capture this output into a variable.  We can then confirm that we&rsquo;re working with a full PowerShell object by taking this output and piping it to &ldquo;Get-Member&rdquo;.</p>
+<p><img src="/images/pureport_list_initiator_pscustomobject.png" alt="pureport list &ndash;initiator &ndash;csv | ConvertFrom-Csv | Get-Member" title="pureport list --initiator --csv | ConvertFrom-Csv | Get-Member"></p>
+<p>In the output from <code>Get-Member</code> we see that we have a TypeName of <code>System.Management.Automation.PSCustomObject</code>, so PowerShell sees this as a custom object.  We&rsquo;re now at a place that we&rsquo;re more functional with our results and are able to work with them in PowerShell.</p>
+<p>However, this same output from <code>Get-Member</code> shows us that the NoteProperty which serves as the headers for our CSV data have a space in them.  This will make it slightly more difficult to deal with because we&rsquo;ll have to wrap each property name in quotes, so let&rsquo;s get back to our source data from the CLI output and fix that really quick.</p>
+<p>If we take a minute to read the documentation - crazy, I know -  which is our <a href="https://support-be.purestorage.com/bundle/m_flasharray_admin_and_cli_reference_guides/page/FlashArray/PurityFA/library/resources/PurityFA_6.6.0_FlashArray_CLIRefGuide.pdf">FlashArray 6.6.0 CLI Reference Guide</a> in this instance, we&rsquo;ll see that the &lsquo;pureport&rsquo; command has another parameter of &ldquo;—raw&rdquo; which does the following:</p>
+<blockquote>
+<p>&ldquo;Displays the unformatted version of column titles and data. For example, in the purearray monitor output, the unformatted version of column title us/op (read) is usec_per_read_op. The &ndash;raw output is used to sort and filter list results.&rdquo;</p>
+</blockquote>
+<p>Let&rsquo;s see what this does for our output:</p>
+<p><img src="/images/pureport_list_initiator_raw.png" alt="pureport list &ndash;initiator &ndash;csv &ndash;raw | ConvertFrom-Csv" title="pureport list --initiator --csv --raw | ConvertFrom-Csv"></p>
+<p>OK, we can see that the NoteProperties changed in the output, but let&rsquo;s confirm this in an easier view with &ldquo;Get-Member&rdquo; again.</p>
+<p><img src="/images/pureport_list_initiator_raw_get_member.png" alt="pureport list &ndash;initiator &ndash;csv &ndash;raw | ConvertFrom-Csv | Get-Member" title="pureport list --initiator --csv --raw | ConvertFrom-Csv | Get-Member"></p>
+<p>OK, for some specific examples of how this output is easier to work with, let&rsquo;s look at two specific NotePropetties.  The first changed from &ldquo;Initiator IQN&rdquo; to &ldquo;initiator.iqn&rdquo;, and the second changed from &ldquo;Failover&rdquo; to &ldquo;target.failover&rdquo;.  Our results are much more specific to work with for any necessary selection or manipulation, should this be required.</p>
+<p>This same <code>--raw</code> parameter that we added to our CLI command also serves an additional functions for us, as it allows us to filter the results in our query from the array itself, which also goes to a core tenet of PowerShell with &ldquo;Filter Left&rdquo;.  This means that we are filtering the results at the source, and we have less extraneous information to deal with in PowerShell.</p>
+<p>To cover the last request of filtering out the VMs running iSCSI, all we need to do is to use the <code>--filter</code> parameter in the CLI which the documentation tells us will do the following:</p>
+<blockquote>
+<p>&ldquo;Displays only the rows that meet the filter criteria specified.&rdquo;</p>
+</blockquote>
+<p>Now that we know this parameter will filter the results of the source output on the FlashArray, we should understand how this will affect those results. In the perspective of PowerShell, this filter can work in a similar fashion to an if statement, where the only results that have a specific property pass through and are returned to us.</p>
+<p>Giving the filter a value of &lsquo;initiator.wwn&rsquo; to filter out only the results which have a WWN, thus giving us only our fiber-channel initiators which we are looking for.</p>
+<p><img src="/images/pureport_list_initiator_raw_filter_initiator.png" alt="pureport list &ndash;initiator &ndash;csv &ndash;raw &ndash;filter &lsquo;initiator.wwn&rsquo;" title="pureport list --initiator --csv  --raw  --filter 'initiator.wwn"></p>
+<p>We can confirm that our results are filtered down to only results with doing a stare and compare of these results, or we can be a bit more efficient and simply verify the counts that are returned.</p>
+<p>The output does give us results which only have a value for &lsquo;initiator.wwn&rsquo;, which means that we only have our fiber-channel initiators in our results, and the count of our objects decreased from 132 values down to 97 values.</p>
+<p>We only have 1 final tweak that we need to make to our filter to also ensure that we have only the active paths, and that is to add &rsquo;target.wwn&rsquo; to our filter.</p>
+<p><img src="/images/pureport_list_initiator_raw_filter_both.png" alt="pureport list &ndash;initiator &ndash;csv &ndash;raw &ndash;filter &lsquo;initiator.wwn and target.wwn&rsquo;" title="pureport list --initiator --csv  --raw  --filter 'initiator.wwn and target.wwn'"></p>
+<p>If we adjust our filter and get our results again, we can see that we only have values with a WWN for both Initiator and Target, which means it is a live fiber-channel initiator, and the count of our results has only 62 values.</p>
+<p><img src="/images/pureport_list_initiator_raw_filter_both_count.png" alt="pureport list &ndash;initiator &ndash;csv &ndash;raw &ndash;filter &lsquo;initiator.wwn and target.wwn&rsquo; | Measure-Object" title="pureport list --initiator --csv  --raw  --filter 'initiator.wwn and target.wwn' | Measure-Object"></p>
+<p>Now, we will just do some cleanup of our code to get the final sample script which looks like this:</p>
+<pre><code>$FlashArray = 'sn1-x90r2-f07-27.puretec.purestorage.com'
+$FA_Credential = Get-Credential
+
+Import-Module PureStoragePowerShellSDK
+
+$arrayports_command = &quot;pureport list --initiator --csv --raw --filter 'initiator.wwn and target.wwn'&quot;
+
+$arrayports_filter = New-PfaCLICommand -EndPoint $FlashArray -Credentials $FA_Credential -CommandText $arrayports_command
+
+$arrayports_filter_output = $arrayports_filter | ConvertFrom-Csv
+
+Write-Output $arrayports_filter_output
+</code></pre>
+<p>This will give us an output object of the count of active fiber-channel initiators, and we have achieved our first request – which was regular/timed updates for number active paths the customer can send to their NOC to watch these counts of host paths throughout the upgrade.</p>
+<p>In the next post, we&rsquo;ll discuss the second ask from the customer of the detailed output of all host initiators to verify before and after the upgrade.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

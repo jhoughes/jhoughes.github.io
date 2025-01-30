@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Migrating to Cloud and Running Hybrid: Part 2 - vVols &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Migrating to Cloud and Running Hybrid: Part 2 - vVols</h1>
+  <time datetime=2024-10-11T14:13:21-0700 class="post-date">Fri, Oct 11, 2024</time>
+  <p>Continuing directly from our last blog post, let&rsquo;s jump in if we need to get to a lower level than VM disks within a hypervisor.</p>
+<p>For our second (and longer) post in the series, we will look at some of the core functionality of Pure Storage which will be used to help any customer migrate workloads, and I am talking about volume management and replication.  For many customers that are considering moving VMware workloads to any new platform, one of the easiest ways to be successful with a &ldquo;replatform&rdquo; for any workloads is to separate the data that needs to move platforms from the core operating system.</p>
+<p>Before we get into the technical overview of how we accomplish this, let&rsquo;s understand why we are needing to consider this in the first place.  Migrating to the cloud comes with a lot of perks, but it also requires some thoughtful planning. One of the big advantages of the cloud is how easy it is to get started—no lengthy procurement process needed. With just a self-service tool, users can request the resources they need - whether that is compute, power, storage, IOPs, or bandwidth. The catch? You must allocate for the maximum of your potential needs for each resource, and you pay for those resources as soon as they&rsquo;re allocated, whether you&rsquo;re using them fully or not.</p>
+<p>A big draw of the cloud is the promise of moving away from buying and managing hardware. But here&rsquo;s the twist: many cloud storage options are still tied to hardware behind the scenes. Crazy, right? Fortunately, with modern tools and features like data reduction—even in public clouds—it&rsquo;s easier to size your resources correctly and lower costs overall.</p>
+<p>For businesses adopting a hybrid cloud model, the flexibility to pay only for what you use is a game-changer. And when the time comes to move applications across clouds, having portable data that&rsquo;s separate from your workloads makes migrations much more realistic. This kind of portability is especially important as businesses increasingly rely on both public and private cloud environments to balance costs, governance, and performance needs.</p>
+<p>Unfortunately, many companies discover their lock-in on any platform and their lack or realistic migration limitations way too late. If they look to migrate to/from more than one platform, this becomes a very daunting task. By focusing on data portability from the start, businesses can avoid those pitfalls, distribute resources where they make the most sense—whether on-premises, in the cloud, or at the edge—and still enjoy all the benefits the cloud has to offer.</p>
+<p>OK, now that we have our background out of the way, let&rsquo;s discuss how we actually try and get our data to the cloud.</p>
+<p>For any customer running Pure Storage, we recommend that they first migrate existing vSphere VMs to vVols, as this allows for each virtual disk that is presented to a virtual machine to become a volume on the FlashArray.  This essentially gives the guest operating system direct access to a volume/LUN on the array, without any special formatting or VMFS filesystem, as it is still seen as a standard disk from the OS.  The advantage of a vVol is that if this volume is presented to another OS, including that of a physical host, the data on the volume can be read directly (as long as the OS can read the formatting done on the device by the source OS, but details&hellip;)</p>
+<p>I won&rsquo;t go into the additional benefits of vVols nor the details of setting up vVols for VMware and Pure Storage, as this is thoroughly covered in the <a href="https://support.purestorage.com/bundle/m_user_guides_for_vmware_solutions/page/Solutions/VMware_Platform_Guide/User_Guides_for_VMware_Solutions/topics/concept/c_virtual_volumes_user_guide.html">Virtual Volumes User Guide</a>, but the good news is that once your VMware environment has a vVol datastore configured and connected, migrating a disk to a vVol is as simple as a Storage vMotion (svMotion).  The same simple steps of a right-click in the vSphere GUI, clicking &lsquo;Migrate&rsquo;, choosing the migration type of &lsquo;Change storage only&rsquo; option, and selecting a vVol datastore as the target will get you to the end result of running each drive as a virtual volume.</p>
+<p>This simple &ldquo;migration&rdquo; from VMware virtual disk to virtual volume can be done for individual disks or an entire virtual machine and all of its disks at once, for VMFS or NFS based virtual machines.  If migration of a raw device mapping (RDM) in virtual mode needs to be performed, the same svMotion migration method applies, it just requires that the VM is powered off.  If the svMotions are done with a source and target datastore on the same FlashArray, this migration is also nearly instantaneous. RDMs can be migrated to a vVol while the virtual machine is online, but it&rsquo;s a bit more complex – it is done by mounting a new vVol to the virtual machine and mapping the device within the OS, copying the RDM to the vVol with the overwrite option, and then bringing the device online within the guest OS.</p>
+<p>We&rsquo;ll go ahead and split this conversation here and tomorrow we will take a look at what happens when we need to get a bit deeper for a data migration method.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

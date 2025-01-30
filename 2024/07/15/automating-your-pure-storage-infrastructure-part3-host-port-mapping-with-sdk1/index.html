@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Automating Your Pure Storage Infrastructure: Part 3 - Host Port Mapping with SDK1 &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Automating Your Pure Storage Infrastructure: Part 3 - Host Port Mapping with SDK1</h1>
+  <time datetime=2024-07-15T14:13:21-0700 class="post-date">Mon, Jul 15, 2024</time>
+  <p>In our third post in our series, we&rsquo;re going to take the code that we produced previously to gather additional information for the request of a detailed host mapping that can give a comparison of pre and post upgrade to verify that all of the paths match.  In the code from our previous post, we were able to gather the information he needed about the connected initiators from the array perspective. Now, we need to gather the information about our hosts and their registered initiators, then tie that information together.</p>
+<p>Based on what we did in the previous step we have an easier start to our discovery, we now know how to run our CLI commands, and capture that input into PowerShell custom object that we can easily work with through our typical PowerShell practices.  Next, we need to start working with the CLI command we will run for the host information, which is &ldquo;purehost”.</p>
+<p>Based on what we did in the previous post, we know how to capture this input with more functional note properties slash CSV headers, and how to return this as CSV output from the CLI which gives us the PowerShell object itself.  If you need a rundown of any of this background information, review the previous post.</p>
+<p>Our starting point for the discovery of the host information is <code>purehost list --raw –csv</code>, and this is what out initial results look like:</p>
+<p><img src="/images/purehost_list_initiator_raw.png" alt="purehost list &ndash;raw" title="purehost list --raw"></p>
+<p>Now we have the full results of all of our hosts and their details, we only need to add a filter for the information we are looking for, so we&rsquo;ll add &ldquo;&ndash;filter &lsquo;wwns&rsquo;” to trim our results to only the hosts that have a WWN configured (those that are running fiber-channel).</p>
+<p>(Note: There has been an update in the output returned from <code>purehost</code> when using the <code>--raw</code> parameter, as in 6.4.10 this filter needs to be &lsquo;wwns&rsquo;, rather than &lsquo;wwn_list&rsquo; when run against a 6.x version of Purity)</p>
+<p>Let&rsquo;s see what we have with the WWNs filtered.</p>
+<p><img src="/images/purehost_list_initiator_raw_wwns.png" alt="purehost list &ndash;raw" title="purehost list --raw"></p>
+<p>When we check the count, we see a count of 59 hosts with no filtering, versus 33 hosts returned when filtering for the fiber-channel initiators.  Since we now have the filtered results for our active initiators and the hosts with WWNs, we need to work to combine this information together.</p>
+<p>We&rsquo;ll begin to accomplish this with using <code>Select-Object</code> to return the host name (as entered on the FlashArray) and the hostgroup (if the host belongs to one), and creating a calculated property to parse the WWNs for the host.</p>
+<p>If we have our host details in a <code>$hostports</code> variable, we can use the existing properties for the Name and &lsquo;host_group.name&rsquo; with Select-Object. You could create a calculated property for the host group name, if you didn&rsquo;t like this name formatting, but I am skipping this and instead focusing on the calculated property to return a list of WWNs for the host.</p>
+<p>Since the output of our host ports gives us a single value for all of the WWNs registered for the host with a &lsquo;/&rsquo; as the separator, we can simply use the <code>.Split()</code> method to parse this into an array of strings. The final one-liner looks like this:</p>
+<p><code>$hostports | Select-Object Name, host_group.name, @{n = 'WWNs'; e = { $_.wwns.Split('/') } }</code></p>
+<p>While having an array of strings as our WWNs for each host may not sound particularly useful, this gives us specific values that we can use for comparison to map initiator IDs between the array connection and the hosts themselves.</p>
+<p>I prefer to loop through these host and initiator objects to perform these data matches (based on data captured in variables), as this makes it easier for me to follow in my head which specific objects are being worked on at each point of the code, and separate the text manipulations from the text comparison.</p>
+<p>So, for each host object, we need to compare both WWNs to the list of the active array initiators, and for the objects that match we want to gather the array port that the host is connected to.  This may be slightly confusing, so let&rsquo;s take a look at the logic in some pseudocode:</p>
+<pre><code>again... the following is pseudocode, the real code is coming in a short bit...
+
+foreach $host-object-with-wwns {
+    foreach $specific-wwn-of-host {
+        $arrayport = $all-active-ports | Where WWN -matches $specific-wwn-of-host | Select &quot;TargetArrayPort”
+
+        $HostDetail = [PSCustomObject] {
+            Hostname = $host-object-with-wwns.Name
+            HostPort = $specific-wwn-of-host
+            ArrayPort = $arrayport  (where we did the data matching)
+        } #end of HostDetail custom object
+    } #end of specific-wwn foreach
+} #end of host-object foreach
+</code></pre>
+<p>To be a bit more efficient in capturing this data and keeping in mind that we are trying to output an object, let&rsquo;s create and capture all of this in a list object, more specifically a <code>System.Collections.Generic.List</code> object (since ArrayList is no longer recommended for new development).</p>
+<p>We&rsquo;ll do this by creating our output variable and constructing our list with this code:</p>
+<p><code>$AllHostDetails = [System.Collections.Generic.List[pscustomobject]]@()</code></p>
+<p>After we put together all of our code for gathering the host &amp; array initiator details plus our loops to match the active initiators to the hosts themselves, we have this as our final result:</p>
+<pre><code>$FlashArray = 'sn1-x90r2-f07-27.puretec.purestorage.com'
+$FA_Credential = Get-Credential
+
+Import-Module PureStoragePowerShellSDK
+
+$arrayports_command = &quot;pureport list --initiator --raw --filter 'initiator.wwn'     --csv&quot;
+$hostports_command = &quot;purehost list --raw --filter 'wwns' --csv&quot;
+
+$arrayports_csv = New-PfaCLICommand -EndPoint $FlashArray -Credentials     $FA_Credential -CommandText $arrayports_command
+$hostports_csv = New-PfaCLICommand -EndPoint $FlashArray -Credentials $FA_Credential     -CommandText $hostports_command
+
+$arrayports = $arrayports_csv | ConvertFrom-Csv
+$hostports = $hostports_csv | ConvertFrom-Csv
+
+$cleanhostports = $hostports | Select-Object Name, hgroup, @{n = 'WWNs'; e = { $_.    wwn_list.Split('/') } }
+
+$AllHostDetails = [System.Collections.Generic.List[pscustomobject]]::new()
+
+#Get host WWN to array port mapping
+
+foreach ($arrayhost in $cleanhostports) {
+
+  foreach ($arraywwn in $arrayhost.wwns) {
+
+    $arrayport = ($arrayports | Where-Object { $($_.'initiator.wwn') -eq     $arraywwn } | Select-Object -ExpandProperty Name) -join ';'
+
+    if ($arrayport -eq '') {
+      $arrayport = 'NotConnected'
+    }
+
+    $HostDetail = [PSCustomObject] @{
+
+      Hostname  = $arrayhost.Name
+      HostPort  = $arraywwn
+      ArrayPort = $arrayport
+
+    } #end DataOutputResult object
+
+    $null = $AllHostDetails.Add($HostDetail)
+
+    Remove-Variable arrayport
+
+  }
+
+}
+
+Write-Output $AllHostDetails
+</code></pre>
+<p>Awesome, we&rsquo;ve completed our customer request to assit with sending their relevant alerts and reporting for pre/post upgrade.</p>
+<p>In the next post, we&rsquo;ll look at a new customer request to do a comparison of the SDK1 and SDK2 modules.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
