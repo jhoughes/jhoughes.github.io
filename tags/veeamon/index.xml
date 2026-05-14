@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VeeamON on FullStackGeek</title>
+    <link>http://localhost:1313/tags/veeamon/</link>
+    <description>Recent content in VeeamON on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/veeamon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VeeamON 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>&lt;p&gt;I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted &lt;a href=&#34;http://localhost:1313/documents/VeeamON2019_Automate-Yourself-Out-of-a-Backup-Job-Advanced-PowerShell-and-API-Usage.pdf&#34;&gt;at this link&lt;/a&gt; for public download.&lt;/p&gt;&#xA;&lt;p&gt;The attachment is only a PDF export of the presentation slides themselves.&lt;/p&gt;&#xA;&lt;p&gt;I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VeeamOn 2018 Presentation – Automate yourself out of a (backup) job</title>
+      <link>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
+      <description>&lt;p&gt;I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.&lt;/p&gt;&#xA;&lt;p&gt;PDF Version is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pdf&#34;&gt;here&lt;/a&gt;, and the full PowerPoint version with embedded videos is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pptx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

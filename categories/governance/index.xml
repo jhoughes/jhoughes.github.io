@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Governance on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/governance/</link>
+    <description>Recent content in Governance on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/categories/governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignite 2025: What Matters After the Keynotes</title>
+      <link>https://www.fullstackgeek.net/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</guid>
+      <description>&lt;p&gt;A few weeks after Ignite 2025, the event energy starts to cool off, and that is usually when the more useful questions begin.&lt;/p&gt;&#xA;&lt;p&gt;During the event itself, the pace is too fast to process everything well. New features, product updates, big-picture messaging, and polished demos all arrive in a flood. It is easy to come away with a strong sense of momentum, but momentum is not the same thing as clarity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

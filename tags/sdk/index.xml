@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SDK on FullStackGeek</title>
+    <link>http://localhost:1313/tags/sdk/</link>
+    <description>Recent content in SDK on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sdk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 4 - Protection Group Snapshots - SDK1 and SDK2</title>
+      <link>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</guid>
+      <description>&lt;p&gt;For this next example, we will look at a request which came into from a customer looking to see if there is a way to list the volumes in a protection group snapshot.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll look at how we can produce this output with 2 different methods:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Continue with our use of PureStoragePowerShellSDK (the original v1 SDK) and the &amp;lsquo;New-PfaCLICommand&amp;rsquo; cmdlet&lt;/li&gt;&#xA;&lt;li&gt;Look at the use of PureStoragePowerShellSDK2 to gather these details&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;While the command that we will use to gather these results from our FlashArray are different, method 1 is the same as our previous blog posts on the process of wrapping CLI commands into PowerShell to work with the results with the addition of using &lt;code&gt;Out-GridView&lt;/code&gt; for the selection of a specific Protection Group (pgroup) snapshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 3 - Host Port Mapping with SDK1</title>
+      <link>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</guid>
+      <description>&lt;p&gt;In our third post in our series, we&amp;rsquo;re going to take the code that we produced previously to gather additional information for the request of a detailed host mapping that can give a comparison of pre and post upgrade to verify that all of the paths match.  In the code from our previous post, we were able to gather the information he needed about the connected initiators from the array perspective. Now, we need to gather the information about our hosts and their registered initiators, then tie that information together.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 2 - Active Port Connections with SDK1</title>
+      <link>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</guid>
+      <description>&lt;p&gt;Now for step 2 in our blog series, we&amp;rsquo;ll take a look at the CLI output which will give us the details that we are looking for, so we can work towards our &amp;ldquo;grouped by host” requirement.&lt;/p&gt;&#xA;&lt;p&gt;The CLI command which will give us the results we are looking for is &lt;code&gt;pureport list&lt;/code&gt; with the &amp;ldquo;initiator” parameter, and a basic run of this CLI command in an SSH session gives us this output:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 1 - Getting Started</title>
+      <link>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</guid>
+      <description>&lt;p&gt;After a decently long hiatus from writing anything in a series-fashion, I&amp;rsquo;m back to share a blog series based around automating your Pure Storage environment.  We&amp;rsquo;re going to begin this series with a few posts about advancing both your understanding of your Pure Storage environment and understanding the options available to you for automating and monitoring the infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;This series will begin with some requests that came from Pure Storage customers, and other Pure employees that asked for some help in delivering the solution, or just some help with understanding how to accomplish the goal.  These are normally the most enjoyable tasks to automate, as it gives a chance to understand what sorts of tasks a customer is trying to accomplish and what needs they have, and to help educate others along the way.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

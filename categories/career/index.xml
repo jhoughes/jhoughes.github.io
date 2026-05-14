@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Career on FullStackGeek</title>
+    <link>http://localhost:1313/categories/career/</link>
+    <description>Recent content in Career on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Being Effective at Technical Communication - Technology Not Required</title>
+      <link>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vmug-2019-nynj-usercon.jpg&#34; alt=&#34;VMUG 2019 NY/NJ Usercon&#34; title=&#34;VMUG 2019 NY/NJ Usercon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.&lt;/p&gt;&#xA;&lt;p&gt;Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications. In practice, being effective at communicating means that you must know how to best deliver your message, in a manner that your audience can understand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Own The Imposter Syndrome</title>
+      <link>http://localhost:1313/2017/10/25/own-the-imposter-syndrome/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/10/25/own-the-imposter-syndrome/</guid>
+      <description>&lt;p&gt;Howdy, this is Joe Houghes. I&amp;rsquo;d like to introduce myself some in my first real post before I try and speak about technical content. This has been a big year of change for me with regards to my career, personal life, and social presence. As such, I want to share some reflection. This relates to my own experience as someone new to sharing knowledge with others.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a run of the mill 35-year-old out of shape IT geek who is a native of Austin, Texas. I am also an imposter, I face that recognition daily, and I&amp;rsquo;m completely OK with this realization. I&amp;rsquo;ve heard a lot of discussion in the last few months around &amp;ldquo;imposter syndrome&amp;rdquo;. I&amp;rsquo;ve also come to a pretty simple conclusion myself which I try to embrace: It doesn&amp;rsquo;t matter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to the Blog</title>
+      <link>http://localhost:1313/2017/08/27/welcome-to-the-blog/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/08/27/welcome-to-the-blog/</guid>
+      <description>&lt;p&gt;Howdy y&amp;rsquo;all, this is Joe.  I recently got accepted into the vExpert program for 2017 (second half) mostly based on internal and vendor community contributions.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s now time to become a bit more social and share what I can with the wider community.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m starting off with adding VMware content about the VMworld 2017 experience. Along with that I&amp;rsquo;ll be sharing experiences a UCS, PowerShell and VEEAM, and we&amp;rsquo;ll see where things go.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Runbooks on FullStackGeek</title>
+    <link>http://localhost:1313/tags/runbooks/</link>
+    <description>Recent content in Runbooks on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/runbooks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Automation and PowerShell 7.4: Less Friction, Better Runs</title>
+      <link>http://localhost:1313/2025/08/20/azure-automation-and-powershell-7-4-less-friction-better-runs/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/08/20/azure-automation-and-powershell-7-4-less-friction-better-runs/</guid>
+      <description>&lt;p&gt;I have spent a lot of time over the years working with Azure Automation, and one of the recurring sources of friction has always been runtime alignment.&lt;/p&gt;&#xA;&lt;p&gt;That sounds like a small technical detail, but anyone who has spent real time building and maintaining runbooks knows it is not small at all. If your local development environment moves forward while your automation runtime lags behind, the whole experience gets more awkward than it should be. You test one way, deploy another, and then spend too much time figuring out whether the problem is your code or the execution environment.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

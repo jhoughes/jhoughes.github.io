@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infrastructure on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/infrastructure/</link>
+    <description>Recent content in Infrastructure on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning</title>
+      <link>https://www.fullstackgeek.net/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</guid>
+      <description>&lt;p&gt;One of the quieter but more important realizations over the last year has been how much platform lifecycle expectations have changed.&lt;/p&gt;&#xA;&lt;p&gt;Azure Local 23H2 approaching end of support in April 2026 is a good example of that shift. On the surface, it is simply a lifecycle milestone. In practice, it says a great deal about the pace of modern platform operations and the kind of discipline that pace now requires.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

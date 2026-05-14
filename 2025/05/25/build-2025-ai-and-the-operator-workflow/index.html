@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Build 2025: AI and the Operator Workflow &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Build 2025: AI and the Operator Workflow</h1>
+  <time datetime=2025-05-25T00:00:00Z class="post-date">Sun, May 25, 2025</time>
+  <p>I spent a fair amount of time after Build 2025 going back through announcements, demos, follow-up commentary, and the broader reaction across the technical community, and one thing became very clear to me: AI is no longer being positioned as a side feature. It is being treated as part of the expected workflow.</p>
+<p>That shift matters more than the headlines by themselves.</p>
+<p>For a while, AI in technical tooling felt like something extra. Interesting, sometimes helpful, occasionally impressive, but still separate from the default path of getting work done. Build 2025 felt different. The framing was much closer to, &ldquo;This is how work is starting to happen now,&rdquo; especially across development, automation, infrastructure definition, and operational assistance.</p>
+<p>That is a meaningful change because once AI moves from optional novelty to workflow assumption, the questions get more serious. The issue is no longer whether it can be useful. The issue becomes where it belongs, how much trust it deserves, and what kind of human judgment still has to stay close to the process.</p>
+<h2 id="the-conversation-is-broader-than-code-generation-now">The conversation is broader than code generation now</h2>
+<p>A lot of early discussion around AI in technical tooling focused on code generation.</p>
+<p>That made sense. It was easy to demonstrate and easy to understand. Could it write functions? Could it scaffold projects? Could it save time on boilerplate? Those were useful starting points, but they were also narrow.</p>
+<p>What stood out at Build was how much broader the scope has become. AI is being woven into more parts of the workflow, including:</p>
+<ul>
+<li>Drafting infrastructure definitions.</li>
+<li>Assisting with troubleshooting paths.</li>
+<li>Navigating APIs and service capabilities.</li>
+<li>Accelerating repetitive operational tasks.</li>
+<li>Acting as a layer between human intent and platform execution.</li>
+</ul>
+<p>That is a bigger story than just writing code faster.</p>
+<p>Once AI starts influencing how infrastructure is described, how services are interrogated, and how issues are diagnosed, it becomes part of the operational surface area. That means the cost of getting it wrong becomes more meaningful too.</p>
+<h2 id="developer-tooling-and-operator-tooling-are-now-deeply-entangled">Developer tooling and operator tooling are now deeply entangled</h2>
+<p>One of the patterns I kept noticing during and after Build was how difficult it has become to draw a clean line between developer tooling and infrastructure tooling.</p>
+<p>That line was always blurrier than people admitted, but it now feels especially outdated.</p>
+<p>You can see it in the way source control, deployment systems, IaC, APIs, cloud management, and platform workflows increasingly feed one another. The same person may move from a repository to a pipeline to a control plane to an identity boundary in one block of work. The roles are still distinct in some organizations, but the tooling is converging.</p>
+<p>That is one reason events like Build matter to me even when the brand surface looks developer-heavy. A lot of what appears there now becomes part of the daily experience of infrastructure and platform teams very quickly.</p>
+<p>If you work in PowerShell, Azure, hybrid operations, or automation enablement, this is not somebody else&rsquo;s lane anymore. It is your lane too.</p>
+<h2 id="more-composability-means-more-design-responsibility">More composability means more design responsibility</h2>
+<p>Another major theme for me was how composable the modern tooling model has become.</p>
+<p>Instead of one giant monolithic experience, the pattern increasingly looks like many smaller layers working together: APIs, agents, service-specific tooling, templates, prompts, workflows, and orchestration logic. That flexibility is powerful, but it also changes where responsibility lives.</p>
+<p>A more composable toolchain means more decisions have to be made well:</p>
+<ul>
+<li>Where should trust live?</li>
+<li>Which outputs need review?</li>
+<li>What happens when the generated result is plausible but wrong?</li>
+<li>How much abstraction is too much for the task at hand?</li>
+</ul>
+<p>This is where experienced practitioners still matter a lot. AI may help reduce friction, but it does not eliminate the need for technical judgment. If anything, the more quickly you can get a first answer, the more important it becomes to know whether that answer should be trusted.</p>
+<h2 id="what-i-am-taking-forward-from-build">What I am taking forward from Build</h2>
+<p>The biggest thing I am carrying forward from Build 2025 is not a desire to use AI everywhere. It is a stronger sense of where AI seems to fit best.</p>
+<p>The themes I want to keep leaning into are:</p>
+<ul>
+<li>Use AI where it removes real friction.</li>
+<li>Stay close to the APIs and platform behavior underneath the abstraction.</li>
+<li>Keep improving fluency across code, infrastructure, and operations.</li>
+<li>Avoid confusing convenience with understanding.</li>
+</ul>
+<p>That last point matters the most to me. The tools are clearly becoming more capable, but the environments we run are also becoming more interconnected and less forgiving. That means human responsibility is not disappearing. It is shifting upward.</p>
+<p>Build 2025 reinforced something I had already started feeling: the strongest technical advantage now is not just depth in one tool. It is the ability to move across layers, from code to infrastructure to operations, without losing the practical sense of what will actually hold up in production.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

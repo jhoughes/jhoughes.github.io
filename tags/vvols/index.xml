@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VVols on FullStackGeek</title>
+    <link>http://localhost:1313/tags/vvols/</link>
+    <description>Recent content in VVols on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vvols/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 2 - vVols</title>
+      <link>http://localhost:1313/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-aws/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-aws/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-2---vvols&#34;&gt;Migrating to Cloud and Running Hybrid: Part 2 - vVols&lt;/h1&gt;&#xA;&lt;p&gt;Continuing directly from our last blog post, let&amp;rsquo;s jump in if we need to get to a lower level than VM disks within a hypervisor.&lt;/p&gt;&#xA;&lt;p&gt;For our second post in the series, we will look at some of the core functionality of Pure Storage which will be used to help any customer migrate workloads, and I am talking about volume management and replication. For many customers that are considering moving VMware workloads to any new platform, one of the easiest ways to be successful with a replatform for any workloads is to separate the data that needs to move platforms from the core operating system.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

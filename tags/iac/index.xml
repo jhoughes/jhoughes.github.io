@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IaC on FullStackGeek</title>
-    <link>https://www.fullstackgeek.net/tags/iac/</link>
+    <link>http://localhost:1313/tags/iac/</link>
     <description>Recent content in IaC on FullStackGeek</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Aug 2022 14:13:21 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/iac/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/iac/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Automating the Entire Stack with FlashStack: Part 1 - From Validated Design to Real World Use</title>
-      <link>https://www.fullstackgeek.net/2022/08/04/automating-the-entire-stack-with-flashstack-1-from-validated-design-to-real-world-use/</link>
-      <pubDate>Thu, 04 Aug 2022 14:13:21 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2022/08/04/automating-the-entire-stack-with-flashstack-1-from-validated-design-to-real-world-use/</guid>
-      <description>Technologies like virtualization, containers, and deployment automation should simplify work around IT operations and enable them to provide for the constantly changing needs of their organizations. As work to manage operations on-prem and in the cloud becomes increasingly challenging at scale, empowering IT teams and developers to consume resources more easily becomes a critical need. Infrastructure as Code (IaC) is a primary means to simplify these functions. It has become a significant driver for simplifying deployment efforts for infrastructure teams in the past few years and easing the overhead of managing environments at scale.</description>
+      <title>From Build to Reality: Automation After the Demos</title>
+      <link>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</guid>
+      <description>&lt;p&gt;A few weeks after Build 2025, the event energy starts to cool down, and that is usually when the most useful reflection begins.&lt;/p&gt;&#xA;&lt;p&gt;That post-event window matters to me because it creates enough distance to sort excitement from lasting value. During Build itself, everything arrives at once. The message is fast, the demos are polished, and the future always looks clean. A little later, the better questions start to emerge. What is actually going to change the way I work? Which ideas hold up outside the keynote frame? What survives contact with real environments?&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

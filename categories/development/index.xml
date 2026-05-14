@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/development/</link>
+    <description>Recent content in Development on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polyglot Notebooks Deprecation: When a Tool Becomes Part of How You Think</title>
+      <link>https://www.fullstackgeek.net/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</guid>
+      <description>&lt;p&gt;This one landed closer to home than a lot of technical announcements do.&lt;/p&gt;&#xA;&lt;p&gt;The deprecation of the Polyglot Notebooks extension in VS Code was not just a tooling update in the abstract. It disrupted a workflow I had actually come to rely on. That made it more than interesting news. It made it a practical problem.&lt;/p&gt;&#xA;&lt;p&gt;There is a particular kind of frustration that comes with losing a tool that had quietly become part of how you think. Not just part of how you type, but part of how you explore ideas, test assumptions, document behavior, and move from experiment to understanding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build 2025: AI and the Operator Workflow</title>
+      <link>https://www.fullstackgeek.net/2025/05/25/build-2025-ai-and-the-operator-workflow/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/05/25/build-2025-ai-and-the-operator-workflow/</guid>
+      <description>&lt;p&gt;I spent a fair amount of time after Build 2025 going back through announcements, demos, follow-up commentary, and the broader reaction across the technical community, and one thing became very clear to me: AI is no longer being positioned as a side feature. It is being treated as part of the expected workflow.&lt;/p&gt;&#xA;&lt;p&gt;That shift matters more than the headlines by themselves.&lt;/p&gt;&#xA;&lt;p&gt;For a while, AI in technical tooling felt like something extra. Interesting, sometimes helpful, occasionally impressive, but still separate from the default path of getting work done. Build 2025 felt different. The framing was much closer to, &amp;ldquo;This is how work is starting to happen now,&amp;rdquo; especially across development, automation, infrastructure definition, and operational assistance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

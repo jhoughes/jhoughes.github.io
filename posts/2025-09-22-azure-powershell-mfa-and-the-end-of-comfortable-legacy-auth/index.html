@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.160.1">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Azure PowerShell, MFA, and the End of Comfortable Legacy Auth &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Azure PowerShell, MFA, and the End of Comfortable Legacy Auth</h1>
+  <time datetime=2025-09-22T00:00:00Z class="post-date">Mon, Sep 22, 2025</time>
+  <p>Every now and then, a platform change comes along that forces you to confront habits you have been carrying for longer than you should have.</p>
+<p>The Azure PowerShell MFA change was one of those moments for me.</p>
+<p>It was not the kind of thing you can politely note and then postpone thinking about forever. It surfaced the places where older automation assumptions had been left in place because they were convenient and familiar. Once those assumptions met a more modern identity model, the cracks were suddenly much easier to see.</p>
+<p>That is part of what made this change so useful. It was disruptive, yes, but it was also clarifying.</p>
+<h2 id="the-first-sign-was-not-theoretical-at-all">The first sign was not theoretical at all</h2>
+<p>The first sign that this mattered was simple: scripts started breaking.</p>
+<p>That is usually how these shifts become real. The impact is not in the announcement itself. It is in the quiet automation that has been running in the background for months or years suddenly demanding attention. Scheduled jobs, service tasks, integration points, runbooks, and glue code all start reminding you how much older identity assumptions were embedded into everyday operations.</p>
+<p>That is uncomfortable, but it is also revealing. It shows exactly where the hidden dependencies are.</p>
+<h2 id="the-real-problem-was-the-old-model">The real problem was the old model</h2>
+<p>What this exposed was not just a new MFA requirement. It exposed how much automation had been leaning on older patterns such as username and password combinations, stored credentials, and broad assumptions about non-interactive access.</p>
+<p>Those patterns feel convenient for a long time because they work quietly. The problem is that they create the illusion of durability. They are stable right up until the platform makes it clear that they are not.</p>
+<p>That is not unique to Azure PowerShell. It is a broader lesson about automation design. The more your scripts assume a legacy identity model, the more brittle they become when the security model evolves.</p>
+<p>In that sense, the breaking change is not the real issue. The real issue is that the automation was depending on a comfortingly outdated pattern in the first place.</p>
+<h2 id="the-better-path-is-clearly-identity-first">The better path is clearly identity-first</h2>
+<p>The long-term direction here is not especially ambiguous.</p>
+<p>Managed identities, service principals, token-based access, and cleaner role assignment models are simply better foundations for modern automation. They align more naturally with platform security expectations and reduce the secret-handling burden that older scripts often normalize.</p>
+<p>The catch, of course, is that moving to a better model still requires work. There is no shortcut around redesigning automation that was built on different assumptions. The migration can touch authentication flow, role scoping, dependency handling, and the way workloads are triggered.</p>
+<p>But the effort is worth it because it moves the automation from &ldquo;works for now&rdquo; toward &ldquo;designed for the environment it actually lives in.&rdquo;</p>
+<h2 id="what-i-changed-in-response">What I changed in response</h2>
+<p>I took this as a good excuse to clean up older patterns rather than merely patch them.</p>
+<p>That meant:</p>
+<ul>
+<li>Replacing legacy auth models where possible.</li>
+<li>Moving toward managed identities in the places that supported them.</li>
+<li>Reworking scripts to use token-aware patterns.</li>
+<li>Reducing reliance on stored credentials and special-case exceptions.</li>
+</ul>
+<p>None of that is especially glamorous work. In fact, some of it is downright tedious. But it is the kind of maintenance that makes automation healthier in the long run.</p>
+<h2 id="why-this-matters-beyond-one-breaking-change">Why this matters beyond one breaking change</h2>
+<p>What I keep coming back to is that security-driven platform changes are not just operational inconveniences. They are forcing functions.</p>
+<p>They expose hidden technical debt. They push teams away from convenience-based design and toward more durable patterns. They make it harder to ignore the gap between what still works and what still makes sense.</p>
+<p>That is why I think this change was worth writing about. Not because it was pleasant, but because it made the cost of old habits visible.</p>
+<p>The transition was not painless, but the underlying direction is the right one. And in the long run, automation that is designed around stronger identity patterns is not just more compliant. It is more resilient.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

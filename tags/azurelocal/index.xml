@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzureLocal on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/azurelocal/</link>
+    <description>Recent content in AzureLocal on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/azurelocal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Local and Windows Server 2025: Hybrid by Design</title>
+      <link>https://www.fullstackgeek.net/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</guid>
+      <description>&lt;p&gt;After a few weeks of Summit conversations, follow-up reading, and customer discussions, I found myself rethinking how I describe hybrid infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, it was easy to talk about hybrid as a transition state. It was the thing between the old model and the new model. It was the bridge from where organizations had been to where they were assumed to be heading.&lt;/p&gt;&#xA;&lt;p&gt;I do not think that framing is as useful anymore.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

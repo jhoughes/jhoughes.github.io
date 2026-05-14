@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ignite on FullStackGeek</title>
+    <link>http://localhost:1313/tags/ignite/</link>
+    <description>Recent content in Ignite on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ignite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignite 2025: What Matters After the Keynotes</title>
+      <link>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</guid>
+      <description>&lt;p&gt;A few weeks after Ignite 2025, the event energy starts to cool off, and that is usually when the more useful questions begin.&lt;/p&gt;&#xA;&lt;p&gt;During the event itself, the pace is too fast to process everything well. New features, product updates, big-picture messaging, and polished demos all arrive in a flood. It is easy to come away with a strong sense of momentum, but momentum is not the same thing as clarity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ignite 2025: AI, Agents, and Operational Trust</title>
+      <link>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</guid>
+      <description>&lt;p&gt;Ignite 2025 felt different to me, and not because of one giant announcement.&lt;/p&gt;&#xA;&lt;p&gt;What made it feel different was the consistency of the message across sessions, demos, and follow-up discussion. The overall direction seemed clear: systems are moving beyond simple task execution and toward more active participation in how work gets done.&lt;/p&gt;&#xA;&lt;p&gt;That is a subtle shift in wording, but it represents a bigger shift in operating models. For years, automation has largely meant defining a process, triggering it, and collecting the result. What showed up at Ignite felt more like a move toward systems that interpret context, suggest actions, generate workflows, and increasingly behave like participants in the loop rather than passive tools.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

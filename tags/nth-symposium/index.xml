@@ -4,19 +4,16 @@
     <title>Nth Symposium on FullStackGeek</title>
     <link>https://www.fullstackgeek.net/tags/nth-symposium/</link>
     <description>Recent content in Nth Symposium on FullStackGeek</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Oct 2018 15:48:21 +0000</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/nth-symposium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Oct 2018 15:48:21 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/nth-symposium/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HPE Storage Tech Day starting now</title>
       <link>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</link>
       <pubDate>Tue, 09 Oct 2018 15:48:21 +0000</pubDate>
-      
       <guid>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</guid>
-      <description>HPE has invited a great group of bloggers and influencers to join for HPE Storage Tech Day.
-We are here to get a deep dive on all things storage within the HPE ecosystem, including all of the topics seen here:
-You can find out more by watching the livestream, by keeping an eye here for blog posts as a follow-up, or by checking content from anyone within this great list of bloggers:</description>
+      <description>&lt;p&gt;HPE has invited a great group of bloggers and influencers to join for HPE Storage Tech Day.&lt;/p&gt;&#xA;&lt;p&gt;We are here to get a deep dive on all things storage within the HPE ecosystem, including all of the topics seen here:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.fullstackgeek.net/images/HPE-Tech-Day-Agenda.png&#34; alt=&#34;HPE Tech Day Agenda&#34; title=&#34;HPE Tech Day Agenda&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can find out more by watching the &lt;a href=&#34;https://www.youtube.com/watch?v=BtokseXDHX4&#34;&gt;livestream&lt;/a&gt;, by keeping an eye here for blog posts as a follow-up, or by checking content from anyone within this great list of bloggers:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

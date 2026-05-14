@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning</h1>
+  <time datetime=2026-03-01T00:00:00Z class="post-date">Sun, Mar 1, 2026</time>
+  <p>One of the quieter but more important realizations over the last year has been how much platform lifecycle expectations have changed.</p>
+<p>Azure Local 23H2 approaching end of support in April 2026 is a good example of that shift. On the surface, it is simply a lifecycle milestone. In practice, it says a great deal about the pace of modern platform operations and the kind of discipline that pace now requires.</p>
+<p>A lot of traditional infrastructure planning was shaped by long timelines. Deploy the platform, stabilize it, patch it carefully, and then let it run for a long time. That model made sense in a world where change moved more slowly and support windows allowed more slack.</p>
+<p>That is not really the operating model Azure-aligned platforms are asking for now.</p>
+<h2 id="the-old-set-it-and-forget-it-mindset-does-not-fit">The old &ldquo;set it and forget it&rdquo; mindset does not fit</h2>
+<p>With Azure Local and similar platforms, the pace feels much closer to cloud expectations.</p>
+<p>That means:</p>
+<ul>
+<li>Updates arrive more regularly.</li>
+<li>Support windows are tighter.</li>
+<li>Version currency matters more.</li>
+<li>Delay creates more visible operational cost.</li>
+</ul>
+<p>That changes the planning mindset. Lifecycle can no longer be treated as background maintenance that gets attention whenever there is spare time. It has to be part of the active operating model.</p>
+<p>This is not just a scheduling issue. It changes what good platform design looks like from the beginning.</p>
+<h2 id="lifecycle-now-has-to-be-part-of-initial-design">Lifecycle now has to be part of initial design</h2>
+<p>What I find most interesting is that lifecycle is increasingly something you design for, not just something you react to later.</p>
+<p>That means asking better questions up front:</p>
+<ul>
+<li>How easy will this environment be to update?</li>
+<li>How much manual work is hidden in our current process?</li>
+<li>What assumptions are we making about staying current?</li>
+<li>Which parts of the environment are likely to create friction during upgrades?</li>
+</ul>
+<p>Those questions are not glamorous, but they are exactly the questions that determine whether a platform remains healthy over time. If lifecycle planning is ignored at deployment time, it often reappears later as avoidable operational pain.</p>
+<h2 id="automation-is-what-makes-the-pace-manageable">Automation is what makes the pace manageable</h2>
+<p>This is one of the places where automation stops being a nice extra and becomes essential.</p>
+<p>At this pace, manual lifecycle tracking does not scale well. Teams need ways to:</p>
+<ul>
+<li>Track environment state.</li>
+<li>Validate readiness.</li>
+<li>Detect drift.</li>
+<li>Reduce upgrade friction.</li>
+<li>Make version awareness part of normal operations.</li>
+</ul>
+<p>That does not mean everything becomes fully hands-off. It means the environment should not depend on memory, scattered notes, and spreadsheets to remain healthy. The more the platform behaves like a service, the more the operational model needs to behave like one too.</p>
+<h2 id="what-i-have-been-adjusting-in-response">What I have been adjusting in response</h2>
+<p>This milestone pushed me to think more deliberately about lifecycle as a design characteristic.</p>
+<p>In practical terms, that means:</p>
+<ul>
+<li>Building upgrade paths into the environment from the start.</li>
+<li>Avoiding unnecessary customization that makes servicing harder.</li>
+<li>Keeping the configuration visible and reproducible.</li>
+<li>Treating version currency as part of operational health, not just maintenance hygiene.</li>
+</ul>
+<p>That is a useful mindset shift because it moves lifecycle from something reactive to something planned. It also aligns better with the overall direction of hybrid platforms, where cloud-style expectations increasingly shape how on-prem and edge systems are supposed to be run.</p>
+<h2 id="why-this-milestone-matters-beyond-one-version">Why this milestone matters beyond one version</h2>
+<p>The trade-off of modern platform velocity is straightforward: you get faster innovation, but you inherit more responsibility to keep up.</p>
+<p>That trade-off is often worth it. Better integration, faster iteration, and a more unified operating model all bring real benefits. But those benefits only hold if the operational side can keep pace with the servicing model.</p>
+<p>That is why Azure Local 23H2 reaching end of support feels worth calling out. It is not just a reminder about one version. It is a signal about the kind of lifecycle discipline hybrid platforms now require.</p>
+<p>For anyone working in this space, that is the real lesson. Modern infrastructure does not just ask for deployment skill. It asks for continuous operational attention. And the teams that treat lifecycle as part of design will handle that reality much better than the ones still hoping for long periods of stillness.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

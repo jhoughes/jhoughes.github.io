@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MVP on FullStackGeek</title>
+    <link>http://localhost:1313/tags/mvp/</link>
+    <description>Recent content in MVP on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mvp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MVP Summit 2025: Direction, Practice, and the Work Between</title>
+      <link>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</guid>
+      <description>&lt;p&gt;I came back from MVP Summit 2025 with the same feeling I usually have after the best technical events: the official sessions mattered, but the real value showed up in the conversations around them.&lt;/p&gt;&#xA;&lt;p&gt;The hallway discussions, the quick chats after a session, and the moments where someone says, &amp;ldquo;here is what we are really seeing,&amp;rdquo; are usually the parts that stay with me the longest. That is where the pattern becomes easier to see. It is also where marketing language tends to fall away and practical direction becomes clearer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

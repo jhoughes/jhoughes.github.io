@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hybrid on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/hybrid/</link>
+    <description>Recent content in Hybrid on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/hybrid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning</title>
+      <link>https://www.fullstackgeek.net/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</guid>
+      <description>&lt;p&gt;One of the quieter but more important realizations over the last year has been how much platform lifecycle expectations have changed.&lt;/p&gt;&#xA;&lt;p&gt;Azure Local 23H2 approaching end of support in April 2026 is a good example of that shift. On the surface, it is simply a lifecycle milestone. In practice, it says a great deal about the pace of modern platform operations and the kind of discipline that pace now requires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Local and Windows Server 2025: Hybrid by Design</title>
+      <link>https://www.fullstackgeek.net/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</guid>
+      <description>&lt;p&gt;After a few weeks of Summit conversations, follow-up reading, and customer discussions, I found myself rethinking how I describe hybrid infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, it was easy to talk about hybrid as a transition state. It was the thing between the old model and the new model. It was the bridge from where organizations had been to where they were assumed to be heading.&lt;/p&gt;&#xA;&lt;p&gt;I do not think that framing is as useful anymore.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters</title>
+      <link>https://www.fullstackgeek.net/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-1---why-hybrid-matters&#34;&gt;Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters&lt;/h1&gt;&#xA;&lt;p&gt;These days, businesses are realizing that sticking to just one cloud or one type of environment does not cut it anymore. The reality is, most organizations need the flexibility to run workloads wherever it makes the most sense - whether that is in their own on-premises setup, in the cloud, or a mix of both.&lt;/p&gt;&#xA;&lt;p&gt;A hybrid approach can be a game-changer, letting companies keep critical data or legacy systems on-prem while still taking advantage of the scalability and innovation that public cloud platforms offer. But it does not stop there. As things change - whether it is costs, technical needs, or capacity - workloads often need to shift between clouds.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

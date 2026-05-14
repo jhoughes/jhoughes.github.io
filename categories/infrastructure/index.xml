@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infrastructure on FullStackGeek</title>
+    <link>http://localhost:1313/categories/infrastructure/</link>
+    <description>Recent content in Infrastructure on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning</title>
+      <link>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</guid>
+      <description>&lt;p&gt;One of the quieter but more important realizations over the last year has been how much platform lifecycle expectations have changed.&lt;/p&gt;&#xA;&lt;p&gt;Azure Local 23H2 approaching end of support in April 2026 is a good example of that shift. On the surface, it is simply a lifecycle milestone. In practice, it says a great deal about the pace of modern platform operations and the kind of discipline that pace now requires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows Server 2025 and Hyper-V: The Quiet Foundation Still Matters</title>
+      <link>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</guid>
+      <description>&lt;p&gt;There is a lot of industry attention on cloud-native everything, AI everything, and whatever the newest operational abstraction happens to be.&lt;/p&gt;&#xA;&lt;p&gt;Meanwhile, in a large number of real environments, Hyper-V is still doing a huge amount of important work.&lt;/p&gt;&#xA;&lt;p&gt;That is one reason I wanted to spend a little more time thinking about Windows Server 2025 and Hyper-V together. Neither one dominates the loudest conversations in the way some newer technologies do, but both still matter deeply in the kind of infrastructure that actually runs businesses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Local and Windows Server 2025: Hybrid by Design</title>
+      <link>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</guid>
+      <description>&lt;p&gt;After a few weeks of Summit conversations, follow-up reading, and customer discussions, I found myself rethinking how I describe hybrid infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, it was easy to talk about hybrid as a transition state. It was the thing between the old model and the new model. It was the bridge from where organizations had been to where they were assumed to be heading.&lt;/p&gt;&#xA;&lt;p&gt;I do not think that framing is as useful anymore.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters</title>
+      <link>http://localhost:1313/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-1---why-hybrid-matters&#34;&gt;Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters&lt;/h1&gt;&#xA;&lt;p&gt;These days, businesses are realizing that sticking to just one cloud or one type of environment does not cut it anymore. The reality is, most organizations need the flexibility to run workloads wherever it makes the most sense - whether that is in their own on-premises setup, in the cloud, or a mix of both.&lt;/p&gt;&#xA;&lt;p&gt;A hybrid approach can be a game-changer, letting companies keep critical data or legacy systems on-prem while still taking advantage of the scalability and innovation that public cloud platforms offer. But it does not stop there. As things change - whether it is costs, technical needs, or capacity - workloads often need to shift between clouds.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First impressions on CWOM – a less green Turbonomic</title>
+      <link>http://localhost:1313/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</guid>
+      <description>&lt;p&gt;Early this year, there were talks of Cisco acquiring Turbonomic. A few months back this became a partnership to release Cisco Workload Optimization Manager (CWOM). This is one of the newest products included in the Cisco ONE Enterprise Cloud Suite.&lt;/p&gt;&#xA;&lt;p&gt;Cisco Workload Optimization Manager is now in its 1.1.3 release. Starting with this release, you can target UCS Director as an orchestration target. I would love to leverage this, I now need to get UCS Director back into the environment).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Potential upgrade issues going to Cisco UCS Manager 3.2(1d)</title>
+      <link>http://localhost:1313/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</guid>
+      <description>&lt;p&gt;We recently upgraded a few of our UCS domains from 3.1(1h) and 3.1(2b) up to 3.2(1d) and we had issues with a few IO modules hanging for up to 2 hours with trying to activate the firmware.&lt;/p&gt;&#xA;&lt;p&gt;The backup version was updated with no issues, but then the activation stalled through anywhere from 16 to 30 tries before failing.&lt;/p&gt;&#xA;&lt;p&gt;We decided to leave most of the faulted IOMs alone to see what they would do, but after 2 hours we decided to attempt a reset of one IO module, and that just made it angry&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

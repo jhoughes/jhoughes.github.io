@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Migration on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/migration/</link>
+    <description>Recent content in Migration on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/categories/migration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</title>
+      <link>https://www.fullstackgeek.net/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-5---azure--avs&#34;&gt;Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp;amp; AVS&lt;/h1&gt;&#xA;&lt;p&gt;For our final technical post in the series, we will look at Microsoft Azure as the public cloud to target for migrating workloads. Similar to our previous post, we will look at some of the options that customers have available to them for migrating on-prem workloads to Azure - we will mention AVS later in the post, but that one is almost cheating.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 4 - AWS</title>
+      <link>https://www.fullstackgeek.net/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</link>
+      <pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-4---aws&#34;&gt;Migrating to Cloud and Running Hybrid: Part 4 - AWS&lt;/h1&gt;&#xA;&lt;p&gt;For our second technical post in the series, we will look at Amazon Web Services (AWS) as the public cloud to target for migrating workloads. We are going to look at some of the options that customers have available to them for migrating on-prem workloads to AWS. We already have our data handled through the methods we discussed in the last blog post, so now we are talking about getting the workloads themselves up to the cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 3 - Guest OS &amp; Replication</title>
+      <link>https://www.fullstackgeek.net/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-3---guest-os--replication&#34;&gt;Migrating to Cloud and Running Hybrid: Part 3 - Guest OS &amp;amp; Replication&lt;/h1&gt;&#xA;&lt;p&gt;If the environment that is being moved to a new platform is not VMware-based, or if vVols are not an option for some reason, then we move to the next layer down and look at performing data migrations from within an operating system. This is performed by enabling and configuring iSCSI within Windows or Linux, creating a host object in the FlashArray with the IQN initiator for the iSCSI initiator, and then mapping a volume to this new host object on the FlashArray. Once the device is visible within the operating system, the raw device should be formatted with the appropriate file system option for the intended usage, and this newly formatted device can then be used for data migration. At this point, we need to discuss a few options and considerations which will be different for Windows versus Linux operating systems. Always have proper planning and backups in place prior to data conversions or migrations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

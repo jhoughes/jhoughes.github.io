@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyper-V on FullStackGeek</title>
+    <link>http://localhost:1313/tags/hyper-v/</link>
+    <description>Recent content in Hyper-V on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hyper-v/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2025 and Hyper-V: The Quiet Foundation Still Matters</title>
+      <link>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</guid>
+      <description>&lt;p&gt;There is a lot of industry attention on cloud-native everything, AI everything, and whatever the newest operational abstraction happens to be.&lt;/p&gt;&#xA;&lt;p&gt;Meanwhile, in a large number of real environments, Hyper-V is still doing a huge amount of important work.&lt;/p&gt;&#xA;&lt;p&gt;That is one reason I wanted to spend a little more time thinking about Windows Server 2025 and Hyper-V together. Neither one dominates the loudest conversations in the way some newer technologies do, but both still matter deeply in the kind of infrastructure that actually runs businesses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Local and Windows Server 2025: Hybrid by Design</title>
+      <link>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</guid>
+      <description>&lt;p&gt;After a few weeks of Summit conversations, follow-up reading, and customer discussions, I found myself rethinking how I describe hybrid infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, it was easy to talk about hybrid as a transition state. It was the thing between the old model and the new model. It was the bridge from where organizations had been to where they were assumed to be heading.&lt;/p&gt;&#xA;&lt;p&gt;I do not think that framing is as useful anymore.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

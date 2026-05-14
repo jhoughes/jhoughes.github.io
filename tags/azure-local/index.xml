@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Local on FullStackGeek</title>
+    <link>http://localhost:1313/tags/azure-local/</link>
+    <description>Recent content in Azure Local on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azure-local/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning</title>
+      <link>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</guid>
+      <description>&lt;p&gt;One of the quieter but more important realizations over the last year has been how much platform lifecycle expectations have changed.&lt;/p&gt;&#xA;&lt;p&gt;Azure Local 23H2 approaching end of support in April 2026 is a good example of that shift. On the surface, it is simply a lifecycle milestone. In practice, it says a great deal about the pace of modern platform operations and the kind of discipline that pace now requires.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Local and Windows Server 2025: Hybrid by Design</title>
+      <link>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</guid>
+      <description>&lt;p&gt;After a few weeks of Summit conversations, follow-up reading, and customer discussions, I found myself rethinking how I describe hybrid infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, it was easy to talk about hybrid as a transition state. It was the thing between the old model and the new model. It was the bridge from where organizations had been to where they were assumed to be heading.&lt;/p&gt;&#xA;&lt;p&gt;I do not think that framing is as useful anymore.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MVP Summit 2025: Direction, Practice, and the Work Between</title>
+      <link>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</guid>
+      <description>&lt;p&gt;I came back from MVP Summit 2025 with the same feeling I usually have after the best technical events: the official sessions mattered, but the real value showed up in the conversations around them.&lt;/p&gt;&#xA;&lt;p&gt;The hallway discussions, the quick chats after a session, and the moments where someone says, &amp;ldquo;here is what we are really seeing,&amp;rdquo; are usually the parts that stay with me the longest. That is where the pattern becomes easier to see. It is also where marketing language tends to fall away and practical direction becomes clearer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

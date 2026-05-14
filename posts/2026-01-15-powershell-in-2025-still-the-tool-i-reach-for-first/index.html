@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.160.1">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PowerShell in 2025: Still the Tool I Reach for First &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>PowerShell in 2025: Still the Tool I Reach for First</h1>
+  <time datetime=2026-01-15T00:00:00Z class="post-date">Thu, Jan 15, 2026</time>
+  <p>Looking back on 2025, I ended up using a lot of different tools.</p>
+<p>That is not unusual anymore. The toolchain around cloud, hybrid infrastructure, automation, and operations is broader than it used to be. There is more direct API work, more CLI usage, more declarative infrastructure, more Python in certain corners, and more AI-assisted help showing up across the workflow.</p>
+<p>And yet, when I look honestly at the work I actually did, PowerShell is still the tool I reached for first more often than anything else.</p>
+<p>That does not mean I think PowerShell should be used for everything. It means it continues to solve the kinds of practical problems that show up constantly in real environments.</p>
+<h2 id="it-no-longer-has-to-be-the-whole-story">It no longer has to be the whole story</h2>
+<p>One reason PowerShell has held up so well is that it no longer has to pretend to be the only tool in the story.</p>
+<p>In practice, I use it most often in places where systems do not naturally fit together. It is the thing I reach for when I need to:</p>
+<ul>
+<li>Interrogate platform state quickly.</li>
+<li>Reshape API output into something useful.</li>
+<li>Bridge work across services.</li>
+<li>Add a procedural layer where declarative tooling stops short.</li>
+<li>Move from question to action without a lot of setup overhead.</li>
+</ul>
+<p>That connective role is not flashy, but it is extremely valuable. Most real environments are not elegant enough to be managed through a single clean abstraction. There is usually some awkward edge, some mismatch, or some operational gap that still needs to be handled directly. PowerShell keeps proving useful in that exact space.</p>
+<h2 id="my-use-of-powershell-has-changed">My use of PowerShell has changed</h2>
+<p>What has changed for me is not whether I use PowerShell. It is how I use it.</p>
+<p>I write fewer massive scripts that try to own an entire workflow from end to end. More often, I write smaller pieces:</p>
+<ul>
+<li>Focused functions.</li>
+<li>Reusable modules.</li>
+<li>Utility code that reshapes data or state.</li>
+<li>Thin orchestration layers that sit alongside APIs and templates.</li>
+</ul>
+<p>That approach feels healthier. It makes the code easier to reason about, easier to test, and easier to adapt when something around it changes. It also fits better with how modern automation is structured. PowerShell increasingly works best when it is allowed to do what it does well without needing to be the entire platform.</p>
+<h2 id="the-surrounding-ecosystem-still-matters">The surrounding ecosystem still matters</h2>
+<p>Another reason PowerShell remains useful is that the ecosystem around it continues to matter.</p>
+<p>Documentation quality, community guidance, module maintenance, examples, release notes, and practical discussion all shape how usable a tool remains in the real world. A mature tool is not just about syntax. It is about whether people can learn it, troubleshoot it, and trust it.</p>
+<p>That is part of what I still appreciate about the PowerShell space. The community tends to stay practical. It is usually less interested in novelty for novelty&rsquo;s sake and more interested in solving real problems clearly.</p>
+<p>That matters when a tool has been around long enough that it could easily become stale. PowerShell has not stayed useful by standing still. It has stayed useful by continuing to fit into the places where actual work still happens.</p>
+<h2 id="why-it-still-works-for-me">Why it still works for me</h2>
+<p>At the end of the day, PowerShell still hits a balance that is hard to replace.</p>
+<p>It is:</p>
+<ul>
+<li>Close enough to the system to be powerful.</li>
+<li>High-level enough to move quickly.</li>
+<li>Flexible enough to adapt when the environment gets messy.</li>
+<li>Familiar enough that I can go from idea to action with very little friction.</li>
+</ul>
+<p>That combination still matters a great deal.</p>
+<p>I am not interested in forcing PowerShell into every problem space, and I do not think that is the right goal anyway. What I care about is using it where it continues to provide leverage. In the kind of work I do, that still happens all the time.</p>
+<h2 id="what-i-am-taking-into-2026">What I am taking into 2026</h2>
+<p>The main thing I am carrying into 2026 is not a need to defend PowerShell. It does not need defending.</p>
+<p>What it needs is continued thoughtful use:</p>
+<ul>
+<li>Stay current.</li>
+<li>Write cleaner code.</li>
+<li>Use it where it improves clarity and speed.</li>
+<li>Keep integrating it well with APIs, cloud services, and modern workflows.</li>
+</ul>
+<p>If anything, 2025 reinforced that PowerShell is still one of the best tools for living in the messy middle between systems. And if you spend long enough in infrastructure and automation, you eventually realize that the messy middle is where most of the real work lives.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.160.1">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</h1>
+  <time datetime=2024-10-21T00:00:00Z class="post-date">Mon, Oct 21, 2024</time>
+  <h1 id="migrating-to-cloud-and-running-hybrid-part-5---azure--avs">Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</h1>
+<p>For our final technical post in the series, we will look at Microsoft Azure as the public cloud to target for migrating workloads. Similar to our previous post, we will look at some of the options that customers have available to them for migrating on-prem workloads to Azure - we will mention AVS later in the post, but that one is almost cheating.</p>
+<p>The first tool that we have available to us for moving workloads to Azure is called Azure Migrate, and this tool can help us to quickly evaluate an existing environment to configure our plans to migrate to Azure. This tool can perform discovery of both VMware and Hyper-V virtual environments, along with physical servers and other cloud instances.</p>
+<p>Once these discoveries for each server type are performed, with the Azure portal you move to the assessment phase. The as-is assessment will use the server configuration to recommend Azure VMs based on the on-prem workload size. The performance-based assessment will use the dynamic performance data that was collected to recommend Azure VMs based on the data for CPU and memory utilization.</p>
+<p>After these assessments are completed, the planning for the actual migration to Azure can begin based on an agent-based or agentless replication.</p>
+<p>For the second option that Azure provides, Azure Site Recovery (ASR), you gain the ability to migrate and replicate workloads between your on-prem environment and Azure. Azure Site Recovery will handle the continuous replication of the boot volumes of your on-prem workloads to Azure.</p>
+<p>The initial configuration of ASR requires that some Azure resources are provisioned to be used, primarily a storage account, Recovery Service Vault, and an Azure VNet/subnet. Once these configuration steps are completed, you can download the virtual appliance for the planning and configuration of disaster recovery to Azure for the following environments: VMware vSphere, Hyper-V, or physical servers.</p>
+<p>For customers that are planning to run in a hybrid mode between on-prem and public cloud, you also need to give some consideration to infrastructure as code and automation. If you are able to completely separate the provisioning of your environment to be automated and even version controlled, your deployment methods may differ for each environment, but then your infrastructure becomes both composable and disposable.</p>
+<p>Finally, we will quickly discuss your options with Azure VMware Solution (AVS), but these are not completely different than looking at a migration between vCenter environments across datacenters. VMware HCX is essentially the mainstream tool provided and used for migrating workloads across both datacenters and clouds, and HCX Enterprise is included with AVS for no additional cost.</p>
+<p>This means that with some basic configuration of NSX or a vSphere Distributed Switch, the HCX Network Extension can be put in place to easily facilitate migrations of vSphere VMs between your on-prem and AVS environments.</p>
+<p>For now, this should be a feasible overview of the options for migrating to and from Azure and AVS, and we will wrap this series for now. I hope this helps you to understand what planning and considerations you should make for a cloud migration, or running in a hybrid model, and what options are available for you to research for your own needs and requirements.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

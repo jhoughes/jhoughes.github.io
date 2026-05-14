@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on FullStackGeek</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in AI on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignite 2025: AI, Agents, and Operational Trust</title>
+      <link>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</guid>
+      <description>&lt;p&gt;Ignite 2025 felt different to me, and not because of one giant announcement.&lt;/p&gt;&#xA;&lt;p&gt;What made it feel different was the consistency of the message across sessions, demos, and follow-up discussion. The overall direction seemed clear: systems are moving beyond simple task execution and toward more active participation in how work gets done.&lt;/p&gt;&#xA;&lt;p&gt;That is a subtle shift in wording, but it represents a bigger shift in operating models. For years, automation has largely meant defining a process, triggering it, and collecting the result. What showed up at Ignite felt more like a move toward systems that interpret context, suggest actions, generate workflows, and increasingly behave like participants in the loop rather than passive tools.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build 2025: AI and the Operator Workflow</title>
+      <link>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</guid>
+      <description>&lt;p&gt;I spent a fair amount of time after Build 2025 going back through announcements, demos, follow-up commentary, and the broader reaction across the technical community, and one thing became very clear to me: AI is no longer being positioned as a side feature. It is being treated as part of the expected workflow.&lt;/p&gt;&#xA;&lt;p&gt;That shift matters more than the headlines by themselves.&lt;/p&gt;&#xA;&lt;p&gt;For a while, AI in technical tooling felt like something extra. Interesting, sometimes helpful, occasionally impressive, but still separate from the default path of getting work done. Build 2025 felt different. The framing was much closer to, &amp;ldquo;This is how work is starting to happen now,&amp;rdquo; especially across development, automation, infrastructure definition, and operational assistance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

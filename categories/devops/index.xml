@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/devops/</link>
+    <description>Recent content in DevOps on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell &#43; DevOps Summit 2025: Where Reality Wins</title>
+      <link>https://www.fullstackgeek.net/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</guid>
+      <description>&lt;p&gt;Coming out of the PowerShell + DevOps Global Summit 2025, I kept circling back to a simple thought: most automation looks great in a demo, but far less of it survives production unchanged.&lt;/p&gt;&#xA;&lt;p&gt;That is not a complaint about demos. Demos are useful. They help people understand what is possible. But real environments do not behave like demos. Authentication changes under you. APIs return something slightly different than expected. Dependencies drift. The script that looked clean in testing becomes awkward six months later when someone else has to maintain it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

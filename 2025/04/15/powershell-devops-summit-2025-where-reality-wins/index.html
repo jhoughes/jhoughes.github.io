@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PowerShell &#43; DevOps Summit 2025: Where Reality Wins &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>PowerShell &#43; DevOps Summit 2025: Where Reality Wins</h1>
+  <time datetime=2025-04-15T00:00:00Z class="post-date">Tue, Apr 15, 2025</time>
+  <p>Coming out of the PowerShell + DevOps Global Summit 2025, I kept circling back to a simple thought: most automation looks great in a demo, but far less of it survives production unchanged.</p>
+<p>That is not a complaint about demos. Demos are useful. They help people understand what is possible. But real environments do not behave like demos. Authentication changes under you. APIs return something slightly different than expected. Dependencies drift. The script that looked clean in testing becomes awkward six months later when someone else has to maintain it.</p>
+<p>That tension between theory and reality was everywhere at this year&rsquo;s summit, and honestly, that is what made it useful. The most valuable conversations were not about idealized workflows. They were about what happens after the first successful run.</p>
+<h2 id="good-automation-has-to-survive-the-messy-middle">Good automation has to survive the messy middle</h2>
+<p>The sessions I delivered were shaped by that reality.</p>
+<p>I wanted to focus less on polished perfection and more on the conditions most of us actually work in. What happens when authentication rules shift? What happens when APIs are inconsistent? What happens when a process that worked as a proof of concept turns into something the team depends on every day?</p>
+<p>That is the messy middle of automation, and I think it is where the real engineering happens. Getting a script to work once is useful, but it is not enough. The harder part is making sure the automation can absorb change without becoming a liability.</p>
+<p>A lot of the best conversations I had at the summit came back to that point. People are no longer just excited by the fact that something can be automated. They are more interested in maintainability, reliability, and operational fit. That is a sign of a healthy community. It means the bar is getting higher in the right way.</p>
+<h2 id="apis-are-now-the-center-of-gravity">APIs are now the center of gravity</h2>
+<p>One of the clearest shifts I noticed this year was how naturally people moved between tools.</p>
+<p>PowerShell is still central to a lot of work, but it is rarely the whole story. More often, the pattern looks like this:</p>
+<ul>
+<li>REST APIs for control.</li>
+<li>PowerShell for orchestration.</li>
+<li>JSON as the shared language between systems.</li>
+</ul>
+<p>That combination keeps showing up because it reflects how modern platforms actually work. Most environments are built from services that expose capabilities in slightly different ways, and the work of automation is often about turning those mismatched pieces into something coherent.</p>
+<p>This is exactly where PowerShell still shines. It is fast, expressive, and good at reshaping data into something actionable. It is also pragmatic, which matters more than elegance when the environment is under pressure.</p>
+<p>What felt different at this summit was not that APIs mattered. That has been true for a while. What felt different was how fully accepted that model now is. There is much less attachment to single-tool purity and much more focus on outcomes.</p>
+<h2 id="day-2-still-needs-more-attention">Day 2 still needs more attention</h2>
+<p>If there was one recurring gap that kept surfacing in sessions and conversations, it was Day 2 operations.</p>
+<p>Teams have made a lot of progress on deployment automation. Provisioning and initial configuration are far more mature than they used to be. But once the environment is live, things get harder. Drift starts to appear. State becomes less predictable. Small inconsistencies accumulate. Failures happen in ways that the original workflow did not anticipate.</p>
+<p>That is where a lot of people were focused this year:</p>
+<ul>
+<li>Detecting and managing drift.</li>
+<li>Handling failures automatically without hiding them.</li>
+<li>Keeping systems aligned over time.</li>
+<li>Designing for lifecycle, not just deployment.</li>
+</ul>
+<p>This matters because the cost of automation is not in the first successful run. The cost is in the ongoing obligation to keep it useful. If an automation pattern cannot survive normal platform change, then it is not really reducing work. It is just moving the work to a later date.</p>
+<h2 id="what-i-am-taking-back-into-my-own-work">What I am taking back into my own work</h2>
+<p>Every good event gives me something practical to carry home, and this one did too.</p>
+<p>The themes I am doubling down on are:</p>
+<ul>
+<li>Write automation that assumes change.</li>
+<li>Prefer reusable patterns over one-off scripts.</li>
+<li>Lean into event-driven workflows where they actually improve responsiveness.</li>
+<li>Treat maintainability as part of the design, not as a cleanup task later.</li>
+</ul>
+<p>That last point probably matters most. It is easy to celebrate a script that works. It is harder, and much more valuable, to build automation that another engineer can understand, trust, and extend without feeling like they are stepping into a trap.</p>
+<p>That is what this summit reinforced for me. The future of automation is not just more automation. It is better automation. And better usually means simpler, clearer, and more resilient under real conditions.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Migrate on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/azure-migrate/</link>
+    <description>Recent content in Azure Migrate on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/azure-migrate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</title>
+      <link>https://www.fullstackgeek.net/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-5---azure--avs&#34;&gt;Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp;amp; AVS&lt;/h1&gt;&#xA;&lt;p&gt;For our final technical post in the series, we will look at Microsoft Azure as the public cloud to target for migrating workloads. Similar to our previous post, we will look at some of the options that customers have available to them for migrating on-prem workloads to Azure - we will mention AVS later in the post, but that one is almost cheating.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

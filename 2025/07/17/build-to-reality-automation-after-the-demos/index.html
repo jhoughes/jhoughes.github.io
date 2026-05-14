@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>From Build to Reality: Automation After the Demos &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.fullstackgeek.net/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.fullstackgeek.net/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.fullstackgeek.net/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>From Build to Reality: Automation After the Demos</h1>
+  <time datetime=2025-06-17T00:00:00Z class="post-date">Tue, Jun 17, 2025</time>
+  <p>A few weeks after Build 2025, the event energy starts to cool down, and that is usually when the most useful reflection begins.</p>
+<p>That post-event window matters to me because it creates enough distance to sort excitement from lasting value. During Build itself, everything arrives at once. The message is fast, the demos are polished, and the future always looks clean. A little later, the better questions start to emerge. What is actually going to change the way I work? Which ideas hold up outside the keynote frame? What survives contact with real environments?</p>
+<p>Sitting with Build for a bit made a few things clearer for me, especially around IaC, AI-assisted workflows, and the continued role PowerShell plays in tying everything together.</p>
+<h2 id="iac-now-feels-like-the-default-operating-assumption">IaC now feels like the default operating assumption</h2>
+<p>Infrastructure as Code is not new, but the tone around it has changed.</p>
+<p>It no longer feels like a best practice that still needs to be argued for. More and more, it feels like the expected baseline. The question is no longer, &ldquo;Should we use IaC?&rdquo; The more revealing question now is, &ldquo;Why are we still doing this manually?&rdquo;</p>
+<p>That shift matters because it changes what maturity looks like. Once IaC becomes the assumption, the conversation moves beyond adoption and into quality. The better questions become:</p>
+<ul>
+<li>Is the code readable?</li>
+<li>Is it reusable?</li>
+<li>Does it describe intent clearly?</li>
+<li>Can another engineer maintain it confidently?</li>
+<li>Will it survive platform change without becoming brittle?</li>
+</ul>
+<p>Those are much healthier questions, and they are also harder ones. It is one thing to adopt IaC. It is another thing to make it durable.</p>
+<h2 id="ai-helps-but-it-does-not-own-the-result">AI helps, but it does not own the result</h2>
+<p>Since Build, I have been thinking a lot about the difference between acceleration and accountability.</p>
+<p>There is real value in using AI to draft templates, suggest structure, reduce repetition, and help move through the early stages of a task more quickly. That part is obvious enough now. In the right hands, it can save time and reduce friction.</p>
+<p>But none of that changes the fact that AI does not own the correctness of the outcome. It does not bear the consequences of a flawed deployment, a misunderstood dependency, or an automation pattern that seemed plausible but was operationally wrong.</p>
+<p>That is why validation matters so much. The faster the first draft arrives, the more disciplined the review has to be. Otherwise, speed just becomes a way to produce fragile work more quickly.</p>
+<p>For me, this is the right mental model: AI is useful as an accelerator, not as a substitute for understanding.</p>
+<h2 id="powershell-still-fills-the-gaps-between-systems">PowerShell still fills the gaps between systems</h2>
+<p>Even with more declarative workflows, stronger native cloud tooling, and growing AI assistance, I still keep coming back to PowerShell.</p>
+<p>Not because I think it should be the center of every solution, but because it remains one of the best ways to connect systems that do not line up neatly on their own.</p>
+<p>That connective role keeps showing up in practical work:</p>
+<ul>
+<li>Interrogating platform state quickly.</li>
+<li>Reshaping API output into something useful.</li>
+<li>Bridging a declarative workflow with a procedural step.</li>
+<li>Moving between services that expose similar concepts differently.</li>
+<li>Handling the awkward edges that abstractions often skip.</li>
+</ul>
+<p>That is the role I see PowerShell playing more and more. It is not always the headline tool, but it is often the thing that makes the whole workflow actually work in the real world.</p>
+<h2 id="what-changed-in-my-own-approach">What changed in my own approach</h2>
+<p>The main thing Build changed for me was not direction so much as commitment.</p>
+<p>It pushed me to be more disciplined about a few patterns I was already moving toward:</p>
+<ul>
+<li>Fewer one-off scripts.</li>
+<li>More reusable functions and modules.</li>
+<li>More direct use of APIs.</li>
+<li>More care around making IaC understandable as code, not just functional as deployment output.</li>
+<li>More intentional use of AI as a drafting and acceleration layer rather than a source of truth.</li>
+</ul>
+<p>That feels like the right balance. I do not want automation that is merely fast to create. I want automation that is still understandable, maintainable, and adaptable after the initial urgency is gone.</p>
+<h2 id="what-actually-stuck-after-build">What actually stuck after Build</h2>
+<p>The clearest takeaway for me is that modern tooling is not removing complexity. It is redistributing it.</p>
+<p>Some things really are easier now. It is faster to scaffold ideas, easier to get a first draft, and quicker to connect pieces than it was a few years ago. But the responsibility for judgment, design discipline, and operational awareness has not disappeared. If anything, it matters more because the pace is higher and the abstractions are thicker.</p>
+<p>That is why the weeks after Build often matter more to me than the event itself. Once the noise settles, the pattern becomes easier to see.</p>
+<p>This year, the pattern was clear enough: automation is becoming more declarative, AI is becoming more embedded, and the people who will do best in that world are the ones who can move comfortably between those layers without losing sight of how the systems behave in production.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

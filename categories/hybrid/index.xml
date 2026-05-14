@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hybrid on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/categories/hybrid/</link>
+    <description>Recent content in Hybrid on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/categories/hybrid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters</title>
+      <link>https://www.fullstackgeek.net/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-1---why-hybrid-matters&#34;&gt;Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters&lt;/h1&gt;&#xA;&lt;p&gt;These days, businesses are realizing that sticking to just one cloud or one type of environment does not cut it anymore. The reality is, most organizations need the flexibility to run workloads wherever it makes the most sense - whether that is in their own on-premises setup, in the cloud, or a mix of both.&lt;/p&gt;&#xA;&lt;p&gt;A hybrid approach can be a game-changer, letting companies keep critical data or legacy systems on-prem while still taking advantage of the scalability and innovation that public cloud platforms offer. But it does not stop there. As things change - whether it is costs, technical needs, or capacity - workloads often need to shift between clouds.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

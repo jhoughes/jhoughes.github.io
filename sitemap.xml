@@ -2,196 +2,289 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/categories/azure/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/austinpowershell/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/tags/azure-local/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/austinpowershell/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/automation/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/tags/hybrid-cloud/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/posts/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/categories/infrastructure/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/powershell/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/presentation/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/tags/windows-server-2025/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/uncategorized/</loc>
-    <lastmod>2019-11-27T15:22:17-07:00</lastmod>
+    <loc>http://localhost:1313/tags/polyglot-notebooks/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</loc>
-    <lastmod>2019-11-27T12:57:57-07:00</lastmod>
+    <loc>http://localhost:1313/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/professionaldevelopment/</loc>
-    <lastmod>2019-11-27T12:57:57-07:00</lastmod>
+    <loc>http://localhost:1313/categories/powershell/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/softskills/</loc>
-    <lastmod>2019-11-27T12:57:57-07:00</lastmod>
+    <loc>http://localhost:1313/tags/powershell/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/vmug/</loc>
-    <lastmod>2019-11-27T12:57:57-07:00</lastmod>
+    <loc>http://localhost:1313/tags/vscode/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/vmug/</loc>
-    <lastmod>2019-11-27T12:57:57-07:00</lastmod>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/spiceworld/</loc>
-    <lastmod>2019-11-27T12:57:56-07:00</lastmod>
+    <loc>http://localhost:1313/tags/azure/</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/spiceworld/</loc>
-    <lastmod>2019-11-27T12:57:56-07:00</lastmod>
+    <loc>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</loc>
-    <lastmod>2019-11-27T12:57:56-07:00</lastmod>
+    <loc>http://localhost:1313/categories/community/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/about/</loc>
+    <loc>http://localhost:1313/tags/ignite/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hyper-v/</loc>
+    <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</loc>
+    <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mfa/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/security/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/automation/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/azure-automation/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/08/20/azure-automation-and-powershell-7-4-less-friction-better-runs/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/runbooks/</loc>
+    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/azure-cloud-shell/</loc>
+    <lastmod>2025-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</loc>
+    <lastmod>2025-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</loc>
+    <lastmod>2025-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/iac/</loc>
+    <lastmod>2025-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/build/</loc>
+    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</loc>
+    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/powershell-summit/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mvp/</loc>
+    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</loc>
+    <lastmod>2025-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/cloud/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/migration/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aws/</loc>
+    <lastmod>2024-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/everpure/</loc>
+    <lastmod>2024-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</loc>
+    <lastmod>2024-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pure-storage/</loc>
+    <lastmod>2024-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/replication/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/storage/</loc>
+    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-aws/</loc>
+    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vmware/</loc>
+    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vvols/</loc>
+    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</loc>
+    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sdk/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/snapshots/</loc>
+    <lastmod>2024-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</loc>
+    <lastmod>2024-07-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</loc>
+    <lastmod>2024-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</loc>
+    <lastmod>2024-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/career/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/soft-skills/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/spiceworld/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vmug/</loc>
+    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2019-11-21T23:42:07+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/veeam/</loc>
-    <lastmod>2019-05-30T20:03:32+00:00</lastmod>
+    <loc>http://localhost:1313/tags/veeam/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/veeam/</loc>
-    <lastmod>2019-05-30T20:03:32+00:00</lastmod>
+    <loc>http://localhost:1313/tags/veeamon/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</loc>
-    <lastmod>2019-05-30T20:03:32+00:00</lastmod>
+    <loc>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/veeamon2019/</loc>
-    <lastmod>2019-05-30T20:03:32+00:00</lastmod>
+    <loc>http://localhost:1313/tags/tech-field-day/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/vmware/</loc>
-    <lastmod>2019-05-30T20:03:32+00:00</lastmod>
+    <loc>http://localhost:1313/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/runecast/</loc>
-    <lastmod>2018-10-27T11:23:38+00:00</lastmod>
+    <loc>http://localhost:1313/2018/10/09/hpe-storage-tech-day-starting-now/</loc>
+    <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</loc>
-    <lastmod>2018-10-27T11:23:38+00:00</lastmod>
+    <loc>http://localhost:1313/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</loc>
+    <lastmod>2018-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/techfieldday/</loc>
-    <lastmod>2018-10-27T11:23:38+00:00</lastmod>
+    <loc>http://localhost:1313/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/techfieldday/</loc>
-    <lastmod>2018-10-27T11:23:38+00:00</lastmod>
+    <loc>http://localhost:1313/2018/09/20/storage-field-day-17-is-about-to-begin/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/tfdx/</loc>
-    <lastmod>2018-10-27T11:23:38+00:00</lastmod>
+    <loc>http://localhost:1313/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</loc>
+    <lastmod>2018-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/vmworld2018/</loc>
-    <lastmod>2018-10-27T11:23:38+00:00</lastmod>
+    <loc>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</loc>
+    <lastmod>2018-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/hpe-storage-tech-day/</loc>
-    <lastmod>2018-10-09T15:48:21+00:00</lastmod>
+    <loc>http://localhost:1313/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</loc>
-    <lastmod>2018-10-09T15:48:21+00:00</lastmod>
+    <loc>http://localhost:1313/tags/exagrid/</loc>
+    <lastmod>2017-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/hpetechday/</loc>
-    <lastmod>2018-10-09T15:48:21+00:00</lastmod>
+    <loc>http://localhost:1313/2017/10/30/exagrid-installation-and-initialization/</loc>
+    <lastmod>2017-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/influencer/</loc>
-    <lastmod>2018-10-09T15:48:21+00:00</lastmod>
+    <loc>http://localhost:1313/tags/cisco/</loc>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/nth-symposium/</loc>
-    <lastmod>2018-10-09T15:48:21+00:00</lastmod>
+    <loc>http://localhost:1313/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</loc>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/quali/</loc>
-    <lastmod>2018-10-07T15:45:23+00:00</lastmod>
+    <loc>http://localhost:1313/tags/turbonomic/</loc>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</loc>
-    <lastmod>2018-10-07T15:45:23+00:00</lastmod>
+    <loc>http://localhost:1313/tags/opinion/</loc>
+    <lastmod>2017-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/tags/jetstreamsoftware/</loc>
-    <lastmod>2018-10-02T17:55:21+00:00</lastmod>
+    <loc>http://localhost:1313/2017/10/25/own-the-imposter-syndrome/</loc>
+    <lastmod>2017-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</loc>
-    <lastmod>2018-10-02T17:55:21+00:00</lastmod>
+    <loc>http://localhost:1313/tags/professional-development/</loc>
+    <lastmod>2017-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2018/09/20/storage-field-day-17-is-about-to-begin/</loc>
-    <lastmod>2018-09-20T17:20:19+00:00</lastmod>
+    <loc>http://localhost:1313/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</loc>
+    <lastmod>2017-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/categories/exagrid/</loc>
-    <lastmod>2018-05-31T20:22:07+00:00</lastmod>
+    <loc>http://localhost:1313/tags/ucs/</loc>
+    <lastmod>2017-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.fullstackgeek.net/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</loc>
-    <lastmod>2018-05-31T20:22:07+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</loc>
-    <lastmod>2018-05-15T19:05:44+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/veeamon2018/</loc>
-    <lastmod>2018-05-15T19:05:44+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</loc>
-    <lastmod>2018-04-15T05:44:53+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/pure-storage/</loc>
-    <lastmod>2018-04-15T05:44:53+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/purestorage/</loc>
-    <lastmod>2018-04-15T05:44:53+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/blogtober/</loc>
-    <lastmod>2017-10-30T23:50:25+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/exagrid/</loc>
-    <lastmod>2017-10-30T23:50:25+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</loc>
-    <lastmod>2017-10-30T23:50:25+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/cisco/</loc>
-    <lastmod>2017-10-26T16:55:05+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/cisco/</loc>
-    <lastmod>2017-10-26T16:55:05+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</loc>
-    <lastmod>2017-10-26T16:55:05+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/turbonomic/</loc>
-    <lastmod>2017-10-26T16:55:05+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/opinion/</loc>
-    <lastmod>2017-10-25T18:57:14+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2017/10/25/own-the-imposter-syndrome/</loc>
-    <lastmod>2017-10-25T18:57:14+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/rambling/</loc>
-    <lastmod>2017-10-25T18:57:14+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/categories/ramblings/</loc>
-    <lastmod>2017-10-25T18:57:14+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</loc>
-    <lastmod>2017-08-27T20:01:45+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/ucs/</loc>
-    <lastmod>2017-08-27T20:01:45+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/ucsm/</loc>
-    <lastmod>2017-08-27T20:01:45+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/tags/upgrade/</loc>
-    <lastmod>2017-08-27T20:01:45+00:00</lastmod>
-  </url><url>
-    <loc>https://www.fullstackgeek.net/2017/08/27/welcome-to-the-blog/</loc>
-    <lastmod>2017-08-27T19:32:37+00:00</lastmod>
+    <loc>http://localhost:1313/2017/08/27/welcome-to-the-blog/</loc>
+    <lastmod>2017-08-27T00:00:00+00:00</lastmod>
   </url>
 </urlset>

@@ -2,21 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VMUG on FullStackGeek</title>
-    <link>https://www.fullstackgeek.net/tags/vmug/</link>
+    <link>http://localhost:1313/tags/vmug/</link>
     <description>Recent content in VMUG on FullStackGeek</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Nov 2019 12:57:57 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/vmug/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vmug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Being Effective at Technical Communication - Technology Not Required</title>
-      <link>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
-      <pubDate>Wed, 27 Nov 2019 12:57:57 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
-      <description>The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.
-This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.
-Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications.</description>
+      <link>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vmug-2019-nynj-usercon.jpg&#34; alt=&#34;VMUG 2019 NY/NJ Usercon&#34; title=&#34;VMUG 2019 NY/NJ Usercon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.&lt;/p&gt;&#xA;&lt;p&gt;Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications. In practice, being effective at communicating means that you must know how to best deliver your message, in a manner that your audience can understand.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

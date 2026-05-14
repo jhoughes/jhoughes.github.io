@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on FullStackGeek</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <description>Recent content in Azure on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell in 2025: Still the Tool I Reach for First</title>
+      <link>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</guid>
+      <description>&lt;p&gt;Looking back on 2025, I ended up using a lot of different tools.&lt;/p&gt;&#xA;&lt;p&gt;That is not unusual anymore. The toolchain around cloud, hybrid infrastructure, automation, and operations is broader than it used to be. There is more direct API work, more CLI usage, more declarative infrastructure, more Python in certain corners, and more AI-assisted help showing up across the workflow.&lt;/p&gt;&#xA;&lt;p&gt;And yet, when I look honestly at the work I actually did, PowerShell is still the tool I reached for first more often than anything else.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ignite 2025: What Matters After the Keynotes</title>
+      <link>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</guid>
+      <description>&lt;p&gt;A few weeks after Ignite 2025, the event energy starts to cool off, and that is usually when the more useful questions begin.&lt;/p&gt;&#xA;&lt;p&gt;During the event itself, the pace is too fast to process everything well. New features, product updates, big-picture messaging, and polished demos all arrive in a flood. It is easy to come away with a strong sense of momentum, but momentum is not the same thing as clarity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ignite 2025: AI, Agents, and Operational Trust</title>
+      <link>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</guid>
+      <description>&lt;p&gt;Ignite 2025 felt different to me, and not because of one giant announcement.&lt;/p&gt;&#xA;&lt;p&gt;What made it feel different was the consistency of the message across sessions, demos, and follow-up discussion. The overall direction seemed clear: systems are moving beyond simple task execution and toward more active participation in how work gets done.&lt;/p&gt;&#xA;&lt;p&gt;That is a subtle shift in wording, but it represents a bigger shift in operating models. For years, automation has largely meant defining a process, triggering it, and collecting the result. What showed up at Ignite felt more like a move toward systems that interpret context, suggest actions, generate workflows, and increasingly behave like participants in the loop rather than passive tools.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure PowerShell, MFA, and the End of Comfortable Legacy Auth</title>
+      <link>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</guid>
+      <description>&lt;p&gt;Every now and then, a platform change comes along that forces you to confront habits you have been carrying for longer than you should have.&lt;/p&gt;&#xA;&lt;p&gt;The Azure PowerShell MFA change was one of those moments for me.&lt;/p&gt;&#xA;&lt;p&gt;It was not the kind of thing you can politely note and then postpone thinking about forever. It surfaced the places where older automation assumptions had been left in place because they were convenient and familiar. Once those assumptions met a more modern identity model, the cracks were suddenly much easier to see.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Cloud Shell: Getting Better in Quiet Ways</title>
+      <link>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</guid>
+      <description>&lt;p&gt;Cloud Shell is one of those tools I do not think about much until I really need it.&lt;/p&gt;&#xA;&lt;p&gt;That might sound like faint praise, but for infrastructure tooling it is often the opposite. The best tools tend to fade into the background until the exact moment you need them, and then they work with just enough predictability that you can get on with the actual job.&lt;/p&gt;&#xA;&lt;p&gt;Over the last few months, I started noticing that Cloud Shell had been improving in ways that were not especially flashy, but absolutely showed up in daily use. None of it felt like major headline material. All of it felt useful.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Build to Reality: Automation After the Demos</title>
+      <link>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</guid>
+      <description>&lt;p&gt;A few weeks after Build 2025, the event energy starts to cool down, and that is usually when the most useful reflection begins.&lt;/p&gt;&#xA;&lt;p&gt;That post-event window matters to me because it creates enough distance to sort excitement from lasting value. During Build itself, everything arrives at once. The message is fast, the demos are polished, and the future always looks clean. A little later, the better questions start to emerge. What is actually going to change the way I work? Which ideas hold up outside the keynote frame? What survives contact with real environments?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build 2025: AI and the Operator Workflow</title>
+      <link>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</guid>
+      <description>&lt;p&gt;I spent a fair amount of time after Build 2025 going back through announcements, demos, follow-up commentary, and the broader reaction across the technical community, and one thing became very clear to me: AI is no longer being positioned as a side feature. It is being treated as part of the expected workflow.&lt;/p&gt;&#xA;&lt;p&gt;That shift matters more than the headlines by themselves.&lt;/p&gt;&#xA;&lt;p&gt;For a while, AI in technical tooling felt like something extra. Interesting, sometimes helpful, occasionally impressive, but still separate from the default path of getting work done. Build 2025 felt different. The framing was much closer to, &amp;ldquo;This is how work is starting to happen now,&amp;rdquo; especially across development, automation, infrastructure definition, and operational assistance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MVP Summit 2025: Direction, Practice, and the Work Between</title>
+      <link>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</guid>
+      <description>&lt;p&gt;I came back from MVP Summit 2025 with the same feeling I usually have after the best technical events: the official sessions mattered, but the real value showed up in the conversations around them.&lt;/p&gt;&#xA;&lt;p&gt;The hallway discussions, the quick chats after a session, and the moments where someone says, &amp;ldquo;here is what we are really seeing,&amp;rdquo; are usually the parts that stay with me the longest. That is where the pattern becomes easier to see. It is also where marketing language tends to fall away and practical direction becomes clearer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</title>
+      <link>http://localhost:1313/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-5---azure--avs&#34;&gt;Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp;amp; AVS&lt;/h1&gt;&#xA;&lt;p&gt;For our final technical post in the series, we will look at Microsoft Azure as the public cloud to target for migrating workloads. Similar to our previous post, we will look at some of the options that customers have available to them for migrating on-prem workloads to Azure - we will mention AVS later in the post, but that one is almost cheating.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,197 +2,298 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FullStackGeek</title>
-    <link>https://www.fullstackgeek.net/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on FullStackGeek</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Nov 2019 15:22:17 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
-      <link>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
-      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
-      <description>About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the Austin PowerShell User Group.
-Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.
-You can get more details on the presentation in my blog post about SpiceWorld, the video of the presentation here, and the version of the slides from this session here.</description>
+      <title>Azure Local 23H2 End of Support and the New Pace of Lifecycle Planning</title>
+      <link>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/03/01/azure-local-23h2-end-of-support-and-the-new-pace-of-lifecycle-planning/</guid>
+      <description>&lt;p&gt;One of the quieter but more important realizations over the last year has been how much platform lifecycle expectations have changed.&lt;/p&gt;&#xA;&lt;p&gt;Azure Local 23H2 approaching end of support in April 2026 is a good example of that shift. On the surface, it is simply a lifecycle milestone. In practice, it says a great deal about the pace of modern platform operations and the kind of discipline that pace now requires.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Polyglot Notebooks Deprecation: When a Tool Becomes Part of How You Think</title>
+      <link>http://localhost:1313/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</guid>
+      <description>&lt;p&gt;This one landed closer to home than a lot of technical announcements do.&lt;/p&gt;&#xA;&lt;p&gt;The deprecation of the Polyglot Notebooks extension in VS Code was not just a tooling update in the abstract. It disrupted a workflow I had actually come to rely on. That made it more than interesting news. It made it a practical problem.&lt;/p&gt;&#xA;&lt;p&gt;There is a particular kind of frustration that comes with losing a tool that had quietly become part of how you think. Not just part of how you type, but part of how you explore ideas, test assumptions, document behavior, and move from experiment to understanding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell in 2025: Still the Tool I Reach for First</title>
+      <link>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</guid>
+      <description>&lt;p&gt;Looking back on 2025, I ended up using a lot of different tools.&lt;/p&gt;&#xA;&lt;p&gt;That is not unusual anymore. The toolchain around cloud, hybrid infrastructure, automation, and operations is broader than it used to be. There is more direct API work, more CLI usage, more declarative infrastructure, more Python in certain corners, and more AI-assisted help showing up across the workflow.&lt;/p&gt;&#xA;&lt;p&gt;And yet, when I look honestly at the work I actually did, PowerShell is still the tool I reached for first more often than anything else.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ignite 2025: What Matters After the Keynotes</title>
+      <link>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</guid>
+      <description>&lt;p&gt;A few weeks after Ignite 2025, the event energy starts to cool off, and that is usually when the more useful questions begin.&lt;/p&gt;&#xA;&lt;p&gt;During the event itself, the pace is too fast to process everything well. New features, product updates, big-picture messaging, and polished demos all arrive in a flood. It is easy to come away with a strong sense of momentum, but momentum is not the same thing as clarity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ignite 2025: AI, Agents, and Operational Trust</title>
+      <link>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</guid>
+      <description>&lt;p&gt;Ignite 2025 felt different to me, and not because of one giant announcement.&lt;/p&gt;&#xA;&lt;p&gt;What made it feel different was the consistency of the message across sessions, demos, and follow-up discussion. The overall direction seemed clear: systems are moving beyond simple task execution and toward more active participation in how work gets done.&lt;/p&gt;&#xA;&lt;p&gt;That is a subtle shift in wording, but it represents a bigger shift in operating models. For years, automation has largely meant defining a process, triggering it, and collecting the result. What showed up at Ignite felt more like a move toward systems that interpret context, suggest actions, generate workflows, and increasingly behave like participants in the loop rather than passive tools.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows Server 2025 and Hyper-V: The Quiet Foundation Still Matters</title>
+      <link>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</guid>
+      <description>&lt;p&gt;There is a lot of industry attention on cloud-native everything, AI everything, and whatever the newest operational abstraction happens to be.&lt;/p&gt;&#xA;&lt;p&gt;Meanwhile, in a large number of real environments, Hyper-V is still doing a huge amount of important work.&lt;/p&gt;&#xA;&lt;p&gt;That is one reason I wanted to spend a little more time thinking about Windows Server 2025 and Hyper-V together. Neither one dominates the loudest conversations in the way some newer technologies do, but both still matter deeply in the kind of infrastructure that actually runs businesses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure PowerShell, MFA, and the End of Comfortable Legacy Auth</title>
+      <link>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</guid>
+      <description>&lt;p&gt;Every now and then, a platform change comes along that forces you to confront habits you have been carrying for longer than you should have.&lt;/p&gt;&#xA;&lt;p&gt;The Azure PowerShell MFA change was one of those moments for me.&lt;/p&gt;&#xA;&lt;p&gt;It was not the kind of thing you can politely note and then postpone thinking about forever. It surfaced the places where older automation assumptions had been left in place because they were convenient and familiar. Once those assumptions met a more modern identity model, the cracks were suddenly much easier to see.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Automation and PowerShell 7.4: Less Friction, Better Runs</title>
+      <link>http://localhost:1313/2025/08/20/azure-automation-and-powershell-7-4-less-friction-better-runs/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/08/20/azure-automation-and-powershell-7-4-less-friction-better-runs/</guid>
+      <description>&lt;p&gt;I have spent a lot of time over the years working with Azure Automation, and one of the recurring sources of friction has always been runtime alignment.&lt;/p&gt;&#xA;&lt;p&gt;That sounds like a small technical detail, but anyone who has spent real time building and maintaining runbooks knows it is not small at all. If your local development environment moves forward while your automation runtime lags behind, the whole experience gets more awkward than it should be. You test one way, deploy another, and then spend too much time figuring out whether the problem is your code or the execution environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Cloud Shell: Getting Better in Quiet Ways</title>
+      <link>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</guid>
+      <description>&lt;p&gt;Cloud Shell is one of those tools I do not think about much until I really need it.&lt;/p&gt;&#xA;&lt;p&gt;That might sound like faint praise, but for infrastructure tooling it is often the opposite. The best tools tend to fade into the background until the exact moment you need them, and then they work with just enough predictability that you can get on with the actual job.&lt;/p&gt;&#xA;&lt;p&gt;Over the last few months, I started noticing that Cloud Shell had been improving in ways that were not especially flashy, but absolutely showed up in daily use. None of it felt like major headline material. All of it felt useful.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Build to Reality: Automation After the Demos</title>
+      <link>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</guid>
+      <description>&lt;p&gt;A few weeks after Build 2025, the event energy starts to cool down, and that is usually when the most useful reflection begins.&lt;/p&gt;&#xA;&lt;p&gt;That post-event window matters to me because it creates enough distance to sort excitement from lasting value. During Build itself, everything arrives at once. The message is fast, the demos are polished, and the future always looks clean. A little later, the better questions start to emerge. What is actually going to change the way I work? Which ideas hold up outside the keynote frame? What survives contact with real environments?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build 2025: AI and the Operator Workflow</title>
+      <link>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</guid>
+      <description>&lt;p&gt;I spent a fair amount of time after Build 2025 going back through announcements, demos, follow-up commentary, and the broader reaction across the technical community, and one thing became very clear to me: AI is no longer being positioned as a side feature. It is being treated as part of the expected workflow.&lt;/p&gt;&#xA;&lt;p&gt;That shift matters more than the headlines by themselves.&lt;/p&gt;&#xA;&lt;p&gt;For a while, AI in technical tooling felt like something extra. Interesting, sometimes helpful, occasionally impressive, but still separate from the default path of getting work done. Build 2025 felt different. The framing was much closer to, &amp;ldquo;This is how work is starting to happen now,&amp;rdquo; especially across development, automation, infrastructure definition, and operational assistance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Local and Windows Server 2025: Hybrid by Design</title>
+      <link>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/30/azure-local-and-windows-server-2025-hybrid-by-design/</guid>
+      <description>&lt;p&gt;After a few weeks of Summit conversations, follow-up reading, and customer discussions, I found myself rethinking how I describe hybrid infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;For a long time, it was easy to talk about hybrid as a transition state. It was the thing between the old model and the new model. It was the bridge from where organizations had been to where they were assumed to be heading.&lt;/p&gt;&#xA;&lt;p&gt;I do not think that framing is as useful anymore.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell &#43; DevOps Summit 2025: Where Reality Wins</title>
+      <link>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</guid>
+      <description>&lt;p&gt;Coming out of the PowerShell + DevOps Global Summit 2025, I kept circling back to a simple thought: most automation looks great in a demo, but far less of it survives production unchanged.&lt;/p&gt;&#xA;&lt;p&gt;That is not a complaint about demos. Demos are useful. They help people understand what is possible. But real environments do not behave like demos. Authentication changes under you. APIs return something slightly different than expected. Dependencies drift. The script that looked clean in testing becomes awkward six months later when someone else has to maintain it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MVP Summit 2025: Direction, Practice, and the Work Between</title>
+      <link>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</guid>
+      <description>&lt;p&gt;I came back from MVP Summit 2025 with the same feeling I usually have after the best technical events: the official sessions mattered, but the real value showed up in the conversations around them.&lt;/p&gt;&#xA;&lt;p&gt;The hallway discussions, the quick chats after a session, and the moments where someone says, &amp;ldquo;here is what we are really seeing,&amp;rdquo; are usually the parts that stay with me the longest. That is where the pattern becomes easier to see. It is also where marketing language tends to fall away and practical direction becomes clearer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp; AVS</title>
+      <link>http://localhost:1313/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/21/migrating-to-cloud-and-running-hybrid-part5-azure-avs/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-5---azure--avs&#34;&gt;Migrating to Cloud and Running Hybrid: Part 5 - Azure &amp;amp; AVS&lt;/h1&gt;&#xA;&lt;p&gt;For our final technical post in the series, we will look at Microsoft Azure as the public cloud to target for migrating workloads. Similar to our previous post, we will look at some of the options that customers have available to them for migrating on-prem workloads to Azure - we will mention AVS later in the post, but that one is almost cheating.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 4 - AWS</title>
+      <link>http://localhost:1313/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</link>
+      <pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-4---aws&#34;&gt;Migrating to Cloud and Running Hybrid: Part 4 - AWS&lt;/h1&gt;&#xA;&lt;p&gt;For our second technical post in the series, we will look at Amazon Web Services (AWS) as the public cloud to target for migrating workloads. We are going to look at some of the options that customers have available to them for migrating on-prem workloads to AWS. We already have our data handled through the methods we discussed in the last blog post, so now we are talking about getting the workloads themselves up to the cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 3 - Guest OS &amp; Replication</title>
+      <link>http://localhost:1313/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/12/migrating-to-cloud-and-running-hybrid-part3-guestos-replication/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-3---guest-os--replication&#34;&gt;Migrating to Cloud and Running Hybrid: Part 3 - Guest OS &amp;amp; Replication&lt;/h1&gt;&#xA;&lt;p&gt;If the environment that is being moved to a new platform is not VMware-based, or if vVols are not an option for some reason, then we move to the next layer down and look at performing data migrations from within an operating system. This is performed by enabling and configuring iSCSI within Windows or Linux, creating a host object in the FlashArray with the IQN initiator for the iSCSI initiator, and then mapping a volume to this new host object on the FlashArray. Once the device is visible within the operating system, the raw device should be formatted with the appropriate file system option for the intended usage, and this newly formatted device can then be used for data migration. At this point, we need to discuss a few options and considerations which will be different for Windows versus Linux operating systems. Always have proper planning and backups in place prior to data conversions or migrations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 2 - vVols</title>
+      <link>http://localhost:1313/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-aws/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/11/migrating-to-cloud-and-running-hybrid-part2-aws/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-2---vvols&#34;&gt;Migrating to Cloud and Running Hybrid: Part 2 - vVols&lt;/h1&gt;&#xA;&lt;p&gt;Continuing directly from our last blog post, let&amp;rsquo;s jump in if we need to get to a lower level than VM disks within a hypervisor.&lt;/p&gt;&#xA;&lt;p&gt;For our second post in the series, we will look at some of the core functionality of Pure Storage which will be used to help any customer migrate workloads, and I am talking about volume management and replication. For many customers that are considering moving VMware workloads to any new platform, one of the easiest ways to be successful with a replatform for any workloads is to separate the data that needs to move platforms from the core operating system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters</title>
+      <link>http://localhost:1313/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/08/migrating-to-cloud-and-running-hybrid-part1-ugh/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-1---why-hybrid-matters&#34;&gt;Migrating to Cloud and Running Hybrid: Part 1 - Why Hybrid Matters&lt;/h1&gt;&#xA;&lt;p&gt;These days, businesses are realizing that sticking to just one cloud or one type of environment does not cut it anymore. The reality is, most organizations need the flexibility to run workloads wherever it makes the most sense - whether that is in their own on-premises setup, in the cloud, or a mix of both.&lt;/p&gt;&#xA;&lt;p&gt;A hybrid approach can be a game-changer, letting companies keep critical data or legacy systems on-prem while still taking advantage of the scalability and innovation that public cloud platforms offer. But it does not stop there. As things change - whether it is costs, technical needs, or capacity - workloads often need to shift between clouds.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 4 - Protection Group Snapshots - SDK1 and SDK2</title>
+      <link>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</guid>
+      <description>&lt;p&gt;For this next example, we will look at a request which came into from a customer looking to see if there is a way to list the volumes in a protection group snapshot.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll look at how we can produce this output with 2 different methods:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Continue with our use of PureStoragePowerShellSDK (the original v1 SDK) and the &amp;lsquo;New-PfaCLICommand&amp;rsquo; cmdlet&lt;/li&gt;&#xA;&lt;li&gt;Look at the use of PureStoragePowerShellSDK2 to gather these details&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;While the command that we will use to gather these results from our FlashArray are different, method 1 is the same as our previous blog posts on the process of wrapping CLI commands into PowerShell to work with the results with the addition of using &lt;code&gt;Out-GridView&lt;/code&gt; for the selection of a specific Protection Group (pgroup) snapshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 3 - Host Port Mapping with SDK1</title>
+      <link>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</guid>
+      <description>&lt;p&gt;In our third post in our series, we&amp;rsquo;re going to take the code that we produced previously to gather additional information for the request of a detailed host mapping that can give a comparison of pre and post upgrade to verify that all of the paths match.  In the code from our previous post, we were able to gather the information he needed about the connected initiators from the array perspective. Now, we need to gather the information about our hosts and their registered initiators, then tie that information together.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 2 - Active Port Connections with SDK1</title>
+      <link>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</guid>
+      <description>&lt;p&gt;Now for step 2 in our blog series, we&amp;rsquo;ll take a look at the CLI output which will give us the details that we are looking for, so we can work towards our &amp;ldquo;grouped by host” requirement.&lt;/p&gt;&#xA;&lt;p&gt;The CLI command which will give us the results we are looking for is &lt;code&gt;pureport list&lt;/code&gt; with the &amp;ldquo;initiator” parameter, and a basic run of this CLI command in an SSH session gives us this output:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 1 - Getting Started</title>
+      <link>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</guid>
+      <description>&lt;p&gt;After a decently long hiatus from writing anything in a series-fashion, I&amp;rsquo;m back to share a blog series based around automating your Pure Storage environment.  We&amp;rsquo;re going to begin this series with a few posts about advancing both your understanding of your Pure Storage environment and understanding the options available to you for automating and monitoring the infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;This series will begin with some requests that came from Pure Storage customers, and other Pure employees that asked for some help in delivering the solution, or just some help with understanding how to accomplish the goal.  These are normally the most enjoyable tasks to automate, as it gives a chance to understand what sorts of tasks a customer is trying to accomplish and what needs they have, and to help educate others along the way.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/atxpowershell-2019.jpg&#34; alt=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34; title=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the &lt;a href=&#34;https://twitter.com/ATXPowershell&#34; title=&#34;ATXPowerShell on Twitter&#34;&gt;Austin PowerShell User Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Being Effective at Technical Communication - Technology Not Required</title>
-      <link>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
-      <pubDate>Wed, 27 Nov 2019 12:57:57 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
-      <description>The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.
-This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.
-Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications.</description>
+      <link>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vmug-2019-nynj-usercon.jpg&#34; alt=&#34;VMUG 2019 NY/NJ Usercon&#34; title=&#34;VMUG 2019 NY/NJ Usercon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.&lt;/p&gt;&#xA;&lt;p&gt;Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications. In practice, being effective at communicating means that you must know how to best deliver your message, in a manner that your audience can understand.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
-      <link>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
-      <pubDate>Wed, 27 Nov 2019 12:57:56 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
-      <description>I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;. I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala. It was pretty cool to see my picture next to these two on the speakers page.</description>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/spiceworld-2019.jpg&#34; alt=&#34;Joe Houghes at SpiceWorld 2019&#34; title=&#34;Joe Houghes at SpiceWorld 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;.  I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala.  It was pretty cool to see my picture next to these two on the speakers page.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About Me</title>
-      <link>https://www.fullstackgeek.net/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Thu, 21 Nov 2019 23:42:07 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/about/</guid>
-      <description>Howdy, Y&amp;rsquo;all.
-So naturally, on this page, you&amp;rsquo;ll find a little bit more about me. The FullStackGeek blog is a personal blog owned and maintained by Joseph Houghes, who is just an all-around native Austin geek.
-I&amp;rsquo;m currently a Solutions Architect for Veeam Software, focused on automation &amp;amp; integration. Throughout the last 18 years of my career, I have worked in the enterprise, financial, healthcare, vendor partner and SMB verticals. My primary focus for the day job and most of what I&amp;rsquo;ll post about will be VMware and virtualization-centric.</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Howdy, Y&amp;rsquo;all.&lt;/p&gt;&#xA;&lt;p&gt;So naturally, on this page, you&amp;rsquo;ll find a little bit more about me.  The FullStackGeek blog is a personal blog owned and maintained by Joseph Houghes, who is just an all-around native Austin geek.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently a Solutions Architect for Veeam Software, focused on automation &amp;amp; integration.  Throughout the last 18 years of my career, I have worked in the enterprise, financial, healthcare, vendor partner and SMB verticals. My primary focus for the day job and most of what I&amp;rsquo;ll post about will be VMware and virtualization-centric.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>VeeamOn 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
-      <link>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
-      <pubDate>Thu, 30 May 2019 20:03:32 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
-      <description>I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted here for public download.
-The attachment is only a PDF export of the presentation slides themselves.
-I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.</description>
+      <title>VeeamON 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>&lt;p&gt;I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted &lt;a href=&#34;http://localhost:1313/documents/VeeamON2019_Automate-Yourself-Out-of-a-Backup-Job-Advanced-PowerShell-and-API-Usage.pdf&#34;&gt;at this link&lt;/a&gt; for public download.&lt;/p&gt;&#xA;&lt;p&gt;The attachment is only a PDF export of the presentation slides themselves.&lt;/p&gt;&#xA;&lt;p&gt;I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tech Field Day Extra VMworld 2018 – Runecast</title>
-      <link>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</link>
-      <pubDate>Sat, 27 Oct 2018 11:23:38 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</guid>
-      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was provided any compensation, only stickers/swag. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.
-Runecast was the third and final presentation which I attended at Tech Field Day Extra during VMworld 2018.</description>
+      <link>http://localhost:1313/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</link>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was provided any compensation, only stickers/swag.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/TFD-Extra-VMworld-300.png&#34; alt=&#34;Tech Field Day Extra VMworld 2018&#34; title=&#34;Tech Field Day Extra VMworld 2018&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HPE Storage Tech Day starting now</title>
-      <link>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</link>
-      <pubDate>Tue, 09 Oct 2018 15:48:21 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/10/09/hpe-storage-tech-day-starting-now/</guid>
-      <description>HPE has invited a great group of bloggers and influencers to join for HPE Storage Tech Day.
-We are here to get a deep dive on all things storage within the HPE ecosystem, including all of the topics seen here:
-You can find out more by watching the livestream, by keeping an eye here for blog posts as a follow-up, or by checking content from anyone within this great list of bloggers:</description>
+      <link>http://localhost:1313/2018/10/09/hpe-storage-tech-day-starting-now/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/09/hpe-storage-tech-day-starting-now/</guid>
+      <description>&lt;p&gt;HPE has invited a great group of bloggers and influencers to join for HPE Storage Tech Day.&lt;/p&gt;&#xA;&lt;p&gt;We are here to get a deep dive on all things storage within the HPE ecosystem, including all of the topics seen here:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/HPE-Tech-Day-Agenda.png&#34; alt=&#34;HPE Tech Day Agenda&#34; title=&#34;HPE Tech Day Agenda&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can find out more by watching the &lt;a href=&#34;https://www.youtube.com/watch?v=BtokseXDHX4&#34;&gt;livestream&lt;/a&gt;, by keeping an eye here for blog posts as a follow-up, or by checking content from anyone within this great list of bloggers:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tech Field Day Extra VMworld 2018 – Quali</title>
-      <link>https://www.fullstackgeek.net/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</link>
-      <pubDate>Sun, 07 Oct 2018 15:45:23 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</guid>
-      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.</description>
+      <link>http://localhost:1313/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tech Field Day Extra VMworld 2018 – JetStream Software</title>
-      <link>https://www.fullstackgeek.net/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</link>
-      <pubDate>Tue, 02 Oct 2018 17:55:21 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</guid>
-      <description>DISCLAIMER: I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization. No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.</description>
+      <link>http://localhost:1313/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Storage Field Day 17 is about to begin</title>
-      <link>https://www.fullstackgeek.net/2018/09/20/storage-field-day-17-is-about-to-begin/</link>
-      <pubDate>Thu, 20 Sep 2018 17:20:19 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/09/20/storage-field-day-17-is-about-to-begin/</guid>
-      <description>After too long of a hiatus, I am out in Silicon Valley this week for the honor of being a first-time delegate for Tech Field Day, specifically at the Storage Field Day 17 event. I&amp;rsquo;ve still got posts coming from TFDx at VMworld 2018.
-This is the event specific page where you can find out more about Storage Field Day 17.
-Here is where you can learn more about the awesomeness that is the ecosystem of Tech Field Day.</description>
+      <link>http://localhost:1313/2018/09/20/storage-field-day-17-is-about-to-begin/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/09/20/storage-field-day-17-is-about-to-begin/</guid>
+      <description>&lt;p&gt;After too long of a hiatus, I am out in Silicon Valley this week for the honor of being a first-time delegate for Tech Field Day, specifically at the Storage Field Day 17 event.  I&amp;rsquo;ve still got posts coming from TFDx at VMworld 2018.&lt;/p&gt;&#xA;&lt;p&gt;This is the event specific page where you can find out more about &lt;a href=&#34;https://techfieldday.com/event/sfd17/&#34;&gt;Storage Field Day 17&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Here is where you can learn more about the awesomeness that is the ecosystem of &lt;a href=&#34;https://techfieldday.com/&#34;&gt;Tech Field Day&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FYI: Veeam Credential errors after April/May 2018 Windows patches</title>
-      <link>https://www.fullstackgeek.net/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</link>
-      <pubDate>Thu, 31 May 2018 20:22:07 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</guid>
-      <description>I just wanted to post this up in case it helps someone else out.
-Short recap: Starting yesterday, when our VBR server was inadvertently rebooted and finished applying some patches that were outstanding for many weeks (don&amp;rsquo;t get me started on the fiasco of a background story), we started getting multiple failures and error messages. I only caught this while doing a job reconfiguration and trying to map a cloned job to an existing backup chain, which was failing with an error of &amp;ldquo;Unable to perform data sovereignty check&amp;hellip;&amp;quot;.</description>
+      <link>http://localhost:1313/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/05/31/fyi-veeam-credential-errors-after-april-may-2018-windows-patches/</guid>
+      <description>&lt;p&gt;I just wanted to post this up in case it helps someone else out.&lt;/p&gt;&#xA;&lt;h2 id=&#34;short-recap&#34;&gt;Short recap:&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Starting yesterday, when our VBR server was inadvertently rebooted and finished applying some patches that were outstanding for many weeks (don&amp;rsquo;t get me started on the fiasco of a background story), we started getting multiple failures and error messages. I only caught this while doing a job reconfiguration and trying to map a cloned job to an existing backup chain, which was failing with an error of &amp;ldquo;Unable to perform data sovereignty check&amp;hellip;&amp;quot;.  The displayed size on disk listed under the Backup Repository selection of the Storage screen in the Backup Job wizard displayed a helpful &amp;ldquo;Failed&amp;rdquo; text.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>VeeamOn 2018 Presentation – Automate yourself out of a (backup) job</title>
-      <link>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
-      <pubDate>Tue, 15 May 2018 19:05:44 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
-      <description>I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.
-Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.
-PDF Version is available here, and the full PowerPoint version with embedded videos is available here.
-I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.</description>
+      <link>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
+      <description>&lt;p&gt;I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.&lt;/p&gt;&#xA;&lt;p&gt;PDF Version is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pdf&#34;&gt;here&lt;/a&gt;, and the full PowerPoint version with embedded videos is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pptx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installing the Pure Storage plugin for Veeam Backup &amp; Recovery Snapshot Integration</title>
-      <link>https://www.fullstackgeek.net/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</link>
-      <pubDate>Sun, 15 Apr 2018 05:44:53 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</guid>
-      <description>Whew, that title is a mouthful. This post will cover the installation and configuration of the Pure Storage plugin for Veeam Backup &amp;amp; Recovery, but we&amp;rsquo;ll incorporate some background first.
-One of the most significant enhancements released with Veeam 9.5U3 is one from which most users have not seen direct improvement &amp;mdash; until now. The specific enhancement that I am referring to is the Universal Storage API, which is the framework that storage vendors can leverage to integrate their storage arrays to allow for Veeam to offload snapshots for backup &amp;amp; recovery operations to the array, rather than relying on VMware snapshots.</description>
+      <link>http://localhost:1313/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</guid>
+      <description>&lt;p&gt;Whew, that title is a mouthful.  This post will cover the installation and configuration of the Pure Storage plugin for Veeam Backup &amp;amp; Recovery, but we&amp;rsquo;ll incorporate some background first.&lt;/p&gt;&#xA;&lt;p&gt;One of the most significant enhancements released with Veeam 9.5U3 is one from which most users have not seen direct improvement  &amp;mdash; until now.  The specific enhancement that I am referring to is the Universal Storage API, which is the framework that storage vendors can leverage to integrate their storage arrays to allow for Veeam to offload snapshots for backup &amp;amp; recovery operations to the array, rather than relying on VMware snapshots.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Exagrid Installation and Initialization</title>
-      <link>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</link>
-      <pubDate>Mon, 30 Oct 2017 23:50:25 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2017/10/30/exagrid-installation-and-initialization/</guid>
-      <description>We are testing out two new ExaGrid 40000E appliances. These will be new initial target repositories for backups from Veeam Backup &amp;amp; Recovery. This is a prime opportunity to get out another article about the install and initialization of the ExaGrid hardware. I intend to follow with a post about the benefits of the Veeam integration.
-ExaGrid is an exceptional idea for their layout with the distinct partitions of a &amp;ldquo;landing zone&amp;rdquo; and &amp;ldquo;retention zone&amp;rdquo;.</description>
+      <link>http://localhost:1313/2017/10/30/exagrid-installation-and-initialization/</link>
+      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/10/30/exagrid-installation-and-initialization/</guid>
+      <description>&lt;p&gt;We are testing out two new ExaGrid 40000E appliances. These will be new initial target repositories for backups from Veeam Backup &amp;amp; Recovery. This is a prime opportunity to get out another article about the install and initialization of the ExaGrid hardware. I intend to follow with a post about the benefits of the Veeam integration.&lt;/p&gt;&#xA;&lt;p&gt;ExaGrid is an exceptional idea for their layout with the distinct partitions of a &amp;ldquo;landing zone&amp;rdquo; and &amp;ldquo;retention zone&amp;rdquo;. The landing zone is intended to host a full backup set. The post-backup deduplication and compression can then take place and be placed into the retention zone. This second zone is the location for longer-term archival of the de-duped and compressed data.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>First impressions on CWOM – a less green Turbonomic</title>
-      <link>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</link>
-      <pubDate>Thu, 26 Oct 2017 16:55:05 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</guid>
-      <description>Early this year, there were talks of Cisco acquiring Turbonomic. A few months back this became a partnership to release Cisco Workload Optimization Manager (CWOM). This is one of the newest products included in the Cisco ONE Enterprise Cloud Suite.
-Cisco Workload Optimization Manager is now in its 1.1.3 release. Starting with this release, you can target UCS Director as an orchestration target. I would love to leverage this, I now need to get UCS Director back into the environment).</description>
+      <link>http://localhost:1313/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/10/26/first-impressions-on-cwom-a-less-green-turbonomic/</guid>
+      <description>&lt;p&gt;Early this year, there were talks of Cisco acquiring Turbonomic. A few months back this became a partnership to release Cisco Workload Optimization Manager (CWOM). This is one of the newest products included in the Cisco ONE Enterprise Cloud Suite.&lt;/p&gt;&#xA;&lt;p&gt;Cisco Workload Optimization Manager is now in its 1.1.3 release. Starting with this release, you can target UCS Director as an orchestration target. I would love to leverage this, I now need to get UCS Director back into the environment).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Own The Imposter Syndrome</title>
-      <link>https://www.fullstackgeek.net/2017/10/25/own-the-imposter-syndrome/</link>
-      <pubDate>Wed, 25 Oct 2017 18:57:14 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2017/10/25/own-the-imposter-syndrome/</guid>
-      <description>Howdy, this is Joe Houghes. I&amp;rsquo;d like to introduce myself some in my first real post before I try and speak about technical content. This has been a big year of change for me with regards to my career, personal life, and social presence. As such, I want to share some reflection. This relates to my own experience as someone new to sharing knowledge with others.
-I&amp;rsquo;m a run of the mill 35-year-old out of shape IT geek who is a native of Austin, Texas.</description>
+      <link>http://localhost:1313/2017/10/25/own-the-imposter-syndrome/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/10/25/own-the-imposter-syndrome/</guid>
+      <description>&lt;p&gt;Howdy, this is Joe Houghes. I&amp;rsquo;d like to introduce myself some in my first real post before I try and speak about technical content. This has been a big year of change for me with regards to my career, personal life, and social presence. As such, I want to share some reflection. This relates to my own experience as someone new to sharing knowledge with others.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a run of the mill 35-year-old out of shape IT geek who is a native of Austin, Texas. I am also an imposter, I face that recognition daily, and I&amp;rsquo;m completely OK with this realization. I&amp;rsquo;ve heard a lot of discussion in the last few months around &amp;ldquo;imposter syndrome&amp;rdquo;. I&amp;rsquo;ve also come to a pretty simple conclusion myself which I try to embrace: It doesn&amp;rsquo;t matter.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Potential upgrade issues going to Cisco UCS Manager 3.2(1d)</title>
-      <link>https://www.fullstackgeek.net/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</link>
-      <pubDate>Sun, 27 Aug 2017 20:01:45 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</guid>
-      <description>We recently upgraded a few of our UCS domains from 3.1(1h) and 3.1(2b) up to 3.2(1d) and we had issues with a few IO modules hanging for up to 2 hours with trying to activate the firmware.
-The backup version was updated with no issues, but then the activation stalled through anywhere from 16 to 30 tries before failing.
-We decided to leave most of the faulted IOMs alone to see what they would do, but after 2 hours we decided to attempt a reset of one IO module, and that just made it angry&amp;hellip;</description>
+      <link>http://localhost:1313/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/08/27/potential-upgrade-issues-upgrades-ucsm-321d/</guid>
+      <description>&lt;p&gt;We recently upgraded a few of our UCS domains from 3.1(1h) and 3.1(2b) up to 3.2(1d) and we had issues with a few IO modules hanging for up to 2 hours with trying to activate the firmware.&lt;/p&gt;&#xA;&lt;p&gt;The backup version was updated with no issues, but then the activation stalled through anywhere from 16 to 30 tries before failing.&lt;/p&gt;&#xA;&lt;p&gt;We decided to leave most of the faulted IOMs alone to see what they would do, but after 2 hours we decided to attempt a reset of one IO module, and that just made it angry&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Welcome to the blog</title>
-      <link>https://www.fullstackgeek.net/2017/08/27/welcome-to-the-blog/</link>
-      <pubDate>Sun, 27 Aug 2017 19:32:37 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2017/08/27/welcome-to-the-blog/</guid>
-      <description>Howdy everyone, this is Joe. I recently got accepted into the vExpert program for 2017 (second half) mostly based on internal and vendor community contributions.
-It&amp;rsquo;s now time to become a bit more social and share what I can with the wider community.
-I&amp;rsquo;m starting off with adding VMware content about the VMworld 2017 experience. Along with that I&amp;rsquo;ll be sharing experiences a UCS, PowerShell and VEEAM, and we&amp;rsquo;ll see where things go.</description>
+      <title>Welcome to the Blog</title>
+      <link>http://localhost:1313/2017/08/27/welcome-to-the-blog/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/08/27/welcome-to-the-blog/</guid>
+      <description>&lt;p&gt;Howdy y&amp;rsquo;all, this is Joe.  I recently got accepted into the vExpert program for 2017 (second half) mostly based on internal and vendor community contributions.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s now time to become a bit more social and share what I can with the wider community.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m starting off with adding VMware content about the VMworld 2017 experience. Along with that I&amp;rsquo;ll be sharing experiences a UCS, PowerShell and VEEAM, and we&amp;rsquo;ll see where things go.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

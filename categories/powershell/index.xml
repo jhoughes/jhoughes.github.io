@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on FullStackGeek</title>
+    <link>http://localhost:1313/categories/powershell/</link>
+    <description>Recent content in PowerShell on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Polyglot Notebooks Deprecation: When a Tool Becomes Part of How You Think</title>
+      <link>http://localhost:1313/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/02/23/polyglot-notebooks-deprecation-when-a-tool-becomes-part-of-how-you-think/</guid>
+      <description>&lt;p&gt;This one landed closer to home than a lot of technical announcements do.&lt;/p&gt;&#xA;&lt;p&gt;The deprecation of the Polyglot Notebooks extension in VS Code was not just a tooling update in the abstract. It disrupted a workflow I had actually come to rely on. That made it more than interesting news. It made it a practical problem.&lt;/p&gt;&#xA;&lt;p&gt;There is a particular kind of frustration that comes with losing a tool that had quietly become part of how you think. Not just part of how you type, but part of how you explore ideas, test assumptions, document behavior, and move from experiment to understanding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell in 2025: Still the Tool I Reach for First</title>
+      <link>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</guid>
+      <description>&lt;p&gt;Looking back on 2025, I ended up using a lot of different tools.&lt;/p&gt;&#xA;&lt;p&gt;That is not unusual anymore. The toolchain around cloud, hybrid infrastructure, automation, and operations is broader than it used to be. There is more direct API work, more CLI usage, more declarative infrastructure, more Python in certain corners, and more AI-assisted help showing up across the workflow.&lt;/p&gt;&#xA;&lt;p&gt;And yet, when I look honestly at the work I actually did, PowerShell is still the tool I reached for first more often than anything else.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure PowerShell, MFA, and the End of Comfortable Legacy Auth</title>
+      <link>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</guid>
+      <description>&lt;p&gt;Every now and then, a platform change comes along that forces you to confront habits you have been carrying for longer than you should have.&lt;/p&gt;&#xA;&lt;p&gt;The Azure PowerShell MFA change was one of those moments for me.&lt;/p&gt;&#xA;&lt;p&gt;It was not the kind of thing you can politely note and then postpone thinking about forever. It surfaced the places where older automation assumptions had been left in place because they were convenient and familiar. Once those assumptions met a more modern identity model, the cracks were suddenly much easier to see.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Cloud Shell: Getting Better in Quiet Ways</title>
+      <link>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/07/22/azure-cloud-shell-getting-better-in-quiet-ways/</guid>
+      <description>&lt;p&gt;Cloud Shell is one of those tools I do not think about much until I really need it.&lt;/p&gt;&#xA;&lt;p&gt;That might sound like faint praise, but for infrastructure tooling it is often the opposite. The best tools tend to fade into the background until the exact moment you need them, and then they work with just enough predictability that you can get on with the actual job.&lt;/p&gt;&#xA;&lt;p&gt;Over the last few months, I started noticing that Cloud Shell had been improving in ways that were not especially flashy, but absolutely showed up in daily use. None of it felt like major headline material. All of it felt useful.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell &#43; DevOps Summit 2025: Where Reality Wins</title>
+      <link>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</guid>
+      <description>&lt;p&gt;Coming out of the PowerShell + DevOps Global Summit 2025, I kept circling back to a simple thought: most automation looks great in a demo, but far less of it survives production unchanged.&lt;/p&gt;&#xA;&lt;p&gt;That is not a complaint about demos. Demos are useful. They help people understand what is possible. But real environments do not behave like demos. Authentication changes under you. APIs return something slightly different than expected. Dependencies drift. The script that looked clean in testing becomes awkward six months later when someone else has to maintain it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/atxpowershell-2019.jpg&#34; alt=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34; title=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the &lt;a href=&#34;https://twitter.com/ATXPowershell&#34; title=&#34;ATXPowerShell on Twitter&#34;&gt;Austin PowerShell User Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/spiceworld-2019.jpg&#34; alt=&#34;Joe Houghes at SpiceWorld 2019&#34; title=&#34;Joe Houghes at SpiceWorld 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;.  I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala.  It was pretty cool to see my picture next to these two on the speakers page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

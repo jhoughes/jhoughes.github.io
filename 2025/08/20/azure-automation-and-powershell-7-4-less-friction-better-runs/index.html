@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Azure Automation and PowerShell 7.4: Less Friction, Better Runs &middot; FullStackGeek</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0g ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>FullStackGeek</h1></a>
+      <p class="lead">
+       The ramblings of this full stack geek. 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        <li><a href="mailto:joe@fullstackgeek.net"> Email </a></li><li><a href="https://github.com/joehoughes"> Github </a></li><li><a href="https://linked.com/in/joehoughes/"> LinkedIn </a></li><li><a href="https://twitter.com/jhoughes"> Twitter </a></li><li><a href="https://www.youtube.com/channel/UChN0jsc6e02jAh9p9rmR_Iw"> YouTube </a></li>
+      </ul>
+    </nav>
+
+    <p>© 2017-Forever by Joe Houghes. All rights reserved.</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Azure Automation and PowerShell 7.4: Less Friction, Better Runs</h1>
+  <time datetime=2025-08-20T00:00:00Z class="post-date">Wed, Aug 20, 2025</time>
+  <p>I have spent a lot of time over the years working with Azure Automation, and one of the recurring sources of friction has always been runtime alignment.</p>
+<p>That sounds like a small technical detail, but anyone who has spent real time building and maintaining runbooks knows it is not small at all. If your local development environment moves forward while your automation runtime lags behind, the whole experience gets more awkward than it should be. You test one way, deploy another, and then spend too much time figuring out whether the problem is your code or the execution environment.</p>
+<p>That is why support for newer PowerShell runtimes, including 7.4, matters more than it might look at first glance.</p>
+<h2 id="the-mismatch-has-been-a-real-tax-on-automation-work">The mismatch has been a real tax on automation work</h2>
+<p>For a long time, there has been a gap between the way many of us want to work locally and the way automation has had to run in practice.</p>
+<p>That mismatch affects more than just version numbers. It affects module support, language features, debugging confidence, and how much defensive code you end up writing just to avoid unpleasant surprises later.</p>
+<p>When your local environment and your automation runtime are far enough apart, small differences become persistent friction. The result is a workflow where you stop thinking only about the problem you are solving and start thinking too much about the compatibility tax you are paying.</p>
+<p>That is one reason I pay attention to runtime updates. They are not just technical housekeeping. They shape how smooth or painful automation work feels over time.</p>
+<h2 id="a-closer-runtime-model-changes-the-day-to-day-experience">A closer runtime model changes the day-to-day experience</h2>
+<p>The biggest benefit of a newer supported runtime is that it narrows the gap between development and execution.</p>
+<p>That means fewer moments where a script behaves one way locally and another way in a runbook. It means better alignment with current modules and a lower chance of discovering some runtime-specific limitation only after the automation is already deployed.</p>
+<p>Most importantly, it restores a little confidence. If the environments are closer together, it becomes easier to trust the test path. And trust matters in automation work. The more uncertainty you have around the runtime itself, the harder it is to feel confident about the actual logic you are building.</p>
+<p>That is why this kind of change matters in practical terms. It reduces the amount of friction that gets normalized over time.</p>
+<h2 id="this-is-about-more-than-one-version-number">This is about more than one version number</h2>
+<p>A runtime update can sound small if you look at it as a release note item. In reality, it can enable a healthier operating model.</p>
+<p>When the automation platform supports a newer PowerShell runtime, it becomes easier to standardize around more modern development practices. It becomes easier to simplify code instead of preserving older workarounds forever. It becomes easier to close the distance between what is comfortable locally and what is safe in production.</p>
+<p>That is a meaningful improvement. It creates room for better structure and less accumulated technical debt.</p>
+<h2 id="what-i-am-changing-because-of-it">What I am changing because of it</h2>
+<p>This shift reinforces a few things I am trying to do more intentionally:</p>
+<ul>
+<li>Keep local development and automation runtimes as close as possible.</li>
+<li>Reduce compatibility branches and unnecessary workarounds.</li>
+<li>Treat runbooks as maintained code, not disposable scripts.</li>
+<li>Standardize patterns that can be reused confidently across environments.</li>
+</ul>
+<p>That last point matters a lot. The less time I spend accounting for environmental mismatch, the more time I can spend improving the actual design of the automation.</p>
+<h2 id="why-small-reductions-in-friction-matter-so-much">Why small reductions in friction matter so much</h2>
+<p>Automation work is often shaped by small sources of drag that people stop talking about because they seem normal. Runtime mismatch is one of those things. Teams compensate for it, build around it, and slowly accept that the workflow is going to be more awkward than it needs to be.</p>
+<p>That is why I think changes like this deserve more attention than they usually get. They do not just add capability. They remove drag.</p>
+<p>And in automation, removing drag matters a lot. It is often the difference between a platform people avoid and a platform people can actually trust as part of their normal operating model.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

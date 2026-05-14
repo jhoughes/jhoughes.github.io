@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/virtualization/</link>
+    <description>Recent content in Virtualization on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2025 and Hyper-V: The Quiet Foundation Still Matters</title>
+      <link>https://www.fullstackgeek.net/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/10/14/windows-server-2025-and-hyper-v-the-quiet-foundation-still-matters/</guid>
+      <description>&lt;p&gt;There is a lot of industry attention on cloud-native everything, AI everything, and whatever the newest operational abstraction happens to be.&lt;/p&gt;&#xA;&lt;p&gt;Meanwhile, in a large number of real environments, Hyper-V is still doing a huge amount of important work.&lt;/p&gt;&#xA;&lt;p&gt;That is one reason I wanted to spend a little more time thinking about Windows Server 2025 and Hyper-V together. Neither one dominates the loudest conversations in the way some newer technologies do, but both still matter deeply in the kind of infrastructure that actually runs businesses.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

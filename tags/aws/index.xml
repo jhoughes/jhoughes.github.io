@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on FullStackGeek</title>
+    <link>http://localhost:1313/tags/aws/</link>
+    <description>Recent content in AWS on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Cloud and Running Hybrid: Part 4 - AWS</title>
+      <link>http://localhost:1313/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</link>
+      <pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/10/17/migrating-to-cloud-and-running-hybrid-part4-aws/</guid>
+      <description>&lt;h1 id=&#34;migrating-to-cloud-and-running-hybrid-part-4---aws&#34;&gt;Migrating to Cloud and Running Hybrid: Part 4 - AWS&lt;/h1&gt;&#xA;&lt;p&gt;For our second technical post in the series, we will look at Amazon Web Services (AWS) as the public cloud to target for migrating workloads. We are going to look at some of the options that customers have available to them for migrating on-prem workloads to AWS. We already have our data handled through the methods we discussed in the last blog post, so now we are talking about getting the workloads themselves up to the cloud.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

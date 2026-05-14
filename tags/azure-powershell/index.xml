@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure PowerShell on FullStackGeek</title>
+    <link>https://www.fullstackgeek.net/tags/azure-powershell/</link>
+    <description>Recent content in Azure PowerShell on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.fullstackgeek.net/tags/azure-powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure PowerShell, MFA, and the End of Comfortable Legacy Auth</title>
+      <link>https://www.fullstackgeek.net/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.fullstackgeek.net/2025/09/22/azure-powershell-mfa-and-the-end-of-comfortable-legacy-auth/</guid>
+      <description>&lt;p&gt;Every now and then, a platform change comes along that forces you to confront habits you have been carrying for longer than you should have.&lt;/p&gt;&#xA;&lt;p&gt;The Azure PowerShell MFA change was one of those moments for me.&lt;/p&gt;&#xA;&lt;p&gt;It was not the kind of thing you can politely note and then postpone thinking about forever. It surfaced the places where older automation assumptions had been left in place because they were convenient and familiar. Once those assumptions met a more modern identity model, the cracks were suddenly much easier to see.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

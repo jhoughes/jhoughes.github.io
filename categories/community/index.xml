@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on FullStackGeek</title>
+    <link>http://localhost:1313/categories/community/</link>
+    <description>Recent content in Community on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/community/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignite 2025: What Matters After the Keynotes</title>
+      <link>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</guid>
+      <description>&lt;p&gt;A few weeks after Ignite 2025, the event energy starts to cool off, and that is usually when the more useful questions begin.&lt;/p&gt;&#xA;&lt;p&gt;During the event itself, the pace is too fast to process everything well. New features, product updates, big-picture messaging, and polished demos all arrive in a flood. It is easy to come away with a strong sense of momentum, but momentum is not the same thing as clarity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ignite 2025: AI, Agents, and Operational Trust</title>
+      <link>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</guid>
+      <description>&lt;p&gt;Ignite 2025 felt different to me, and not because of one giant announcement.&lt;/p&gt;&#xA;&lt;p&gt;What made it feel different was the consistency of the message across sessions, demos, and follow-up discussion. The overall direction seemed clear: systems are moving beyond simple task execution and toward more active participation in how work gets done.&lt;/p&gt;&#xA;&lt;p&gt;That is a subtle shift in wording, but it represents a bigger shift in operating models. For years, automation has largely meant defining a process, triggering it, and collecting the result. What showed up at Ignite felt more like a move toward systems that interpret context, suggest actions, generate workflows, and increasingly behave like participants in the loop rather than passive tools.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell &#43; DevOps Summit 2025: Where Reality Wins</title>
+      <link>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/04/15/powershell-devops-summit-2025-where-reality-wins/</guid>
+      <description>&lt;p&gt;Coming out of the PowerShell + DevOps Global Summit 2025, I kept circling back to a simple thought: most automation looks great in a demo, but far less of it survives production unchanged.&lt;/p&gt;&#xA;&lt;p&gt;That is not a complaint about demos. Demos are useful. They help people understand what is possible. But real environments do not behave like demos. Authentication changes under you. APIs return something slightly different than expected. Dependencies drift. The script that looked clean in testing becomes awkward six months later when someone else has to maintain it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MVP Summit 2025: Direction, Practice, and the Work Between</title>
+      <link>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/03/30/mvp-summit-2025-direction-and-practice/</guid>
+      <description>&lt;p&gt;I came back from MVP Summit 2025 with the same feeling I usually have after the best technical events: the official sessions mattered, but the real value showed up in the conversations around them.&lt;/p&gt;&#xA;&lt;p&gt;The hallway discussions, the quick chats after a session, and the moments where someone says, &amp;ldquo;here is what we are really seeing,&amp;rdquo; are usually the parts that stay with me the longest. That is where the pattern becomes easier to see. It is also where marketing language tends to fall away and practical direction becomes clearer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/atxpowershell-2019.jpg&#34; alt=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34; title=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the &lt;a href=&#34;https://twitter.com/ATXPowershell&#34; title=&#34;ATXPowerShell on Twitter&#34;&gt;Austin PowerShell User Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Being Effective at Technical Communication - Technology Not Required</title>
+      <link>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/vmug-2019-nynj-usercon-being-effective-at-technical-communication-technology-not-required/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vmug-2019-nynj-usercon.jpg&#34; alt=&#34;VMUG 2019 NY/NJ Usercon&#34; title=&#34;VMUG 2019 NY/NJ Usercon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The leaders of the NY/NJ VMUG chapters selected me to present to their usercon in September 2019, for a session titled &amp;ldquo;Being Effective at Technical Communication - Technology Not Required&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This session is meant to help IT Pros more effectively deliver their presentations and messages, both within their current organizations, and throughout their careers.&lt;/p&gt;&#xA;&lt;p&gt;Many of us focus too much on the technology which is part of our roles, and we do not give enough attention to developing soft skills such as effective communications. In practice, being effective at communicating means that you must know how to best deliver your message, in a manner that your audience can understand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/spiceworld-2019.jpg&#34; alt=&#34;Joe Houghes at SpiceWorld 2019&#34; title=&#34;Joe Houghes at SpiceWorld 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;.  I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala.  It was pretty cool to see my picture next to these two on the speakers page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VeeamON 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>&lt;p&gt;I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted &lt;a href=&#34;http://localhost:1313/documents/VeeamON2019_Automate-Yourself-Out-of-a-Backup-Job-Advanced-PowerShell-and-API-Usage.pdf&#34;&gt;at this link&lt;/a&gt; for public download.&lt;/p&gt;&#xA;&lt;p&gt;The attachment is only a PDF export of the presentation slides themselves.&lt;/p&gt;&#xA;&lt;p&gt;I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – Runecast</title>
+      <link>http://localhost:1313/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</link>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/27/tech-field-day-extra-vmworld-2018-runecast/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was provided any compensation, only stickers/swag.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/TFD-Extra-VMworld-300.png&#34; alt=&#34;Tech Field Day Extra VMworld 2018&#34; title=&#34;Tech Field Day Extra VMworld 2018&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HPE Storage Tech Day starting now</title>
+      <link>http://localhost:1313/2018/10/09/hpe-storage-tech-day-starting-now/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/09/hpe-storage-tech-day-starting-now/</guid>
+      <description>&lt;p&gt;HPE has invited a great group of bloggers and influencers to join for HPE Storage Tech Day.&lt;/p&gt;&#xA;&lt;p&gt;We are here to get a deep dive on all things storage within the HPE ecosystem, including all of the topics seen here:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/HPE-Tech-Day-Agenda.png&#34; alt=&#34;HPE Tech Day Agenda&#34; title=&#34;HPE Tech Day Agenda&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can find out more by watching the &lt;a href=&#34;https://www.youtube.com/watch?v=BtokseXDHX4&#34;&gt;livestream&lt;/a&gt;, by keeping an eye here for blog posts as a follow-up, or by checking content from anyone within this great list of bloggers:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – Quali</title>
+      <link>http://localhost:1313/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/07/tech-field-day-extra-vmworld-2018-quali/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tech Field Day Extra VMworld 2018 – JetStream Software</title>
+      <link>http://localhost:1313/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/10/02/tech-field-day-extra-vmworld-2018-JetStream-software/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER:  I was invited to join in for a few vendor presentations during Tech Field Day Extra at VMworld US 2018, but I was not compensated in any way, I only grabbed some stickers/swag during this event hosted by GestaltIT and the Tech Field Day organization.  No one requires that I write this blog post, nor did they request it. I have written my honest opinion about this vendor, product and the presentation made during Tech Field Day Extra at VMworld US 2018.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Storage Field Day 17 is about to begin</title>
+      <link>http://localhost:1313/2018/09/20/storage-field-day-17-is-about-to-begin/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/09/20/storage-field-day-17-is-about-to-begin/</guid>
+      <description>&lt;p&gt;After too long of a hiatus, I am out in Silicon Valley this week for the honor of being a first-time delegate for Tech Field Day, specifically at the Storage Field Day 17 event.  I&amp;rsquo;ve still got posts coming from TFDx at VMworld 2018.&lt;/p&gt;&#xA;&lt;p&gt;This is the event specific page where you can find out more about &lt;a href=&#34;https://techfieldday.com/event/sfd17/&#34;&gt;Storage Field Day 17&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Here is where you can learn more about the awesomeness that is the ecosystem of &lt;a href=&#34;https://techfieldday.com/&#34;&gt;Tech Field Day&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VeeamOn 2018 Presentation – Automate yourself out of a (backup) job</title>
+      <link>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
+      <description>&lt;p&gt;I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.&lt;/p&gt;&#xA;&lt;p&gt;PDF Version is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pdf&#34;&gt;here&lt;/a&gt;, and the full PowerPoint version with embedded videos is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pptx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

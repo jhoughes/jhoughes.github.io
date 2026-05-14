@@ -2,53 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automation on FullStackGeek</title>
-    <link>https://www.fullstackgeek.net/tags/automation/</link>
+    <link>http://localhost:1313/tags/automation/</link>
     <description>Recent content in Automation on FullStackGeek</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Nov 2019 15:22:17 -0700</lastBuildDate><atom:link href="https://www.fullstackgeek.net/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
-      <link>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
-      <pubDate>Wed, 27 Nov 2019 15:22:17 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
-      <description>About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the Austin PowerShell User Group.
-Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.
-You can get more details on the presentation in my blog post about SpiceWorld, the video of the presentation here, and the version of the slides from this session here.</description>
+      <title>PowerShell in 2025: Still the Tool I Reach for First</title>
+      <link>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2026/01/15/powershell-in-2025-still-the-tool-i-reach-for-first/</guid>
+      <description>&lt;p&gt;Looking back on 2025, I ended up using a lot of different tools.&lt;/p&gt;&#xA;&lt;p&gt;That is not unusual anymore. The toolchain around cloud, hybrid infrastructure, automation, and operations is broader than it used to be. There is more direct API work, more CLI usage, more declarative infrastructure, more Python in certain corners, and more AI-assisted help showing up across the workflow.&lt;/p&gt;&#xA;&lt;p&gt;And yet, when I look honestly at the work I actually did, PowerShell is still the tool I reached for first more often than anything else.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With Powershell</title>
-      <link>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
-      <pubDate>Wed, 27 Nov 2019 12:57:56 -0700</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
-      <description>I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;. I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala. It was pretty cool to see my picture next to these two on the speakers page.</description>
+      <title>Ignite 2025: What Matters After the Keynotes</title>
+      <link>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/12/09/ignite-2025-what-matters-after-the-keynotes/</guid>
+      <description>&lt;p&gt;A few weeks after Ignite 2025, the event energy starts to cool off, and that is usually when the more useful questions begin.&lt;/p&gt;&#xA;&lt;p&gt;During the event itself, the pace is too fast to process everything well. New features, product updates, big-picture messaging, and polished demos all arrive in a flood. It is easy to come away with a strong sense of momentum, but momentum is not the same thing as clarity.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>VeeamOn 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
-      <link>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
-      <pubDate>Thu, 30 May 2019 20:03:32 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
-      <description>I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted here for public download.
-The attachment is only a PDF export of the presentation slides themselves.
-I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.</description>
+      <title>Ignite 2025: AI, Agents, and Operational Trust</title>
+      <link>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/11/24/ignite-2025-ai-agents-and-operational-trust/</guid>
+      <description>&lt;p&gt;Ignite 2025 felt different to me, and not because of one giant announcement.&lt;/p&gt;&#xA;&lt;p&gt;What made it feel different was the consistency of the message across sessions, demos, and follow-up discussion. The overall direction seemed clear: systems are moving beyond simple task execution and toward more active participation in how work gets done.&lt;/p&gt;&#xA;&lt;p&gt;That is a subtle shift in wording, but it represents a bigger shift in operating models. For years, automation has largely meant defining a process, triggering it, and collecting the result. What showed up at Ignite felt more like a move toward systems that interpret context, suggest actions, generate workflows, and increasingly behave like participants in the loop rather than passive tools.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>From Build to Reality: Automation After the Demos</title>
+      <link>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/06/17/build-to-reality-automation-after-the-demos/</guid>
+      <description>&lt;p&gt;A few weeks after Build 2025, the event energy starts to cool down, and that is usually when the most useful reflection begins.&lt;/p&gt;&#xA;&lt;p&gt;That post-event window matters to me because it creates enough distance to sort excitement from lasting value. During Build itself, everything arrives at once. The message is fast, the demos are polished, and the future always looks clean. A little later, the better questions start to emerge. What is actually going to change the way I work? Which ideas hold up outside the keynote frame? What survives contact with real environments?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build 2025: AI and the Operator Workflow</title>
+      <link>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2025/05/25/build-2025-ai-and-the-operator-workflow/</guid>
+      <description>&lt;p&gt;I spent a fair amount of time after Build 2025 going back through announcements, demos, follow-up commentary, and the broader reaction across the technical community, and one thing became very clear to me: AI is no longer being positioned as a side feature. It is being treated as part of the expected workflow.&lt;/p&gt;&#xA;&lt;p&gt;That shift matters more than the headlines by themselves.&lt;/p&gt;&#xA;&lt;p&gt;For a while, AI in technical tooling felt like something extra. Interesting, sometimes helpful, occasionally impressive, but still separate from the default path of getting work done. Build 2025 felt different. The framing was much closer to, &amp;ldquo;This is how work is starting to happen now,&amp;rdquo; especially across development, automation, infrastructure definition, and operational assistance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 4 - Protection Group Snapshots - SDK1 and SDK2</title>
+      <link>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</guid>
+      <description>&lt;p&gt;For this next example, we will look at a request which came into from a customer looking to see if there is a way to list the volumes in a protection group snapshot.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll look at how we can produce this output with 2 different methods:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Continue with our use of PureStoragePowerShellSDK (the original v1 SDK) and the &amp;lsquo;New-PfaCLICommand&amp;rsquo; cmdlet&lt;/li&gt;&#xA;&lt;li&gt;Look at the use of PureStoragePowerShellSDK2 to gather these details&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;While the command that we will use to gather these results from our FlashArray are different, method 1 is the same as our previous blog posts on the process of wrapping CLI commands into PowerShell to work with the results with the addition of using &lt;code&gt;Out-GridView&lt;/code&gt; for the selection of a specific Protection Group (pgroup) snapshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 3 - Host Port Mapping with SDK1</title>
+      <link>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/15/automating-your-pure-storage-infrastructure-part3-host-port-mapping-with-sdk1/</guid>
+      <description>&lt;p&gt;In our third post in our series, we&amp;rsquo;re going to take the code that we produced previously to gather additional information for the request of a detailed host mapping that can give a comparison of pre and post upgrade to verify that all of the paths match.  In the code from our previous post, we were able to gather the information he needed about the connected initiators from the array perspective. Now, we need to gather the information about our hosts and their registered initiators, then tie that information together.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 2 - Active Port Connections with SDK1</title>
+      <link>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/11/automating-your-pure-storage-infrastructure-part2-active-port-connections-with-sdk1/</guid>
+      <description>&lt;p&gt;Now for step 2 in our blog series, we&amp;rsquo;ll take a look at the CLI output which will give us the details that we are looking for, so we can work towards our &amp;ldquo;grouped by host” requirement.&lt;/p&gt;&#xA;&lt;p&gt;The CLI command which will give us the results we are looking for is &lt;code&gt;pureport list&lt;/code&gt; with the &amp;ldquo;initiator” parameter, and a basic run of this CLI command in an SSH session gives us this output:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 1 - Getting Started</title>
+      <link>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/09/automating-your-pure-storage-infrastructure-part1-getting-started/</guid>
+      <description>&lt;p&gt;After a decently long hiatus from writing anything in a series-fashion, I&amp;rsquo;m back to share a blog series based around automating your Pure Storage environment.  We&amp;rsquo;re going to begin this series with a few posts about advancing both your understanding of your Pure Storage environment and understanding the options available to you for automating and monitoring the infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;This series will begin with some requests that came from Pure Storage customers, and other Pure employees that asked for some help in delivering the solution, or just some help with understanding how to accomplish the goal.  These are normally the most enjoyable tasks to automate, as it gives a chance to understand what sorts of tasks a customer is trying to accomplish and what needs they have, and to help educate others along the way.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Austin PowerShell User Group - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/atxpowershell-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/atxpowershell-2019.jpg&#34; alt=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34; title=&#34;Joe Houghes at Austin PowerShell User Group 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;About a month after my presentation of my &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo; session presented at SpiceWorld 2019, I presented the same topic to the &lt;a href=&#34;https://twitter.com/ATXPowershell&#34; title=&#34;ATXPowerShell on Twitter&#34;&gt;Austin PowerShell User Group&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Having a longer period of time to give my presentation led to me being a little bit less rushed, and gave me some time to demo some advanced methods for better performance with PowerShell.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spiceworld 2019 - From Scripting to Toolmaking: Taking the Next Step With PowerShell</title>
+      <link>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/11/27/spiceworld-2019-from-scripting-to-toolmaking-taking-the-next-step-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/spiceworld-2019.jpg&#34; alt=&#34;Joe Houghes at SpiceWorld 2019&#34; title=&#34;Joe Houghes at SpiceWorld 2019&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I got selected to present at SpiceWorld (hosted by Spiceworks) in September 2019, for a session titled &amp;ldquo;From Scripting to Toolmaking: Taking the Next Step With Powershell&amp;rdquo;.  I also got to attend a great PowerShell workshop and a few sessions by one of my PowerShell heroes, Jeff Hicks, and to chat with another Microsoft MVP and Veeam Vanguard, Dave Kuwala.  It was pretty cool to see my picture next to these two on the speakers page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VeeamON 2019 Presentation – Automate Yourself Out of a Backup Job: Advanced PowerShell and API Usage</title>
+      <link>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2019/05/30/veeamon-2019-presentation-automate-yourself-out-of-a-backup-job-advanced-powershell-and-api-usage/</guid>
+      <description>&lt;p&gt;I have had requests to make my slides from the newest &amp;ldquo;Automate Yourself Out of a Backup Job&amp;rdquo; presentation available, so I am finally getting them posted &lt;a href=&#34;http://localhost:1313/documents/VeeamON2019_Automate-Yourself-Out-of-a-Backup-Job-Advanced-PowerShell-and-API-Usage.pdf&#34;&gt;at this link&lt;/a&gt; for public download.&lt;/p&gt;&#xA;&lt;p&gt;The attachment is only a PDF export of the presentation slides themselves.&lt;/p&gt;&#xA;&lt;p&gt;I will be working on recording my demo videos with some added voiceover, so they will be available outside of the recorded breakout sessions posted on the VeeamON site.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>VeeamOn 2018 Presentation – Automate yourself out of a (backup) job</title>
-      <link>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
-      <pubDate>Tue, 15 May 2018 19:05:44 +0000</pubDate>
-      
-      <guid>https://www.fullstackgeek.net/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
-      <description>I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.
-Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.
-PDF Version is available here, and the full PowerPoint version with embedded videos is available here.
-I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.</description>
+      <link>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/05/15/veeamon-2018-presentation-automate-yourself-out-of-a-backup-job/</guid>
+      <description>&lt;p&gt;I had some folks who have asked for a copy of my presentation titled &amp;lsquo;Automate Yourself Out of a (Backup) Job&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;Below is both a PDF export of the presentation slides, along with a copy of the full PPT with the embedded videos.&lt;/p&gt;&#xA;&lt;p&gt;PDF Version is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pdf&#34;&gt;here&lt;/a&gt;, and the full PowerPoint version with embedded videos is available &lt;a href=&#34;http://localhost:1313/documents/VeeamON2018_JoeHoughes_Automate-Yourself-Out-of-a-Backup-Job.pptx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I hope this helps y&amp;rsquo;all out on your path and gives you some benefit within your own environments.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

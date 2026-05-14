@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snapshots on FullStackGeek</title>
+    <link>http://localhost:1313/tags/snapshots/</link>
+    <description>Recent content in Snapshots on FullStackGeek</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/snapshots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating Your Pure Storage Infrastructure: Part 4 - Protection Group Snapshots - SDK1 and SDK2</title>
+      <link>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/07/19/automating-your-pure-storage-infrastructure-part4-protection-group-snapshots-sdk1-and-sdk2/</guid>
+      <description>&lt;p&gt;For this next example, we will look at a request which came into from a customer looking to see if there is a way to list the volumes in a protection group snapshot.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll look at how we can produce this output with 2 different methods:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Continue with our use of PureStoragePowerShellSDK (the original v1 SDK) and the &amp;lsquo;New-PfaCLICommand&amp;rsquo; cmdlet&lt;/li&gt;&#xA;&lt;li&gt;Look at the use of PureStoragePowerShellSDK2 to gather these details&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;While the command that we will use to gather these results from our FlashArray are different, method 1 is the same as our previous blog posts on the process of wrapping CLI commands into PowerShell to work with the results with the addition of using &lt;code&gt;Out-GridView&lt;/code&gt; for the selection of a specific Protection Group (pgroup) snapshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installing the Pure Storage plugin for Veeam Backup &amp; Recovery Snapshot Integration</title>
+      <link>http://localhost:1313/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2018/04/15/installing-the-pure-storage-plugin-for-veeam-backup-recovery-snapshot-integration/</guid>
+      <description>&lt;p&gt;Whew, that title is a mouthful.  This post will cover the installation and configuration of the Pure Storage plugin for Veeam Backup &amp;amp; Recovery, but we&amp;rsquo;ll incorporate some background first.&lt;/p&gt;&#xA;&lt;p&gt;One of the most significant enhancements released with Veeam 9.5U3 is one from which most users have not seen direct improvement  &amp;mdash; until now.  The specific enhancement that I am referring to is the Universal Storage API, which is the framework that storage vendors can leverage to integrate their storage arrays to allow for Veeam to offload snapshots for backup &amp;amp; recovery operations to the array, rather than relying on VMware snapshots.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
